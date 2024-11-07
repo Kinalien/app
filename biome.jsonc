@@ -1,0 +1,66 @@
+{
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"formatter": {
+		"enabled": true,
+		"formatWithErrors": false,
+		"indentWidth": 2,
+		"lineWidth": 100,
+		"attributePosition": "auto",
+		"useEditorconfig": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"style": {
+				"noNonNullAssertion": "info"
+			},
+			"correctness": {
+				"noChildrenProp": "off",
+				"useJsxKeyInIterable": "off",
+				"noUnusedImports": "error",
+				"noUnusedVariables": "error"
+			},
+			"nursery": {
+				"useSortedClasses": {
+					"level": "info",
+					"fix": "safe",
+					"options": {
+						"attributes": ["class", "classList"],
+						"functions": ["cva", "tw"]
+					}
+				}
+			}
+		}
+	},
+	"css": {
+		"formatter": {
+			"enabled": false
+		},
+		"linter": {
+			"enabled": false
+		},
+		"parser": {
+			"cssModules": false
+		}
+	},
+	"files": {
+		"ignore": [
+			".vscode/**",
+			".turbo/**",
+			".vinxi/**/*",
+			".output/**/*",
+			".drizzle/migrations/**/*",
+			"playwright-report/**/*",
+			"playwright/.auth/**/*",
+			"test-results/**/*",
+			"svg-icons.d.ts"
+		]
+	},
+	"overrides": [
+		{
+			"include": ["*.json", ".*rc"],
+			"json": { "formatter": { "trailingCommas": "none" } }
+		}
+	]
+}
