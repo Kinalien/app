@@ -13,12 +13,11 @@
 		"db:migrate": "npx tsx .drizzle/migrate.ts",
 		"db:seed": "npx tsx .drizzle/seed.ts",
 		"db:push": "drizzle-kit push",
-		"db:studio": "drizzle-kit studio --port=3001",
-		"postinstall": "paraglide-js compile --project ./project.inlang --outdir ./src/i18n/runtime"
+		"db:studio": "drizzle-kit studio --port=3001"
 	},
 	"dependencies": {
-		"@inlang/paraglide-solidstart": "^0.0.2",
 		"@nou/ui": "^0.0.1",
+		"@solid-primitives/i18n": "^2.1.1",
 		"@solid-primitives/refs": "^1.0.8",
 		"@solid-primitives/storage": "^4.2.1",
 		"@solidjs/meta": "^0.29.4",
@@ -37,8 +36,6 @@
 	},
 	"devDependencies": {
 		"@faker-js/faker": "^9.2.0",
-		"@inlang/paraglide-js": "1.11.3",
-		"@inlang/paraglide-vite": "^1.2.76",
 		"@nou/config": "^1.0.0",
 		"@storybook/builder-vite": "^8.4.2",
 		"@types/pg": "^8.11.10",

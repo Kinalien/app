@@ -1,20 +1,17 @@
 {
-  "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "bundler",
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "jsx": "preserve",
-    "jsxImportSource": "solid-js",
-    "allowJs": true,
-    "strict": true,
-    "noEmit": true,
-    "types": ["vinxi/types/client", "node"],
-    "isolatedModules": true,
-    "paths": {
-      "~/*": ["./src/*"],
-      "@/*": ["./drizzle/*"]
-    }
-  }
+	"extends": "@nou/config/tsconfig",
+	"include": [
+		"./src",
+		"./drizzle.config.ts",
+		".drizzle/migrate.ts",
+		"app.config.ts",
+		"tailwind.config.ts",
+		"../config/globals.d.ts"
+	],
+	"compilerOptions": {
+		"types": ["vite/client", "vinxi/types/client", "@solidjs/start/env"],
+		"paths": {
+			"~/*": ["./src/*"]
+		}
+	}
 }
