@@ -1,9 +1,11 @@
-export default {
-  dialect: "sqlite",
-  schema: "./drizzle/schema.ts",
-  out: "./drizzle/migrations/",
-  // driver: "better-sqlite",
+import { defineConfig } from 'drizzle-kit';
+import { env } from '~/env';
+
+export default defineConfig({
+  out: './drizzle',
+  schema: './src/db/schema.ts',
+  dialect: 'postgresql',
   dbCredentials: {
-    url: './drizzle/db.sqlite',
+    url: env.DATABASE_URL,
   },
-};
+});

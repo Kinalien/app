@@ -11,7 +11,7 @@
     "./theme/theme.json": "./theme/theme.json"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   },
   "scripts": {
     "generate-themed-css": "node ./theme/generate.js",
