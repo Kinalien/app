@@ -29,7 +29,7 @@
 		"oslo": "^1.2.1",
 		"pg": "^8.13.1",
 		"solid-js": "^1.9.3",
-		"tailwind-variants": "^0.2.1",
+		"tailwind-variants": "^0.3.0",
 		"temporal-polyfill": "^0.2.5",
 		"valibot": "^1.0.0-beta.3",
 		"vinxi": "0.4.3"
