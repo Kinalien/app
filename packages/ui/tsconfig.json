@@ -1,0 +1,7 @@
+{
+	"extends": "@nou/config/tsconfig",
+	"include": ["./src", "./.storybook"],
+	"compilerOptions": {
+		"types": ["vite/client"]
+	}
+}
