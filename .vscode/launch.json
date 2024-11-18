@@ -2,7 +2,13 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"command": "npm run dev -w @nou/web",
+			"command": "npm run dev -w @nou/web-petcare",
+			"name": "Development server",
+			"request": "launch",
+			"type": "node-terminal"
+		},
+		{
+			"command": "npm run dev -w @nou/web-vet",
 			"name": "Development server",
 			"request": "launch",
 			"type": "node-terminal"

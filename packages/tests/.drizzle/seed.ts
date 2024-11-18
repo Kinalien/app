@@ -1,6 +1,6 @@
-import type { useDb } from "../../web/src/server/db";
-import * as schema from "../../web/src/server/db/schema";
-import type { UserID } from "../../web/src/server/types";
+import type { useDb } from "../../web-petcare/src/server/db";
+import * as schema from "../../web-petcare/src/server/db/schema";
+import type { UserID } from "../../web-petcare/src/server/types";
 
 export async function seed(db: ReturnType<typeof useDb>) {
 	await Promise.all([

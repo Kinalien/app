@@ -6,7 +6,7 @@
 		".drizzle/migrate.ts",
 		"app.config.ts",
 		"tailwind.config.ts",
-		"../config/globals.d.ts"
+		"../_config/globals.d.ts"
 	],
 	"compilerOptions": {
 		"types": ["vite/client", "vinxi/types/client", "@solidjs/start/env"],

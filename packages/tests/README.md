@@ -1,6 +1,6 @@
 # @nou/acceptance-tests
 
-[Playwright](https://playwright.dev/) E2E tests for `@nou/web`.
+[Playwright](https://playwright.dev/) E2E tests.
 
 ## Running
 
