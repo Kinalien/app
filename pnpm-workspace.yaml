@@ -1,0 +1,6 @@
+packages:
+  - "packages/*"
+
+catalog:
+  "solid-js": ^1.9.3
+  "@solidjs/router": ^0.15.1

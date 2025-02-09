@@ -1,7 +1,7 @@
-diff --git a/node_modules/validate-html-nesting/src/mapping.js b/node_modules/validate-html-nesting/src/mapping.js
-index 323b7d6..d9edfef 100644
---- a/node_modules/validate-html-nesting/src/mapping.js
-+++ b/node_modules/validate-html-nesting/src/mapping.js
+diff --git a/src/mapping.js b/src/mapping.js
+index 323b7d61058f6c80ab9421897945ecf172fbd256..d9edfefbca2fa59d3422571dfc8d3ce15b559c44 100644
+--- a/src/mapping.js
++++ b/src/mapping.js
 @@ -18,7 +18,7 @@ const onlyValidChildren = {
  		'template',
  	]),
