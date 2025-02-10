@@ -3,11 +3,10 @@ export type { Props } from "@astrojs/starlight/props";
 import { Code } from "@astrojs/starlight/components";
 
 const { entry: { data } } = Astro.props;
-console.log(data);
 ---
 
 <div class="sl-markdown-content">
-  <Code code={data.usage} lang="tsx" />
+  { data.usage && <Code code={data.usage} lang="tsx" /> }
   <slot />
 </div>
 

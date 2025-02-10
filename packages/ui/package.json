@@ -20,6 +20,7 @@
 		"check": "biome check ."
 	},
 	"dependencies": {
+		"@astrojs/solid-js": "^5.0.4",
 		"@solid-primitives/media": "^2.2.9",
 		"@solid-primitives/presence": "^0.1.0",
 		"@solid-primitives/refs": "^1.0.8",
@@ -27,7 +28,7 @@
 		"@solidjs/router": "catalog:",
 		"astro": "^5.2.5",
 		"class-variance-authority": "^0.7.0",
-		"solid-js": "catalog:",
+		"solid-js": "1.9.4",
 		"tailwind-merge": "^3.0.1"
 	},
 	"devDependencies": {

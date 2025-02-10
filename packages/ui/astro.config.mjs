@@ -1,3 +1,4 @@
+import solidJs from "@astrojs/solid-js";
 import starlight from "@astrojs/starlight";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
@@ -22,6 +23,7 @@ export default defineConfig({
 				MarkdownContent: "./docs/components/MarkdownContent.astro",
 			},
 		}),
+		solidJs(),
 	],
 	vite: {
 		plugins: [

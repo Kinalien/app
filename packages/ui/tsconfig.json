@@ -1,8 +1,27 @@
 {
-	"extends": ["astro/tsconfigs/base", "@nou/config/tsconfig"],
-	"include": [".astro/types.d.ts", "./src", "./.storybook"],
-	"exclude": ["dist"],
-	"compilerOptions": {
-		"types": ["vite/client"]
-	}
+  "extends": [
+    "@nou/config/tsconfig",
+    "astro/tsconfigs/base"
+  ],
+  "include": [
+    ".astro/types.d.ts",
+    "./src",
+    "./.storybook"
+  ],
+  "exclude": [
+    "dist"
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "./src/*"
+      ]
+    },
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js"
+  },
+  "mdx": {
+    "checkMdx": true
+  }
 }
