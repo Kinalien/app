@@ -13,9 +13,11 @@
 	},
 	"scripts": {
 		"typecheck": "tsc",
-		"dev": "storybook dev -p 6006",
-		"check": "biome check .",
-		"build": "storybook build"
+		"dev": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"check": "biome check ."
 	},
 	"dependencies": {
 		"@solid-primitives/media": "^2.2.9",
@@ -23,28 +25,22 @@
 		"@solid-primitives/refs": "^1.0.8",
 		"@solid-primitives/rootless": "^1.4.5",
 		"@solidjs/router": "catalog:",
+		"astro": "^5.2.5",
 		"class-variance-authority": "^0.7.0",
 		"solid-js": "catalog:",
 		"tailwind-merge": "^3.0.1"
 	},
 	"devDependencies": {
+		"@astrojs/starlight": "^0.31.1",
 		"@nou/config": "workspace:*",
-		"@storybook/addon-essentials": "^8.4.2",
-		"@storybook/addon-interactions": "^8.4.2",
-		"@storybook/addon-links": "^8.4.2",
-		"@storybook/blocks": "^8.4.2",
-		"@storybook/docs-tools": "^8.4.2",
-		"@storybook/test": "^8.4.2",
+		"@tailwindcss/vite": "4.0.6",
 		"autoprefixer": "^10.4.20",
-		"postcss": "^8.4.49",
-		"remark-gfm": "^4.0.0",
-		"storybook": "8.6.0-alpha.4",
-		"storybook-solidjs": "1.0.0-beta.6",
-		"storybook-solidjs-vite": "1.0.0-beta.6",
-		"tailwindcss": "^4.0.5",
-		"valibot": "1.0.0-beta.15",
+		"prettier": "3.5.0",
+		"prettier-plugin-astro": "0.14.1",
+		"tailwindcss": "catalog:",
+		"valibot": "1.0.0-rc.0",
 		"vite": "^6.1.0",
-		"vite-plugin-solid": "^2.10.2",
+		"vite-plugin-solid": "^2.11.1",
 		"vite-svg-sprite-wrapper": "^1.3.3"
 	}
 }

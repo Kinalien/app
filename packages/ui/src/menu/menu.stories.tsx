@@ -1,17 +1,7 @@
-import type { Meta } from "storybook-solidjs";
-
 import { Avatar } from "../avatar";
 import { Button } from "../button";
 
 import { Menu, MenuItem } from ".";
-
-const meta = {
-	title: "Menu",
-	component: Menu,
-	argTypes: {},
-} satisfies Meta<typeof Menu>;
-
-export default meta;
 
 export const SimpleMenu = () => {
 	return (

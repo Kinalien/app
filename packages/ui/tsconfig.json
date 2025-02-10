@@ -1,6 +1,7 @@
 {
-	"extends": "@nou/config/tsconfig",
-	"include": ["./src", "./.storybook"],
+	"extends": ["astro/tsconfigs/base", "@nou/config/tsconfig"],
+	"include": [".astro/types.d.ts", "./src", "./.storybook"],
+	"exclude": ["dist"],
 	"compilerOptions": {
 		"types": ["vite/client"]
 	}

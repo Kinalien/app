@@ -5,6 +5,8 @@ dist
 .netlify
 .vinxi
 app.config.timestamp_*.js
+# generated types
+.astro/
 
 # Environment
 .env

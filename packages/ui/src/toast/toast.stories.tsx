@@ -1,12 +1,6 @@
-import type { Meta } from "storybook-solidjs";
 import { Toast, Toaster, toast } from ".";
 import { Button } from "../button";
 import { Text } from "../text";
-
-const meta = {
-	title: "Toast",
-	argTypes: {},
-} satisfies Meta<ReturnType<typeof Toast>>;
 
 export const ToastExample = () => {
 	return (
@@ -46,5 +40,3 @@ export const ToastExample = () => {
 		</>
 	);
 };
-
-export default meta;

@@ -1,16 +1,6 @@
-import type { Meta } from "storybook-solidjs";
-
 import { Text } from "../text";
 
 import { Option, Picker } from ".";
-
-const meta = {
-	title: "Picker",
-	component: Picker,
-	argTypes: {},
-} satisfies Meta<typeof Picker>;
-
-export default meta;
 
 export const SimplePicker = () => {
 	return (

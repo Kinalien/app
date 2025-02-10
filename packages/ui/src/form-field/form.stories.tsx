@@ -1,5 +1,4 @@
 import { For, createSignal } from "solid-js";
-import type { Meta } from "storybook-solidjs";
 import * as v from "valibot";
 
 import { Button } from "../button";
@@ -10,14 +9,6 @@ import { RadioCard } from "../radio";
 import { Text } from "../text";
 import { TextField } from "../text-field";
 import { Form } from "./form";
-
-const meta = {
-	title: "Form",
-	component: TextField,
-	argTypes: {},
-} satisfies Meta<typeof TextField>;
-
-export default meta;
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
