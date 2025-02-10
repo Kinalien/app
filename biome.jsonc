@@ -61,6 +61,15 @@
 		{
 			"include": ["*.json", ".*rc"],
 			"json": { "formatter": { "trailingCommas": "none" } }
+		},
+		{
+			"include": ["*.astro"],
+			"linter": {
+				"enabled": false
+			},
+			"formatter": {
+				"enabled": false
+			}
 		}
 	]
 }
