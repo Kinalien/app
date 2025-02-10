@@ -4,7 +4,7 @@
 	"type": "module",
 	"license": "GNU General Public License v3.0",
 	"exports": {
-		"./tailwind": "./tailwind.ts",
+		"./theme.css": "./theme.css",
 		"./tsconfig": "./tsconfig.json",
 		"./global.css": "./global.css",
 		"./icons/sprite.svg": "./icons/sprite.svg",
@@ -20,10 +20,8 @@
 	},
 	"dependencies": {
 		"@fontsource-variable/inter": "^5.1.0",
-		"@tailwindcss/container-queries": "^0.1.1",
-		"autoprefixer": "^10.4.20",
-		"postcss": "^8.4.49",
-		"tailwindcss": "^4.0.5",
+		"@tailwindcss/vite": "4.0.6",
+		"tailwindcss": "catalog:",
 		"tailwindcss-animate": "^1.0.7",
 		"tailwindcss-spring": "^1.0.1",
 		"typescript-plugin-css-modules": "^5.1.0",

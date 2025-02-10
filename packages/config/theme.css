@@ -1,0 +1,168 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+@plugin "tailwindcss-spring";
+
+@theme {
+  /* fonts */
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  /* colors */
+  --color-*: initial;
+  --color-white: hsl(0 0% 100%);
+  --color-black: hsl(0 0% 0%);
+  --color-primary: hsl(350 45.67% 49.8%);
+  --color-on-primary: hsl(0 0% 100%);
+  --color-primary-container: hsl(355 100% 92.5%);
+  --color-on-primary-container: hsl(346 78.8% 12.9%);
+  --color-secondary: hsl(354 15.7% 40%);
+  --color-on-secondary: hsl(0 0% 100%);
+  --color-secondary-container: hsl(355 100% 92.5%);
+  --color-on-secondary-container: hsl(352 35.4% 12.7%);
+  --color-tertiary: hsl(193 85.5% 27.1%);
+  --color-on-tertiary: hsl(0 0% 100%);
+  --color-tertiary-container: hsl(198 100% 86.3%);
+  --color-on-tertiary-container: hsl(195 100% 8.04%);
+  --color-error: hsl(0 75.5% 41.6%);
+  --color-on-error: hsl(0 0% 100%);
+  --color-error-container: hsl(5.85 100% 92%);
+  --color-on-error-container: hsl(358 100% 12.7%);
+  --color-background: hsl(7.5 16% 97.6%);
+  --color-on-background: hsl(353 15.3% 11.6%);
+  --color-surface: hsl(349 2.9% 99.8%);
+  --color-on-surface: hsl(353 15.3% 11.6%);
+  --color-surface-variant: hsl(357 51.1% 91.2%);
+  --color-on-surface-variant: hsl(356 10.1% 29.2%);
+  --color-outline: hsl(356 7% 61%);
+  --color-outline-variant: hsl(355 21.6% 80%);
+  --color-inverse-surface: hsl(354 9.8% 20%);
+  --color-inverse-on-surface: hsl(0 100% 96.5%);
+  --color-inverse-primary: hsl(354 100% 84.9%);
+  --color-surface-dim: hsl(356 26.2% 87.3%);
+  --color-surface-bright: hsl(7.5 100% 98.4%);
+  --color-surface-container-lowest: hsl(0 0% 100%);
+  --color-surface-container-low: hsl(0 100% 97.1%);
+  --color-surface-container: hsl(0 75% 95.3%);
+  --color-surface-container-high: hsl(357 50% 92.9%);
+  --color-surface-container-highest: hsl(357 37.5% 90.6%);
+
+  /* breakpoints */
+  --breakpoint-sm: 560px;
+  --breakpoint-3xl: 1400px;
+
+  /* opacity */
+  --opacity-3: 0.03;
+  --opacity-8: 0.08;
+  --opacity-12: 0.12;
+
+  /* spacing */
+  --spacing-font: 1rem;
+
+  /* shadows */
+  --shadow-flat: 0 0 1px 2px alpha(var(--color-on-surface, 0.2));
+  --shadow-popover: 0 0 1px alpha(var(--color-on-surface-variant, 0.2)),
+    var(--shadow-lg);
+
+  /* animation */
+  --animate-spinner-circle: spinner-circle 1.8s linear infinite;
+
+  --filter-darker: brightness(0.96) saturate(1.2);
+
+  @keyframes spinner-circle {
+    0% {
+      stroke-dasharray: 1, 150;
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dasharray: 90, 150;
+      stroke-dashoffset: -35;
+    }
+    100% {
+      stroke-dasharray: 90, 150;
+      stroke-dashoffset: -124;
+    }
+  }
+}
+
+@utility bg-main {
+  background-image: linear-gradient(
+    135deg,
+    theme(color.secondary-container/0.3) 0%,
+    theme(color.tertiary-container/0.3) 100%
+  );
+}
+
+@utility scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@utility stack {
+  display: grid;
+  place-items: center;
+  & > * {
+    grid-area: 1/1;
+  }
+}
+
+@utility container {
+  width: 100%;
+  max-width: 100%;
+  margin-inline: auto;
+  padding-inline: 1rem;
+
+  @media (min-width: theme(screens.sm)) {
+    padding-inline: 2rem;
+  }
+  @media (min-width: theme(screens.xl)) {
+    max-width: theme("screens.xl");
+  }
+}
+
+@custom-variant intent (&:where(:hover,:focus));
+
+@custom-variant disabled (&:where(disabled,[aria-disabled="true"]));
+
+@utility view-transition-* {
+  view-transition-name: --value(*);
+}
+
+@utility view-transition-class-* {
+  view-transition-class: --value(*);
+}
+
+@utility anchor-* {
+  anchor-name: --value(*);
+}
+
+@utility to-anchor-* {
+  position-anchor: --value(*);
+}
+
+@utility overflow-snap-* {
+  display: flex;
+  flex-flow: row nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  margin-block: calc(-1 * --value(*, theme(spacing.2)));
+  padding-block: --value(*, theme(spacing.2));
+  & > * {
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+  & > *:last-of-type {
+    scroll-snap-align: end;
+  }
+}
+
+/* @custom-variant part-* (& [data-part="--value(*)"]); */
+
+/* plugin(function partStyle({ matchVariant }) {
+  matchVariant("part", (value) => `& [data-part="${value}"]`, {});
+}), */

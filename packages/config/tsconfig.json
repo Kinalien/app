@@ -27,10 +27,7 @@
 					"goToDefinition": true,
 					"classnameTransform": "camelCase",
 					"noUncheckedIndexedAccess": true,
-					"namedExports": true,
-					"postcssOptions": {
-						"useConfig": true
-					}
+					"namedExports": true
 				}
 			}
 		]
