@@ -20,6 +20,7 @@
     height: 100%;
     max-width: 100%;
     overscroll-behavior: contain;
+    font-family: var(--font-sans);
   }
   #app {
     overflow-x: hidden;
