@@ -3,9 +3,6 @@
 	"version": "0.0.1",
 	"type": "module",
 	"license": "GNU General Public License v3.0",
-	"engines": {
-		"node": ">=20"
-	},
 	"main": "./src/_index.tsx",
 	"exports": {
 		".": "./src/_index.tsx",
@@ -29,7 +26,8 @@
 		"astro": "^5.2.5",
 		"class-variance-authority": "^0.7.0",
 		"solid-js": "1.9.4",
-		"tailwind-merge": "^3.0.1"
+		"tailwind-merge": "^3.0.1",
+		"tailwindcss-spring": "^1.0.1"
 	},
 	"devDependencies": {
 		"@astrojs/starlight": "^0.31.1",

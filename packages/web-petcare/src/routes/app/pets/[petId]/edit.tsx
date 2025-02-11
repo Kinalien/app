@@ -83,7 +83,7 @@ function PetPictureWithUpload(props: {
 				heading={t("edit.photo-update-dialog-title", { petName: props.pet.name })}
 				id="pet-picture-upload"
 				placement="center"
-				class="w-[calc(100%-theme(spacing.4))] max-w-[560px]"
+				class="w-[calc(100%-var(--spacing-4))] max-w-[560px]"
 			>
 				Upload
 			</Popover>

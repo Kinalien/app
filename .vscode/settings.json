@@ -5,6 +5,11 @@
 	"files.associations": {
 		"*.css": "tailwindcss"
 	},
+  "tailwindCSS.experimental.classRegex": [
+    ["css(?:\\.\\w*)?\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["tw\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
+  ],
 	"tailwindCSS.classAttributes": ["class", "class:list"],
 	"[typescript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -39,5 +44,5 @@
 	},
 	"cSpell.words": [
 		"petcare"
-	]
+	],
 }

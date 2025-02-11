@@ -50,19 +50,19 @@ export const buttonVariants = cva(
 		compoundVariants: [
 			{
 				variant: "accent",
-				class: "intent:filter-darker [--btn-bg:theme(colors.primary)]",
+				class: "intent:filter-darker [--btn-bg:var(--color-primary)]",
 			},
 			{
 				variant: "accent",
 				tone: "secondary",
 				class:
-					"intent:filter-darker bg-tertiary text-on-tertiary outline-tertiary [--btn-bg:theme(colors.tertiary)]",
+					"intent:filter-darker bg-tertiary text-on-tertiary outline-tertiary [--btn-bg:var(--color-tertiary)]",
 			},
 			{
 				variant: "accent",
 				tone: "destructive",
 				class:
-					"bg-error intent:bg-error/90 text-on-error outline-error [--btn-bg:theme(colors.error)]",
+					"bg-error intent:bg-error/90 text-on-error outline-error [--btn-bg:var(--color-error)]",
 			},
 			{
 				variant: "outline",
@@ -72,31 +72,31 @@ export const buttonVariants = cva(
 				variant: "outline",
 				tone: "destructive",
 				class:
-					"border-error intent:bg-error-container/30 text-error outline-error [--btn-bg:theme(colors.surface)]",
+					"border-error intent:bg-error-container/30 text-error outline-error [--btn-bg:var(--color-surface)]",
 			},
 			{
 				variant: "tonal",
 				tone: "neutral",
 				class:
-					"bg-on-surface/5 intent:bg-on-surface/8 text-on-surface [--btn-bg:theme(colors.surface)]",
+					"bg-on-surface/5 intent:bg-on-surface/8 text-on-surface [--btn-bg:var(--color-surface)]",
 			},
 			{
 				variant: "tonal",
 				tone: "primary",
 				class:
-					"intent:filter-darker bg-primary-container text-on-primary-container [--btn-bg:theme(colors.primary-container)]",
+					"intent:filter-darker bg-primary-container text-on-primary-container [--btn-bg:var(--color-primary-container)]",
 			},
 			{
 				variant: "tonal",
 				tone: "secondary",
 				class:
-					"intent:filter-darker bg-tertiary-container text-on-tertiary-container [--btn-bg:theme(colors.tertiary-container)]",
+					"intent:filter-darker bg-tertiary-container text-on-tertiary-container [--btn-bg:var(--color-tertiary-container)]",
 			},
 			{
 				variant: "tonal",
 				tone: "destructive",
 				class:
-					"bg-error/5 text-error [--btn-bg:theme(colors.error/0.05)] hover:bg-error/8 focus:bg-error/12",
+					"bg-error/5 text-error [--btn-bg:var(--color-error/0.05)] hover:bg-error/8 focus:bg-error/12",
 			},
 			{
 				variant: "tonal",
@@ -107,18 +107,18 @@ export const buttonVariants = cva(
 			{
 				variant: "ghost",
 				tone: "neutral",
-				class: "[--btn-bg:theme(colors.surface)] hover:bg-on-surface/5 focus:bg-on-surface/8",
+				class: "[--btn-bg:var(--color-surface)] hover:bg-on-surface/5 focus:bg-on-surface/8",
 			},
 			{
 				variant: "ghost",
 				tone: "primary",
 				class:
-					"text-primary outline-primary [--btn-bg:theme(colors.surface)] hover:bg-primary/5 focus:bg-primary/8",
+					"text-primary outline-primary [--btn-bg:var(--color-surface)] hover:bg-primary/5 focus:bg-primary/8",
 			},
 			{
 				variant: "ghost",
 				tone: "destructive",
-				class: "text-error [--btn-bg:theme(colors.error/0.05)] hover:bg-error/5 focus:bg-error/8",
+				class: "text-error [--btn-bg:var(--color-error/0.05)] hover:bg-error/5 focus:bg-error/8",
 			},
 			{
 				variant: "link",
@@ -147,6 +147,7 @@ const BaseComponent = <T extends ValidComponent>(ownProps: BaseProps<T>) => {
 		"label",
 		"title",
 		"style",
+		"disabled",
 	]);
 	return (
 		<Dynamic
@@ -158,7 +159,7 @@ const BaseComponent = <T extends ValidComponent>(ownProps: BaseProps<T>) => {
 			onClick={(event: MouseEvent) => {
 				if (
 					local.pending ||
-					props.disabled ||
+					local.disabled ||
 					(props["aria-disabled"] && props["aria-disabled"] !== "false")
 				) {
 					event.preventDefault();
@@ -175,7 +176,7 @@ const BaseComponent = <T extends ValidComponent>(ownProps: BaseProps<T>) => {
 					props.onClick[1](props.onClick[0], event);
 				}
 			}}
-			aria-disabled={local.pending || undefined}
+			aria-disabled={local.pending || local.disabled || props["aria-disabled"]}
 			style={
 				props.popoverTarget
 					? ({
@@ -211,7 +212,7 @@ const SplitButton = (ownProps: Omit<BaseProps<"div">, "component" | "icon">) => 
 		<BaseComponent
 			{...ownProps}
 			icon={false}
-			class={tw(ownProps.class, "flex w-fit p-0 [&>*]:rounded-[inherit]")}
+			class={tw(ownProps.class, "flex w-fit p-0 *:rounded-[inherit]")}
 			component="div"
 		/>
 	);

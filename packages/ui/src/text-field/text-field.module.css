@@ -1,4 +1,6 @@
-@layer tw-components {
+@reference "@nou/config/theme.css";
+
+@layer components {
   .input {
     flex-basis: 100%;
     background: transparent;
@@ -8,19 +10,19 @@
     position: relative;
     &[type="number"] {
       font-variant-numeric: tabular-nums;
-      @media (min-width: theme(screens.sm)) {
-        padding-inline-end: theme("spacing.1");
+      @media (min-width: theme(--breakpoint-sm)) {
+        padding-inline-end: var(--spacing-1);
         &::-webkit-inner-spin-button {
-          margin-inline-start: theme("spacing.1");
+          margin-inline-start: var(--spacing-1);
         }
       }
     }
     &::placeholder {
-      color: theme("colors.on-surface-variant/0.7");
+      color: theme("color.on-surface-variant/0.7");
       font-weight: 400;
     }
     /* &[type="date"] {
-      padding-inline-end: theme(spacing.8);
+      padding-inline-end: var(--spacing-8);
     } */
     /** set same sizing/position styles as for custom ones */
     &[type="date"]::-webkit-calendar-picker-indicator,
@@ -32,7 +34,7 @@
       aspect-ratio: 1 / 1;
       background-size: 1.75em;
       background-position: center;
-      padding-inline-end: theme("spacing.1");
+      padding-inline-end: var(--spacing-1);
       margin: 0;
       padding: 0;
       &:focus-visible {

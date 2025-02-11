@@ -13,7 +13,7 @@ export default function WWW() {
 			<Title>{t("meta.main-title")}</Title>
 			<section>
 				<div class="flex flex-col items-start md:gap-12">
-					<h1 class="z-10 rounded-2xl bg-background bg-main py-4 pe-4 font-bold text-6xl [background-attachment:fixed] md:h-[calc(theme(fontSize.6xl)+theme(spacing.4)*2)]">
+					<h1 class="z-10 rounded-2xl bg-background bg-main py-4 pe-4 font-bold text-6xl [background-attachment:fixed] md:h-[calc(var(--fontSize-6xl)+var(--spacing-4)*2)]">
 						<T>{t("headline")}</T>
 					</h1>
 					<div class="flex w-full flex-row sm:gap-8">
@@ -28,7 +28,7 @@ export default function WWW() {
 							{t("cta-start")}
 							<Icon use="arrow-circle-up-right" class="size-8 shrink-0" />
 						</ButtonLink>
-						<div class="h-full w-[85%] min-w-[320px] overflow-hidden rounded-2xl sm:top-36 sm:w-full lg:absolute lg:top-4 lg:right-4 lg:max-h-[calc(100%-theme(spacing.8))] lg:w-[65%] xl:w-[45%]">
+						<div class="h-full w-[85%] min-w-[320px] overflow-hidden rounded-2xl sm:top-36 sm:w-full lg:absolute lg:top-4 lg:right-4 lg:max-h-[calc(100%-var(--spacing-8))] lg:w-[65%] xl:w-[45%]">
 							<HeroImage alt={t("hero-image")} />
 						</div>
 					</div>

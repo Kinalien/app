@@ -15,8 +15,8 @@
   body,
   #app {
     scrollbar-gutter: stable;
-    background-color: theme(color.background);
-    color: theme(color.on-background);
+    background-color: var(--color-background);
+    color: var(--color-on-background);
     height: 100%;
     max-width: 100%;
     overscroll-behavior: contain;

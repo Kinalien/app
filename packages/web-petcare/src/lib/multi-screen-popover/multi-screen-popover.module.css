@@ -1,4 +1,4 @@
-@tailwind utilities;
+@reference "@nou/config/theme.css";
 
 :global(html:active-view-transition-type(backwards, forwards)) {
   &::view-transition-old(multi-screen-popover-content),
@@ -6,10 +6,10 @@
     @apply w-full overflow-clip object-none;
   }
   &::view-transition-old(multi-screen-popover-content) {
-    @apply animate-out fade-out-0 fill-mode-forwards duration-200;
+    /* @apply animate-out fade-out-0 fill-mode-forwards duration-200; */
   }
   &::view-transition-new(multi-screen-popover-content) {
-    @apply animate-in fade-in-0 fill-mode-forwards duration-300;
+    /* @apply animate-in fade-in-0 fill-mode-forwards duration-300; */
   }
 }
 
@@ -29,14 +29,14 @@
         multi-screen-popover-content
       )
   ) {
-  @apply slide-out-to-right-[20%];
+  /* @apply slide-out-to-right-[20%]; */
 }
 :global(
     html:active-view-transition-type(backwards)::view-transition-new(
         multi-screen-popover-content
       )
   ) {
-  @apply slide-in-from-left-[20%];
+  /* @apply slide-in-from-left-[20%]; */
 }
 :global(
     html:active-view-transition-type(forwards)::view-transition-old(
@@ -44,12 +44,12 @@
       )
   ) {
   /* animation: slide-out-to-left 0.1s ease-in forwards; */
-  @apply slide-out-to-left-[20%];
+  /* @apply slide-out-to-left-[20%]; */
 }
 :global(
     html:active-view-transition-type(forwards)::view-transition-new(
         multi-screen-popover-content
       )
   ) {
-  @apply slide-in-from-right-[20%];
+  /* @apply slide-in-from-right-[20%]; */
 }

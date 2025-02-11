@@ -42,7 +42,7 @@ function AppLoginPage() {
 						<DevLogin />
 					</Suspense>
 				</header>
-				<section class="container flex h-full flex-[2] flex-col items-center gap-12">
+				<section class="container flex h-full flex-2 flex-col items-center gap-12">
 					<div class="flex max-w-2xl flex-col gap-8">
 						{/* TODO: Replace with carousel of app features with screenshots */}
 						<HeroImage

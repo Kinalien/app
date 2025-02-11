@@ -1,10 +1,12 @@
+@reference "@nou/config/theme.css";
+
 /* Avoid consumers overriding this for all states with e.g. display: flex */
-@layer tw-utilities {
+@layer utilities {
   .popover:not(:popover-open) {
     display: none;
   }
 }
-@layer tw-base {
+@layer base {
   :global(body):has(
       .popover[data-placement="center"]:not([data-state="closed"]),
       .drawer:not([data-state="closed"])
@@ -14,20 +16,24 @@
   }
 }
 
-@layer tw-components {
+@layer components {
   .popover {
-    background-color: theme("colors.surface");
-    color: theme("colors.on-surface");
+    background-color: var(--color-surface);
+    color: var(--color-on-surface);
     isolation: isolate;
-    transition: opacity 0.16s, transform 0.24s, display 0.24s, overlay 0.24s,
+    transition:
+      opacity 0.16s,
+      transform 0.24s,
+      display 0.24s,
+      overlay 0.24s,
       height 0.4s;
     transition-behavior: allow-discrete;
     width: max-content;
     will-change: transform, opacity;
     margin: 0;
     inset: auto;
-    max-width: calc(100svw - theme("spacing.4"));
-    max-height: calc(100svh - theme("spacing.4"));
+    max-width: calc(100svw - var(--spacing-4));
+    max-height: calc(100svh - var(--spacing-4));
     content-visibility: auto;
     position-try-options: flip-block, flip-inline;
     overflow: auto;
@@ -40,10 +46,10 @@
     }
 
     &[role="menu"] {
-      padding: theme("spacing.1");
+      padding: var(--spacing-1);
     }
     &[role="dialog"] {
-      padding: theme("spacing.4");
+      padding: var(--spacing-4);
     }
 
     &:popover-open {
@@ -74,13 +80,13 @@
         [data-placement*="left-to-right"],
         [data-placement*="right-to-left"]
       ) {
-      margin-inline: theme("spacing.2");
+      margin-inline: var(--spacing-2);
     }
     &:where(
         [data-placement*="top-to-bottom"],
         [data-placement*="bottom-to-top"]
       ) {
-      margin-block: theme("spacing.2");
+      margin-block: var(--spacing-2);
     }
 
     &:where([data-placement*="top"], [data-placement*="bottom"]):not(
@@ -102,7 +108,7 @@
       &::backdrop {
         opacity: 1;
         transition: opacity 0.16s ease;
-        background-color: theme("colors.on-surface/0.5");
+        background-color: alpha(var(--color-on-surface), 0.5);
       }
 
       &:not(:popover-open) {
@@ -150,29 +156,29 @@
     }
   }
 
-  @media not all and (min-width: theme("screens[sm]")) {
+  @media not all and (min-width: theme(--breakpoint-sm)) {
     .drawer:is(.popover) {
       pointer-events: all;
       position: fixed;
       position-anchor: unset !important;
-      padding: theme("spacing.2") theme("spacing.4") theme("spacing.4");
-      inset-block: auto theme("spacing.2");
-      inset-inline: theme("spacing.2");
+      padding: var(--spacing-2) var(--spacing-4) var(--spacing-4);
+      inset-block: auto var(--spacing-2);
+      inset-inline: var(--spacing-2);
       margin: 0;
       height: max-content;
-      width: max(calc(100% - theme("spacing.2") * 2), theme(screens.sm));
+      width: max(calc(100% - var(--spacing-2) * 2), var(--breakpoint-sm));
       max-height: 100svh;
-      padding-top: theme("spacing.8");
+      padding-top: var(--spacing-8);
       opacity: 1;
       transform: none;
       transform-origin: top center;
       &:focus-visible {
-        outline: 2px auto theme("colors.on-surface");
+        outline: 2px auto var(--color-on-surface);
         outline-offset: -2px;
       }
       &::backdrop {
         /* backdrop-filter: none; */
-        background-color: theme("colors.on-surface/0.5");
+        background-color: theme("color.on-surface/0.5");
       }
       &:not(:popover-open) {
         transform: translate3d(0, 100%, 0) !important;

@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-@plugin "tailwindcss-animate";
 @plugin "tailwindcss-spring";
 
 @theme {
@@ -115,11 +114,11 @@
   margin-inline: auto;
   padding-inline: 1rem;
 
-  @media (min-width: theme(screens.sm)) {
+  @media (min-width: theme(--breakpoint-sm)) {
     padding-inline: 2rem;
   }
-  @media (min-width: theme(screens.xl)) {
-    max-width: theme("screens.xl");
+  @media (min-width: theme(--breakpoint-xl)) {
+    max-width: var(--breakpoint-xl);
   }
 }
 
@@ -149,8 +148,8 @@
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
-  margin-block: calc(-1 * --value(*, theme(spacing.2)));
-  padding-block: --value(*, theme(spacing.2));
+  margin-block: calc(-1 * --value(*, var(--spacing-2)));
+  padding-block: --value(*, var(--spacing-2));
   & > * {
     flex-shrink: 0;
     scroll-snap-align: start;

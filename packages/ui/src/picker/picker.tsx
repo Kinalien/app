@@ -42,7 +42,7 @@ const Picker = (ownProps: PickerProps) => {
 							// @ts-expect-error select menu not supported
 							// biome-ignore lint/a11y/useButtonType: <explanation>
 							type="popover"
-							class="flex w-full cursor-default items-center outline-none"
+							class="flex w-full cursor-default items-center outline-hidden"
 							data-part="trigger"
 							style={{ "anchor-name": `--anchor-${aria.id}` }}
 						>

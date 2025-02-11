@@ -1,14 +1,20 @@
-@layer tw-components {
+@reference "@nou/config/theme.css";
+
+@layer components {
   .toast {
-    transition: opacity 0.24s ease, display 0.3s ease allow-discrete,
-      filter 0.3s ease, translate 0.4s cubic-bezier(0.5, 0.85, 0.85, 1.25),
-      scale 0.3s ease, inset-block-start 0.14s ease;
+    transition:
+      opacity 0.24s ease,
+      display 0.3s ease allow-discrete,
+      filter 0.3s ease,
+      translate 0.4s cubic-bezier(0.5, 0.85, 0.85, 1.25),
+      scale 0.3s ease,
+      inset-block-start 0.14s ease;
     position: absolute;
-    inset-block-start: calc(anchor(start, 0) + theme(spacing.2));
+    inset-block-start: calc(anchor(start, 0) + var(--spacing-2));
     /* use padding instead of positioning to allow hover to remain stable for multiple toasts */
     padding: theme("spacing[1]") theme("spacing[3]");
-    border-radius: theme(borderRadius.2xl);
-    min-width: theme(spacing.64);
+    border-radius: var(--radius-2xl);
+    min-width: var(--spacing-64);
     filter: contrast(0.95) brightness(1.01);
     z-index: var(--nou-toast-index);
     pointer-events: all !important;
@@ -55,7 +61,7 @@
         scale: 1;
         filter: none;
         z-index: 8;
-        inset-block-start: calc(anchor(start, 0) + theme(spacing.2));
+        inset-block-start: calc(anchor(start, 0) + var(--spacing-2));
       }
 
       /* focused toast */
