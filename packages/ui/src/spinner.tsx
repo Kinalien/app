@@ -1,5 +1,5 @@
-import { type VariantProps, cva } from "class-variance-authority";
 import { type JSX, splitProps } from "solid-js";
+import { type VariantProps, tv as css } from "tailwind-variants";
 
 import { tw } from "./tw";
 
@@ -27,7 +27,8 @@ export const Spinner = (ownProps: Props) => {
 		</svg>
 	);
 };
-const spinnerCss = cva("animate-spin", {
+const spinnerCss = css({
+	base: "animate-spin",
 	variants: {
 		size: {
 			base: "size-6",

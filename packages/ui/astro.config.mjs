@@ -22,6 +22,7 @@ export default defineConfig({
 			components: {
 				MarkdownContent: "./docs/components/MarkdownContent.astro",
 			},
+			customCss: "../config/global.css",
 		}),
 		solidJs(),
 	],

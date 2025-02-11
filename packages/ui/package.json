@@ -24,9 +24,9 @@
 		"@solid-primitives/rootless": "^1.4.5",
 		"@solidjs/router": "catalog:",
 		"astro": "^5.2.5",
-		"class-variance-authority": "^0.7.0",
 		"solid-js": "1.9.4",
 		"tailwind-merge": "^3.0.1",
+		"tailwind-variants": "^0.3.0",
 		"tailwindcss-spring": "^1.0.1"
 	},
 	"devDependencies": {

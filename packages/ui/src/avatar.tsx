@@ -1,9 +1,10 @@
-import { type VariantProps, cva } from "class-variance-authority";
 import { Show } from "solid-js";
+import { type VariantProps, tv as css } from "tailwind-variants";
 
 import { tw } from "./tw";
 
-const avatarVariants = cva("shrink-0 rounded-full shadow-inner", {
+const avatarVariants = css({
+	base: "shrink-0 rounded-full shadow-inner",
 	variants: {
 		size: {
 			base: "size-12",

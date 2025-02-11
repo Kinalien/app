@@ -1,17 +1,18 @@
-import { type VariantProps, cva } from "class-variance-authority";
 import { type ComponentProps, type ValidComponent, splitProps } from "solid-js";
 import { Dynamic } from "solid-js/web";
+import { type VariantProps, tv as css } from "tailwind-variants";
 
 import { tw } from "../tw";
 import { type Merge, mergeDefaultProps } from "../utils";
 
-import css from "./menu.module.css";
+import styles from "./menu.module.css";
 
-const listItemVariants = cva(css.listItem, {
+const listItemVariants = css({
+	base: styles.listItem,
 	variants: {
 		tone: {
-			neutral: css.listItemNeutral,
-			destructive: css.listItemDestructive,
+			neutral: styles.listItemNeutral,
+			destructive: styles.listItemDestructive,
 		},
 	},
 	defaultVariants: {

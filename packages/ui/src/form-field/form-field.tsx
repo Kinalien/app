@@ -1,4 +1,3 @@
-import { type VariantProps, cva } from "class-variance-authority";
 import {
 	type ComponentProps,
 	type JSX,
@@ -9,25 +8,27 @@ import {
 	createUniqueId,
 	splitProps,
 } from "solid-js";
+import { type VariantProps, tv as css } from "tailwind-variants";
 
 import { Text } from "../text";
 import { tw } from "../tw";
 import { useFormContext } from "./form";
-import css from "./form-field.module.css";
+import styles from "./form-field.module.css";
 
-export const formFieldVariants = cva(css.wrapper, {
+export const formFieldVariants = css({
+	base: styles.wrapper,
 	variants: {
 		variant: {
-			underline: css.wrapperUnderline,
-			ghost: css.wrapperGhost,
+			underline: styles.wrapperUnderline,
+			ghost: styles.wrapperGhost,
 		},
 		textSize: {
-			sm: css.sizeSm,
-			base: css.sizeBase,
-			lg: css.sizeLg,
+			sm: styles.sizeSm,
+			base: styles.sizeBase,
+			lg: styles.sizeLg,
 		},
 		inline: {
-			true: css.wrapperInline,
+			true: styles.wrapperInline,
 		},
 	},
 	defaultVariants: {
@@ -81,44 +82,44 @@ const FormField = (ownProps: FieldInnerProps) => {
 	const child = createMemo(() => props.children(aria));
 	const overlay = children(() => props.overlay);
 	return (
-		<div id={local.id} class={tw(css.field, props.class)} style={props.style}>
+		<div id={local.id} class={tw(styles.field, props.class)} style={props.style}>
 			<div class={formFieldVariants(local)}>
 				<Show when={label()}>
 					<Text
 						as="label"
 						for={aria.id}
 						with="label-sm"
-						class={tw(css.label, "flex w-full flex-row items-center justify-between gap-4")}
+						class={tw(styles.label, "flex w-full flex-row items-center justify-between gap-4")}
 					>
 						{label()}
 					</Text>
 				</Show>
 				<div class="stack w-full place-items-baseline">
-					<div class={css.inputWrapper}>
+					<div class={styles.inputWrapper}>
 						<Show when={prefix()}>
-							<label for={aria.id} class={css.prefix}>
+							<label for={aria.id} class={styles.prefix}>
 								{prefix()}
 							</label>
 						</Show>
 						{child()}
 						<Show when={suffix()}>
-							<label for={aria.id} class={css.suffix}>
+							<label for={aria.id} class={styles.suffix}>
 								{suffix()}
 							</label>
 						</Show>
 					</div>
 					<Show when={overlay()}>
-						<Text as="label" with="label" tone="light" for={aria.id} class={css.overlay}>
+						<Text as="label" with="label" tone="light" for={aria.id} class={styles.overlay}>
 							{overlay()}
 						</Text>
 					</Show>
 				</div>
 			</div>
 			<Show when={typeof errorMessage() === "string" || description()}>
-				<div id={aria.describedBy} class={css.description}>
+				<div id={aria.describedBy} class={styles.description}>
 					{description()}
 					<Show when={typeof errorMessage() === "string"}>
-						<div aria-live="polite" class={tw(css.error)}>
+						<div aria-live="polite" class={tw(styles.error)}>
 							{errorMessage()}
 						</div>
 					</Show>
@@ -157,24 +158,24 @@ const Fieldset = (
 		<fieldset
 			{...props}
 			id={aria.id}
-			class={tw(css.fieldset, props.class)}
+			class={tw(styles.fieldset, props.class)}
 			aria-describedby={aria.describedBy}
 		>
 			<Show when={legend()}>
 				<Text
 					as="legend"
 					with="label-sm"
-					class={tw(css.label, "ms-3 mb-1 flex w-full items-center justify-between gap-4")}
+					class={tw(styles.label, "ms-3 mb-1 flex w-full items-center justify-between gap-4")}
 				>
 					{legend()}
 				</Text>
 			</Show>
 			{local.children}
 			<Show when={aria.describedBy}>
-				<div aria-live="polite" class={tw(css.description)} id={aria.describedBy}>
+				<div aria-live="polite" class={tw(styles.description)} id={aria.describedBy}>
 					<Show when={description()}>{description()}</Show>
 					<Show when={errorMessage()}>
-						<div aria-live="polite" class={tw(css.error)}>
+						<div aria-live="polite" class={tw(styles.error)}>
 							{errorMessage()}
 						</div>
 					</Show>

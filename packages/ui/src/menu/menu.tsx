@@ -1,5 +1,5 @@
-import { type VariantProps, cva } from "class-variance-authority";
 import { type ComponentProps, type JSX, type ValidComponent, splitProps } from "solid-js";
+import { type VariantProps, tv as css } from "tailwind-variants";
 
 import { Popover } from "../popover";
 import { tw } from "../tw";
@@ -7,7 +7,7 @@ import { type Merge, composeEventHandlers, mergeDefaultProps } from "../utils";
 
 import { ListItem } from "./list-item";
 
-import css from "./menu.module.css";
+import styles from "./menu.module.css";
 
 interface MenuProps
 	extends Omit<ComponentProps<"div">, "children" | "style" | "role">,
@@ -19,11 +19,12 @@ const Menu = (ownProps: MenuProps) => {
 	return <Popover role="menu" as={MenuList} {...ownProps} />;
 };
 
-const menuItemVariants = cva(css.listItem, {
+const menuItemVariants = css({
+	base: styles.listItem,
 	variants: {
 		tone: {
-			neutral: css.listItemNeutral,
-			destructive: css.listItemDestructive,
+			neutral: styles.listItemNeutral,
+			destructive: styles.listItemDestructive,
 		},
 	},
 	defaultVariants: {

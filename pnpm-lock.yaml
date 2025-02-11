@@ -42,7 +42,7 @@ importers:
         version: 5.1.1
       '@tailwindcss/vite':
         specifier: 4.0.6
-        version: 4.0.6(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2))
+        version: 4.0.6(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0))
       tailwindcss:
         specifier: 'catalog:'
         version: 4.0.6
@@ -54,7 +54,7 @@ importers:
         version: 5.1.0(typescript@5.7.3)
       vite:
         specifier: ^6.1.0
-        version: 6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)
+        version: 6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0)
     devDependencies:
       colorjs.io:
         specifier: ^0.5.2
@@ -80,7 +80,7 @@ importers:
     dependencies:
       '@astrojs/solid-js':
         specifier: ^5.0.4
-        version: 5.0.4(@testing-library/jest-dom@6.5.0)(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(solid-js@1.9.4)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)
+        version: 5.0.4(@testing-library/jest-dom@6.5.0)(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(solid-js@1.9.4)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0)
       '@solid-primitives/media':
         specifier: ^2.2.9
         version: 2.3.0(solid-js@1.9.4)
@@ -98,29 +98,29 @@ importers:
         version: 0.15.3(solid-js@1.9.4)
       astro:
         specifier: ^5.2.5
-        version: 5.2.5(@types/node@22.13.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.6)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)
-      class-variance-authority:
-        specifier: ^0.7.0
-        version: 0.7.1
+        version: 5.2.5(@types/node@22.13.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.6)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.7.0)
       solid-js:
         specifier: 1.9.4
         version: 1.9.4
       tailwind-merge:
         specifier: ^3.0.1
         version: 3.0.1
+      tailwind-variants:
+        specifier: ^0.3.0
+        version: 0.3.1(tailwindcss@4.0.6)
       tailwindcss-spring:
         specifier: ^1.0.1
         version: 1.0.1(tailwindcss@4.0.6)
     devDependencies:
       '@astrojs/starlight':
         specifier: ^0.31.1
-        version: 0.31.1(astro@5.2.5(@types/node@22.13.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.6)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3))
+        version: 0.31.1(astro@5.2.5(@types/node@22.13.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.6)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.7.0))
       '@nou/config':
         specifier: workspace:*
         version: link:../config
       '@tailwindcss/vite':
         specifier: 4.0.6
-        version: 4.0.6(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2))
+        version: 4.0.6(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0))
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.5.1)
@@ -138,13 +138,13 @@ importers:
         version: 1.0.0-rc.0(typescript@5.7.3)
       vite:
         specifier: ^6.1.0
-        version: 6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)
+        version: 6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0)
       vite-plugin-solid:
         specifier: ^2.11.1
-        version: 2.11.1(@testing-library/jest-dom@6.5.0)(solid-js@1.9.4)(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2))
+        version: 2.11.1(@testing-library/jest-dom@6.5.0)(solid-js@1.9.4)(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0))
       vite-svg-sprite-wrapper:
         specifier: ^1.3.3
-        version: 1.4.1(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2))
+        version: 1.4.1(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0))
 
   packages/web-petcare:
     dependencies:
@@ -177,16 +177,13 @@ importers:
         version: 0.15.3(solid-js@1.9.4)
       '@solidjs/start':
         specifier: ^1.1.0
-        version: 1.1.0(@testing-library/jest-dom@6.5.0)(solid-js@1.9.4)(vinxi@0.5.3(@types/node@22.13.1)(better-sqlite3@11.8.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3))(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2))
+        version: 1.1.0(@testing-library/jest-dom@6.5.0)(solid-js@1.9.4)(vinxi@0.5.3(@types/node@22.13.1)(better-sqlite3@11.8.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.7.0))(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0))
       arctic:
         specifier: ^3.2.4
         version: 3.2.4
       better-sqlite3:
         specifier: ^11.5.0
         version: 11.8.1
-      class-variance-authority:
-        specifier: ^0.7.0
-        version: 0.7.1
       date-fns:
         specifier: ^4.1.0
         version: 4.1.0
@@ -222,7 +219,7 @@ importers:
         version: 1.0.0-rc.0(typescript@5.7.3)
       vinxi:
         specifier: 0.5.3
-        version: 0.5.3(@types/node@22.13.1)(better-sqlite3@11.8.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)
+        version: 0.5.3(@types/node@22.13.1)(better-sqlite3@11.8.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.7.0)
     devDependencies:
       '@faker-js/faker':
         specifier: ^9.2.0
@@ -232,7 +229,7 @@ importers:
         version: link:../config
       '@storybook/builder-vite':
         specifier: ^8.4.2
-        version: 8.5.3(storybook@8.6.0-alpha.5(prettier@3.5.0))(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2))
+        version: 8.5.3(storybook@8.6.0-alpha.5(prettier@3.5.0))(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0))
       '@types/better-sqlite3':
         specifier: ^7.6.11
         version: 7.6.12
@@ -250,16 +247,16 @@ importers:
         version: 4.19.2
       vite:
         specifier: ^6.1.0
-        version: 6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)
+        version: 6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0)
       vite-imagetools:
         specifier: ^7.0.4
         version: 7.0.5(rollup@4.34.6)
       vite-svg-sprite-wrapper:
         specifier: ^1.3.3
-        version: 1.4.1(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2))
+        version: 1.4.1(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0))
       vite-tsconfig-paths:
         specifier: ^5.1.2
-        version: 5.1.4(typescript@5.7.3)(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2))
+        version: 5.1.4(typescript@5.7.3)(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0))
 
   packages/web-vet:
     dependencies:
@@ -283,7 +280,7 @@ importers:
         version: 0.15.3(solid-js@1.9.4)
       '@solidjs/start':
         specifier: ^1.1.0
-        version: 1.1.0(@testing-library/jest-dom@6.5.0)(solid-js@1.9.4)(vinxi@0.5.3(@types/node@22.13.1)(better-sqlite3@11.8.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3))(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2))
+        version: 1.1.0(@testing-library/jest-dom@6.5.0)(solid-js@1.9.4)(vinxi@0.5.3(@types/node@22.13.1)(better-sqlite3@11.8.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.7.0))(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0))
       arctic:
         specifier: ^3.2.4
         version: 3.2.4
@@ -313,7 +310,7 @@ importers:
         version: 1.0.0-rc.0(typescript@5.7.3)
       vinxi:
         specifier: 0.5.3
-        version: 0.5.3(@types/node@22.13.1)(better-sqlite3@11.8.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)
+        version: 0.5.3(@types/node@22.13.1)(better-sqlite3@11.8.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.7.0)
     devDependencies:
       '@faker-js/faker':
         specifier: ^9.2.0
@@ -323,7 +320,7 @@ importers:
         version: link:../config
       '@storybook/builder-vite':
         specifier: ^8.4.2
-        version: 8.5.3(storybook@8.6.0-alpha.5(prettier@3.5.0))(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2))
+        version: 8.5.3(storybook@8.6.0-alpha.5(prettier@3.5.0))(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0))
       '@types/pg':
         specifier: ^8.11.10
         version: 8.11.11
@@ -341,16 +338,16 @@ importers:
         version: 4.19.2
       vite:
         specifier: ^6.1.0
-        version: 6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)
+        version: 6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0)
       vite-imagetools:
         specifier: ^7.0.4
         version: 7.0.5(rollup@4.34.6)
       vite-svg-sprite-wrapper:
         specifier: ^1.3.3
-        version: 1.4.1(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2))
+        version: 1.4.1(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0))
       vite-tsconfig-paths:
         specifier: ^5.1.2
-        version: 5.1.4(typescript@5.7.3)(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2))
+        version: 5.1.4(typescript@5.7.3)(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0))
 
 packages:
 
@@ -2766,9 +2763,6 @@ packages:
 
   citty@0.1.6:
     resolution: {integrity: sha512-tskPPKEs8D2KPafUypv2gxwJP8h/OaJmC82QQGGDQcHvXX43xF2VDACcJVmZ0EuSxkpO9Kc4MlrA3q0+FG58AQ==}
-
-  class-variance-authority@0.7.1:
-    resolution: {integrity: sha512-Ka+9Trutv7G8M6WT6SeiRWz792K5qEqIGEGzXKhAE6xOWAY6pPH8U+9IY3oCMv6kqTmLsv7Xh/2w2RigkePMsg==}
 
   cli-boxes@3.0.0:
     resolution: {integrity: sha512-/lzGpEWL/8PfI0BmBOPRwp0c/wFNX1RdUML3jK/RcSBA9T8mZDdQpqYBKtCFTOfQbwPqWEOpjqW+Fnayc0969g==}
@@ -5904,6 +5898,11 @@ packages:
     resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}
     engines: {node: '>= 6'}
 
+  yaml@2.7.0:
+    resolution: {integrity: sha512-+hSoy/QHluxmC9kCIJyL/uyFmLmc+e5CFR5Wa+bpIhIj85LVb9ZH2nVnqrHoSvKogwODv0ClqZkmiSSaIH5LTA==}
+    engines: {node: '>= 14'}
+    hasBin: true
+
   yargs-parser@21.1.1:
     resolution: {integrity: sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw==}
     engines: {node: '>=12'}
@@ -5986,12 +5985,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@4.0.8(astro@5.2.5(@types/node@22.13.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.6)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3))':
+  '@astrojs/mdx@4.0.8(astro@5.2.5(@types/node@22.13.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.6)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.7.0))':
     dependencies:
       '@astrojs/markdown-remark': 6.1.0
       '@mdx-js/mdx': 3.1.0(acorn@8.14.0)
       acorn: 8.14.0
-      astro: 5.2.5(@types/node@22.13.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.6)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)
+      astro: 5.2.5(@types/node@22.13.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.6)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.7.0)
       es-module-lexer: 1.6.0
       estree-util-visit: 2.0.0
       hast-util-to-html: 9.0.4
@@ -6015,11 +6014,11 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.24.1
 
-  '@astrojs/solid-js@5.0.4(@testing-library/jest-dom@6.5.0)(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(solid-js@1.9.4)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)':
+  '@astrojs/solid-js@5.0.4(@testing-library/jest-dom@6.5.0)(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(solid-js@1.9.4)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0)':
     dependencies:
       solid-js: 1.9.4
-      vite: 6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)
-      vite-plugin-solid: 2.11.1(@testing-library/jest-dom@6.5.0)(solid-js@1.9.4)(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2))
+      vite: 6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0)
+      vite-plugin-solid: 2.11.1(@testing-library/jest-dom@6.5.0)(solid-js@1.9.4)(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0))
     transitivePeerDependencies:
       - '@testing-library/jest-dom'
       - '@types/node'
@@ -6035,16 +6034,16 @@ snapshots:
       - tsx
       - yaml
 
-  '@astrojs/starlight@0.31.1(astro@5.2.5(@types/node@22.13.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.6)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3))':
+  '@astrojs/starlight@0.31.1(astro@5.2.5(@types/node@22.13.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.6)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.7.0))':
     dependencies:
-      '@astrojs/mdx': 4.0.8(astro@5.2.5(@types/node@22.13.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.6)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3))
+      '@astrojs/mdx': 4.0.8(astro@5.2.5(@types/node@22.13.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.6)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.7.0))
       '@astrojs/sitemap': 3.2.1
       '@pagefind/default-ui': 1.3.0
       '@types/hast': 3.0.4
       '@types/js-yaml': 4.0.9
       '@types/mdast': 4.0.4
-      astro: 5.2.5(@types/node@22.13.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.6)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)
-      astro-expressive-code: 0.40.1(astro@5.2.5(@types/node@22.13.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.6)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3))
+      astro: 5.2.5(@types/node@22.13.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.6)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.7.0)
+      astro-expressive-code: 0.40.1(astro@5.2.5(@types/node@22.13.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.6)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.7.0))
       bcp-47: 2.1.0
       hast-util-from-html: 2.0.3
       hast-util-select: 6.0.3
@@ -7441,11 +7440,11 @@ snapshots:
     dependencies:
       solid-js: 1.9.4
 
-  '@solidjs/start@1.1.0(@testing-library/jest-dom@6.5.0)(solid-js@1.9.4)(vinxi@0.5.3(@types/node@22.13.1)(better-sqlite3@11.8.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3))(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2))':
+  '@solidjs/start@1.1.0(@testing-library/jest-dom@6.5.0)(solid-js@1.9.4)(vinxi@0.5.3(@types/node@22.13.1)(better-sqlite3@11.8.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.7.0))(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0))':
     dependencies:
       '@tanstack/server-functions-plugin': 1.99.5
-      '@vinxi/plugin-directives': 0.5.0(vinxi@0.5.3(@types/node@22.13.1)(better-sqlite3@11.8.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3))
-      '@vinxi/server-components': 0.5.0(vinxi@0.5.3(@types/node@22.13.1)(better-sqlite3@11.8.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3))
+      '@vinxi/plugin-directives': 0.5.0(vinxi@0.5.3(@types/node@22.13.1)(better-sqlite3@11.8.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.7.0))
+      '@vinxi/server-components': 0.5.0(vinxi@0.5.3(@types/node@22.13.1)(better-sqlite3@11.8.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.7.0))
       defu: 6.1.4
       error-stack-parser: 2.1.4
       html-to-image: 1.11.11
@@ -7456,8 +7455,8 @@ snapshots:
       source-map-js: 1.2.1
       terracotta: 1.0.6(solid-js@1.9.4)
       tinyglobby: 0.2.10
-      vinxi: 0.5.3(@types/node@22.13.1)(better-sqlite3@11.8.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)
-      vite-plugin-solid: 2.11.1(@testing-library/jest-dom@6.5.0)(solid-js@1.9.4)(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2))
+      vinxi: 0.5.3(@types/node@22.13.1)(better-sqlite3@11.8.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.7.0)
+      vite-plugin-solid: 2.11.1(@testing-library/jest-dom@6.5.0)(solid-js@1.9.4)(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0))
     transitivePeerDependencies:
       - '@testing-library/jest-dom'
       - babel-plugin-macros
@@ -7465,13 +7464,13 @@ snapshots:
       - supports-color
       - vite
 
-  '@storybook/builder-vite@8.5.3(storybook@8.6.0-alpha.5(prettier@3.5.0))(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2))':
+  '@storybook/builder-vite@8.5.3(storybook@8.6.0-alpha.5(prettier@3.5.0))(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0))':
     dependencies:
       '@storybook/csf-plugin': 8.5.3(storybook@8.6.0-alpha.5(prettier@3.5.0))
       browser-assert: 1.2.1
       storybook: 8.6.0-alpha.5(prettier@3.5.0)
       ts-dedent: 2.2.0
-      vite: 6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)
+      vite: 6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0)
 
   '@storybook/core@8.6.0-alpha.5(prettier@3.5.0)(storybook@8.6.0-alpha.5(prettier@3.5.0))':
     dependencies:
@@ -7556,13 +7555,13 @@ snapshots:
       '@tailwindcss/oxide-win32-arm64-msvc': 4.0.6
       '@tailwindcss/oxide-win32-x64-msvc': 4.0.6
 
-  '@tailwindcss/vite@4.0.6(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2))':
+  '@tailwindcss/vite@4.0.6(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0))':
     dependencies:
       '@tailwindcss/node': 4.0.6
       '@tailwindcss/oxide': 4.0.6
       lightningcss: 1.29.1
       tailwindcss: 4.0.6
-      vite: 6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)
+      vite: 6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0)
 
   '@tanstack/directive-functions-plugin@1.99.5':
     dependencies:
@@ -7779,7 +7778,7 @@ snapshots:
       untun: 0.1.3
       uqr: 0.1.2
 
-  '@vinxi/plugin-directives@0.5.0(vinxi@0.5.3(@types/node@22.13.1)(better-sqlite3@11.8.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3))':
+  '@vinxi/plugin-directives@0.5.0(vinxi@0.5.3(@types/node@22.13.1)(better-sqlite3@11.8.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.7.0))':
     dependencies:
       '@babel/parser': 7.26.8
       acorn: 8.14.0
@@ -7790,18 +7789,18 @@ snapshots:
       magicast: 0.2.11
       recast: 0.23.9
       tslib: 2.8.1
-      vinxi: 0.5.3(@types/node@22.13.1)(better-sqlite3@11.8.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)
+      vinxi: 0.5.3(@types/node@22.13.1)(better-sqlite3@11.8.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.7.0)
 
-  '@vinxi/server-components@0.5.0(vinxi@0.5.3(@types/node@22.13.1)(better-sqlite3@11.8.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3))':
+  '@vinxi/server-components@0.5.0(vinxi@0.5.3(@types/node@22.13.1)(better-sqlite3@11.8.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.7.0))':
     dependencies:
-      '@vinxi/plugin-directives': 0.5.0(vinxi@0.5.3(@types/node@22.13.1)(better-sqlite3@11.8.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3))
+      '@vinxi/plugin-directives': 0.5.0(vinxi@0.5.3(@types/node@22.13.1)(better-sqlite3@11.8.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.7.0))
       acorn: 8.14.0
       acorn-loose: 8.4.0
       acorn-typescript: 1.4.13(acorn@8.14.0)
       astring: 1.9.0
       magicast: 0.2.11
       recast: 0.23.9
-      vinxi: 0.5.3(@types/node@22.13.1)(better-sqlite3@11.8.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)
+      vinxi: 0.5.3(@types/node@22.13.1)(better-sqlite3@11.8.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.7.0)
 
   '@xmldom/xmldom@0.8.10': {}
 
@@ -7898,12 +7897,12 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro-expressive-code@0.40.1(astro@5.2.5(@types/node@22.13.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.6)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)):
+  astro-expressive-code@0.40.1(astro@5.2.5(@types/node@22.13.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.6)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.7.0)):
     dependencies:
-      astro: 5.2.5(@types/node@22.13.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.6)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)
+      astro: 5.2.5(@types/node@22.13.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.6)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.7.0)
       rehype-expressive-code: 0.40.1
 
-  astro@5.2.5(@types/node@22.13.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.6)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3):
+  astro@5.2.5(@types/node@22.13.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.6)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.7.0):
     dependencies:
       '@astrojs/compiler': 2.10.4
       '@astrojs/internal-helpers': 0.5.1
@@ -7955,8 +7954,8 @@ snapshots:
       unist-util-visit: 5.0.0
       unstorage: 1.14.4(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(ioredis@5.5.0)
       vfile: 6.0.3
-      vite: 6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)
-      vitefu: 1.0.5(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2))
+      vite: 6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0)
+      vitefu: 1.0.5(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0))
       which-pm: 3.0.1
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
@@ -8233,10 +8232,6 @@ snapshots:
   citty@0.1.6:
     dependencies:
       consola: 3.4.0
-
-  class-variance-authority@0.7.1:
-    dependencies:
-      clsx: 2.1.1
 
   cli-boxes@3.0.0: {}
 
@@ -11772,7 +11767,7 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.2
 
-  vinxi@0.5.3(@types/node@22.13.1)(better-sqlite3@11.8.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3):
+  vinxi@0.5.3(@types/node@22.13.1)(better-sqlite3@11.8.1)(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.7.0):
     dependencies:
       '@babel/core': 7.26.8
       '@babel/plugin-syntax-jsx': 7.25.9(@babel/core@7.26.8)
@@ -11806,7 +11801,7 @@ snapshots:
       unctx: 2.4.1
       unenv: 1.10.0
       unstorage: 1.14.4(db0@0.2.3(better-sqlite3@11.8.1)(drizzle-orm@0.39.3(@types/better-sqlite3@7.6.12)(@types/pg@8.11.11)(better-sqlite3@11.8.1)(pg@8.13.1)))(ioredis@5.5.0)
-      vite: 6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)
+      vite: 6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0)
       zod: 3.24.1
     transitivePeerDependencies:
       - '@azure/app-configuration'
@@ -11868,7 +11863,7 @@ snapshots:
     transitivePeerDependencies:
       - rollup
 
-  vite-plugin-solid@2.11.1(@testing-library/jest-dom@6.5.0)(solid-js@1.9.4)(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)):
+  vite-plugin-solid@2.11.1(@testing-library/jest-dom@6.5.0)(solid-js@1.9.4)(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0)):
     dependencies:
       '@babel/core': 7.26.8
       '@types/babel__core': 7.20.5
@@ -11876,33 +11871,33 @@ snapshots:
       merge-anything: 5.1.7
       solid-js: 1.9.4
       solid-refresh: 0.6.3(solid-js@1.9.4)
-      vite: 6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)
-      vitefu: 1.0.5(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2))
+      vite: 6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0)
+      vitefu: 1.0.5(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0))
     optionalDependencies:
       '@testing-library/jest-dom': 6.5.0
     transitivePeerDependencies:
       - supports-color
 
-  vite-svg-sprite-wrapper@1.4.1(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)):
+  vite-svg-sprite-wrapper@1.4.1(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0)):
     dependencies:
       fast-glob: 3.3.3
       picocolors: 1.1.1
       picomatch: 4.0.2
       svg-sprite: 2.0.4
-      vite: 6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)
+      vite: 6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0)
 
-  vite-tsconfig-paths@5.1.4(typescript@5.7.3)(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)):
+  vite-tsconfig-paths@5.1.4(typescript@5.7.3)(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0)):
     dependencies:
       debug: 4.4.0(supports-color@9.4.0)
       globrex: 0.1.2
       tsconfck: 3.1.5(typescript@5.7.3)
     optionalDependencies:
-      vite: 6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)
+      vite: 6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0)
     transitivePeerDependencies:
       - supports-color
       - typescript
 
-  vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2):
+  vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0):
     dependencies:
       esbuild: 0.24.2
       postcss: 8.5.1
@@ -11917,10 +11912,11 @@ snapshots:
       stylus: 0.62.0
       terser: 5.38.1
       tsx: 4.19.2
+      yaml: 2.7.0
 
-  vitefu@1.0.5(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)):
+  vitefu@1.0.5(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0)):
     optionalDependencies:
-      vite: 6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)
+      vite: 6.1.0(@types/node@22.13.1)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.84.0)(stylus@0.62.0)(terser@5.38.1)(tsx@4.19.2)(yaml@2.7.0)
 
   web-namespaces@2.0.1: {}
 
@@ -12023,6 +12019,9 @@ snapshots:
   yaml-ast-parser@0.0.43: {}
 
   yaml@1.10.2: {}
+
+  yaml@2.7.0:
+    optional: true
 
   yargs-parser@21.1.1: {}
 

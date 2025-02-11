@@ -1,12 +1,13 @@
 import { A, type AnchorProps } from "@solidjs/router";
-import { type VariantProps, cva } from "class-variance-authority";
 import { type ValidComponent, splitProps } from "solid-js";
 import { Dynamic, type DynamicProps } from "solid-js/web";
+import { type VariantProps, tv as css } from "tailwind-variants";
 
 import { tw } from "./tw";
 import { mergeDefaultProps } from "./utils";
 
-const cardVariants = cva("flex flex-col gap-2 rounded-2xl p-4", {
+const cardVariants = css({
+	base: "flex flex-col gap-2 rounded-2xl p-4",
 	variants: {
 		_link: {
 			true: "intent:outline-2 outline-offset-4 transition duration-200",
