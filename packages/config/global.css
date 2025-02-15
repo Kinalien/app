@@ -1,7 +1,7 @@
 @import "./theme.css";
 @import "@fontsource-variable/inter/index.css" layer(base);
 
-@layer tw-base {
+@layer base {
   :root {
     view-transition-name: none;
     interpolate-size: allow-keywords;

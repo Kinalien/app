@@ -1,9 +1,11 @@
-@layer tw-components {
+@reference "@nou/ui/theme.css";
+
+@layer components {
   .genderSwitch {
     &:has(input[value="male"]:checked) {
       & .genderSwitchCard:has(input[value="male"]) {
         color: var(--color-tertiary);
-        background-color: theme("color.tertiary/0.08");
+        background-color: alpha(var(--color-tertiary), 0.08);
         border-color: var(--color-tertiary);
       }
       & .genderIcon {
@@ -21,7 +23,7 @@
     &:has(input[value="female"]:checked) {
       & .genderSwitchCard:has(input[value="female"]) {
         color: var(--color-primary);
-        background-color: theme("color.primary/0.08");
+        background-color: alpha(var(--color-primary), 0.08);
         border-color: var(--color-primary);
       }
       & .genderIcon {
@@ -39,12 +41,12 @@
 
   .genderSwitchCard {
     &:where(:hover, :focus-within):has(input[value="male"]) {
-      border-color: theme("color.tertiary/0.4");
-      background-color: theme("color.tertiary/0.05");
+      border-color: alpha(var(--color-tertiary), 0.04);
+      background-color: alpha(var(--color-tertiary), 0.05);
     }
     &:where(:hover, :focus-within):has(input[value="female"]) {
-      border-color: theme("color.primary/0.4");
-      background-color: theme("color.primary/0.05");
+      border-color: alpha(var(--color-primary), 0.04);
+      background-color: alpha(var(--color-primary), 0.05);
     }
     & [data-part="label"] {
       height: 100%;
@@ -52,10 +54,10 @@
     }
     &:has(:focus-visible):focus-within {
       &:has(input[value="male"]) {
-        outline-color: theme("color.tertiary/0.4");
+        outline-color: alpha(var(--color-tertiary), 0.04);
       }
       &:has(input[value="female"]) {
-        outline-color: theme("color.primary/0.4");
+        outline-color: alpha(var(--color-primary), 0.04);
       }
     }
   }

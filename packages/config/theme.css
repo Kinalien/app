@@ -150,8 +150,8 @@
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
-  margin-block: calc(-1 * --value(*, var(--spacing-2)));
-  padding-block: --value(*, var(--spacing-2));
+  margin-block: calc(-1 * var(--value(*), --spacing-2));
+  padding-block: var(--value(*), --spacing-2);
   & > * {
     flex-shrink: 0;
     scroll-snap-align: start;

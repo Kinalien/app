@@ -1,8 +1,7 @@
 import { type ComponentProps, splitProps } from "solid-js";
-import { type VariantProps, tv as css } from "tailwind-variants";
 
 import { Text } from "./text";
-import { tw } from "./tw";
+import { type VariantProps, tv, tw } from "./tw";
 
 interface Props extends ComponentProps<"div">, VariantProps<typeof chipCss> {}
 
@@ -10,7 +9,7 @@ export const Chip = (ownProps: Props) => {
 	const [local, props] = splitProps(ownProps, ["tone"]);
 	return <Text as="div" with="label-sm" {...props} class={tw(chipCss(local), props.class)} />;
 };
-const chipCss = css({
+const chipCss = tv({
 	base: "flex min-w-12 cursor-default flex-row items-center justify-center gap-2 self-end rounded-full bg-primary-container p-2 text-on-primary-container",
 	variants: {
 		tone: {

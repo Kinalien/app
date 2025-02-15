@@ -49,10 +49,10 @@
       );
     }
     &:where(:hover) {
-      background-color: theme("color.on-surface/0.05");
+      background-color: alpha(var(--color-on-surface), 0.05);
     }
     &:where(:focus-within) {
-      background-color: theme("color.on-surface/0.08");
+      background-color: alpha(var(--color-on-surface), 0.08);
     }
     &:where(:focus-within) {
       --border-color: var(--color-primary);
@@ -65,13 +65,13 @@
       border: 1px solid var(--border-color);
       transition: background-color 0.2s ease-out;
       border-radius: var(--radius-xl);
-      background-color: theme("color.on-surface/0.03");
+      background-color: alpha(var(--color-on-surface), 0.03);
     }
     &:where(:hover) .inputWrapper {
-      background-color: theme("color.on-surface/0.05");
+      background-color: alpha(var(--color-on-surface), 0.05);
     }
     &:where(:focus-within) .inputWrapper {
-      background-color: theme("color.on-surface/0.08");
+      background-color: alpha(var(--color-on-surface), 0.08);
     }
   }
   .wrapperInline {
@@ -124,7 +124,7 @@
   .sizeLg {
     @apply text-3xl font-medium;
     & :where(input, textarea) {
-      padding: theme("spacing[3.5]") var(--start-padding);
+      padding: calc(var(--spacing) * 3.5) var(--start-padding);
       min-height: var(--spacing-12);
     }
     & :where(.prefix, .suffix) {
@@ -183,7 +183,7 @@
 
   .overlay {
     pointer-events: none;
-    padding-inline: theme("spacing[3.5]");
+    padding-inline: calc(var(--spacing) * 3.5);
     transition: opacity 0.15s ease-out;
     opacity: 0;
   }

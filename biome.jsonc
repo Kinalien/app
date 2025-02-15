@@ -54,7 +54,8 @@
 			"playwright-report/**/*",
 			"playwright/.auth/**/*",
 			"test-results/**/*",
-			"svg-icons.d.ts"
+			"svg-icons.d.ts",
+			"./packages/ui/docs/**/*.astro"
 		]
 	},
 	"overrides": [

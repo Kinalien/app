@@ -1,7 +1,6 @@
 import { type JSX, splitProps } from "solid-js";
-import { type VariantProps, tv as css } from "tailwind-variants";
 
-import { tw } from "./tw";
+import { type VariantProps, tv, tw } from "./tw";
 
 interface Props extends JSX.SvgSVGAttributes<SVGSVGElement>, VariantProps<typeof spinnerCss> {}
 
@@ -27,7 +26,7 @@ export const Spinner = (ownProps: Props) => {
 		</svg>
 	);
 };
-const spinnerCss = css({
+const spinnerCss = tv({
 	base: "animate-spin",
 	variants: {
 		size: {

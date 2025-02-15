@@ -1,10 +1,9 @@
 import { type ValidComponent, splitProps } from "solid-js";
 import { Dynamic, type DynamicProps } from "solid-js/web";
-import { type VariantProps, tv as css } from "tailwind-variants";
 
-import { tw } from "./tw";
+import { type VariantProps, tv, tw } from "./tw";
 
-const textVariants = css({
+const textVariants = tv({
 	base: "m-0 whitespace-pre-line font-sans",
 	variants: {
 		with: {

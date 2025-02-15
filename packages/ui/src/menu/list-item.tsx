@@ -1,13 +1,12 @@
 import { type ComponentProps, type ValidComponent, splitProps } from "solid-js";
 import { Dynamic } from "solid-js/web";
-import { type VariantProps, tv as css } from "tailwind-variants";
 
-import { tw } from "../tw";
+import { type VariantProps, tv, tw } from "../tw";
 import { type Merge, mergeDefaultProps } from "../utils";
 
 import styles from "./menu.module.css";
 
-const listItemVariants = css({
+const listItemVariants = tv({
 	base: styles.listItem,
 	variants: {
 		tone: {

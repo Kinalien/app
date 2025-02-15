@@ -1,13 +1,12 @@
-import spriteHref from "@nou/config/icons/sprite.svg";
+import spriteHref from "@nou/config/icons/sprite.svg?url";
 import { type JSX, splitProps } from "solid-js";
-import { type VariantProps, tv as css } from "tailwind-variants";
 
-import { tw } from "../tw";
+import { type VariantProps, tv, tw } from "../tw";
 import type { SvgIcons } from "./svg-icons.d.ts";
 
 export type { SvgIcons } from "./svg-icons.d.ts";
 
-const iconVariants = css({
+const iconVariants = tv({
 	base: "inline-block shrink-0 select-none",
 	variants: {
 		size: {

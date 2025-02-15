@@ -1,13 +1,12 @@
 import { A } from "@solidjs/router";
 import { type JSX, Show, type ValidComponent, splitProps } from "solid-js";
 import { Dynamic, type DynamicProps } from "solid-js/web";
-import { type VariantProps, tv as css } from "tailwind-variants";
 
 import { Spinner } from "../spinner";
-import { tw } from "../tw";
+import { type VariantProps, tv, tw } from "../tw";
 import { type Merge, mergeDefaultProps } from "../utils";
 
-export const buttonVariants = css({
+export const buttonVariants = tv({
 	base: "relative border-none [text-box:_trim-both_cap_alphabetic] inline-flex cursor-default select-none items-center justify-center gap-2 rounded-full font-medium text-sm outline-offset-4 transition focus-visible:outline-4 disabled:pointer-events-none disabled:opacity-50",
 	variants: {
 		size: {

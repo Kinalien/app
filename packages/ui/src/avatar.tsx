@@ -1,9 +1,8 @@
 import { Show } from "solid-js";
-import { type VariantProps, tv as css } from "tailwind-variants";
 
-import { tw } from "./tw";
+import { type VariantProps, tv, tw } from "./tw";
 
-const avatarVariants = css({
+const avatarVariants = tv({
 	base: "shrink-0 rounded-full shadow-inner",
 	variants: {
 		size: {

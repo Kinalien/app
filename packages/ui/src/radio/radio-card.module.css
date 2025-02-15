@@ -12,29 +12,30 @@
       color 0.24s ease-out,
       border-radius 0.24s ease-out,
       flex 0.3s ease-out;
-    background-color: theme("color.on-background/0.01");
-    border: var(--borderWidth-DEFAULT) solid theme("color.on-surface/0.08");
+    background-color: alpha(var(--color-on-background), 0.01);
+    border: var(--borderWidth-DEFAULT) solid
+      alpha(var(--color-on-surface), 0.08);
     &:where(:hover, :focus-within) {
-      border-color: theme("color.primary/0.3");
-      background-color: theme("color.primary/0.05");
+      border-color: alpha(var(--color-primary), 0.3);
+      background-color: alpha(var(--color-primary), 0.05);
     }
     &:where(:active) {
-      background-color: theme("color.primary/0.08");
+      background-color: alpha(var(--color-primary), 0.08);
     }
     &:has(:focus-visible):focus-within {
-      outline: 4px solid theme("color.on-surface/0.4");
+      outline: 4px solid alpha(var(--color-on-surface), 0.4);
     }
     &:has(input:checked) {
       border-radius: var(--radius-xl);
       border-color: var(--color-primary);
       background-color: var(--color-surface-container-lowest);
-      outline-color: theme("color.primary/0.4");
+      outline-color: alpha(var(--color-primary), 0.4);
       color: var(--color-primary);
       & .icon {
-        background-color: theme("color.primary/0.12");
+        background-color: alpha(var(--color-primary), 0.12);
       }
       &:has(:focus-visible):focus-within {
-        outline-color: theme("color.primary/0.4");
+        outline-color: alpha(var(--color-primary), 0.4);
       }
       &:before {
         content: "";
@@ -61,7 +62,7 @@
   .icon {
     transition: all 0.24s ease-out;
     padding: var(--spacing-2);
-    background-color: theme("color.on-surface/0.08");
+    background-color: alpha(var(--color-on-surface), 0.08);
     border-radius: var(--radius-full);
   }
   .label {

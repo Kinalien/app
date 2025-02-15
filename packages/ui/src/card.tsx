@@ -1,12 +1,11 @@
 import { A, type AnchorProps } from "@solidjs/router";
 import { type ValidComponent, splitProps } from "solid-js";
 import { Dynamic, type DynamicProps } from "solid-js/web";
-import { type VariantProps, tv as css } from "tailwind-variants";
 
-import { tw } from "./tw";
+import { type VariantProps, tv, tw } from "./tw";
 import { mergeDefaultProps } from "./utils";
 
-const cardVariants = css({
+const cardVariants = tv({
 	base: "flex flex-col gap-2 rounded-2xl p-4",
 	variants: {
 		_link: {

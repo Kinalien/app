@@ -178,7 +178,7 @@
       }
       &::backdrop {
         /* backdrop-filter: none; */
-        background-color: theme("color.on-surface/0.5");
+        background-color: alpha(var(--color-on-surface), 0.5);
       }
       &:not(:popover-open) {
         transform: translate3d(0, 100%, 0) !important;

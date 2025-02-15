@@ -1,4 +1,8 @@
 import { type ClassNameValue, extendTailwindMerge } from "tailwind-merge";
+import { createTV } from "tailwind-variants";
+
+export const tv = createTV({ twMerge: false });
+export type { VariantProps } from "tailwind-variants";
 
 const customTwMerge = extendTailwindMerge({
 	extend: {

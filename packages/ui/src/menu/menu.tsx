@@ -1,8 +1,7 @@
 import { type ComponentProps, type JSX, type ValidComponent, splitProps } from "solid-js";
-import { type VariantProps, tv as css } from "tailwind-variants";
 
 import { Popover } from "../popover";
-import { tw } from "../tw";
+import { type VariantProps, tv, tw } from "../tw";
 import { type Merge, composeEventHandlers, mergeDefaultProps } from "../utils";
 
 import { ListItem } from "./list-item";
@@ -19,7 +18,7 @@ const Menu = (ownProps: MenuProps) => {
 	return <Popover role="menu" as={MenuList} {...ownProps} />;
 };
 
-const menuItemVariants = css({
+const menuItemVariants = tv({
 	base: styles.listItem,
 	variants: {
 		tone: {

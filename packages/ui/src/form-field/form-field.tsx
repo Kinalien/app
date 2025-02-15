@@ -8,14 +8,13 @@ import {
 	createUniqueId,
 	splitProps,
 } from "solid-js";
-import { type VariantProps, tv as css } from "tailwind-variants";
 
 import { Text } from "../text";
-import { tw } from "../tw";
+import { type VariantProps, tv, tw } from "../tw";
 import { useFormContext } from "./form";
 import styles from "./form-field.module.css";
 
-export const formFieldVariants = css({
+export const formFieldVariants = tv({
 	base: styles.wrapper,
 	variants: {
 		variant: {

@@ -2,15 +2,26 @@
 title: Button
 description: A simple Button component.
 usage: |
-  import { Button } from '@nou/ui';
-
-  const MyComponent = () => (
-    <Button>Click me</Button>
-  );
 ---
 
-import { Primary } from '~/button/button.stories'
+import { Button } from "@nou/ui";
+
+import { Code } from "@astrojs/starlight/components";
 
 This is a simple Button component.
 
-<Primary>Click Me</Primary>
+## Usage
+
+```tsx
+import { Button } from "@nou/ui";
+
+const MyComponent = () => (
+  <Button variant="primary" tone="accent">
+    Click me
+  </Button>
+);
+```
+
+<Button variant="primary" tone="accent">
+  Click me
+</Button>
