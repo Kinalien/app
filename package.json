@@ -19,6 +19,13 @@
 	"pnpm": {
 		"patchedDependencies": {
 			"validate-html-nesting@1.2.2": "patches/validate-html-nesting@1.2.2.patch"
-		}
+		},
+		"onlyBuiltDependencies": [
+			"@biomejs/biome",
+			"@parcel/watcher",
+			"better-sqlite3",
+			"esbuild",
+			"sharp"
+		]
 	}
 }
