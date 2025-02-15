@@ -3,12 +3,12 @@ import * as v from "valibot";
 
 import { Button } from "../button";
 import { Card } from "../card";
+import { Form } from "../form";
 import { Icon } from "../icon/icon";
 import { Option, Picker } from "../picker";
 import { RadioCard } from "../radio";
 import { Text } from "../text";
 import { TextField } from "../text-field";
-import { Form } from "./form";
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 

@@ -9,7 +9,7 @@ import {
 	splitProps,
 	useContext,
 } from "solid-js";
-import { mergeDefaultProps, startViewTransition } from "../utils";
+import { mergeDefaultProps, startViewTransition } from "./utils";
 
 interface FormContext {
 	validationErrors?: Record<string, string | undefined | null> | null;

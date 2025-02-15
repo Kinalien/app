@@ -1,6 +1,6 @@
 /** @type {import("prettier").Config} */
 export default {
-	plugins: ["prettier-plugin-astro"],
+	plugins: ["prettier-plugin-tailwindcss", "prettier-plugin-astro"],
 	overrides: [
 		{
 			files: "*.astro",
@@ -9,4 +9,6 @@ export default {
 			},
 		},
 	],
+	tailwindStylesheet: "../config/theme.css",
+	tailwindFunctions: ["clsx", "tv", "tw", "css"],
 };

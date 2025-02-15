@@ -9,9 +9,9 @@ import {
 	splitProps,
 } from "solid-js";
 
+import { useFormContext } from "../form";
 import { Text } from "../text";
 import { type VariantProps, tv, tw } from "../tw";
-import { useFormContext } from "./form";
 import styles from "./form-field.module.css";
 
 export const formFieldVariants = tv({

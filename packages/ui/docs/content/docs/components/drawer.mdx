@@ -1,0 +1,80 @@
+---
+title: Button
+description: A simple Button component.
+---
+
+import {
+  Button,
+  Form,
+  SegmentedButton,
+  Text,
+  TextField,
+  Drawer,
+} from "@nou/ui";
+
+import { Code } from "@astrojs/starlight/components";
+
+## Usage
+
+```tsx
+import { Button } from "@nou/ui";
+
+const MyComponent = () => (
+  <>
+    <Button popoverTarget="drawer" variant="tonal">
+      Toggle Drawer
+    </Button>
+    <Drawer id="drawer">Hello world!</Drawer>
+  </>
+);
+```
+
+<>
+  <Button popoverTarget="weight" variant="tonal">
+    Add pet's weight info
+  </Button>
+  <Drawer id="weight" aria-labelledby="weight-popup-label">
+    <span id="weight-popup-label" class="sr-only">
+      Add pet's weight info
+    </span>
+    <Form
+      class="flex flex-col gap-4 sm:min-w-[340px]"
+      onSubmit={(e) => {
+        e.preventDefault();
+        console.log("valid!");
+        // can be ref, can be #id access
+        const popover = e.currentTarget.closest("[popover]");
+        if (popover instanceof HTMLElement) {
+          popover.hidePopover();
+        }
+      }}
+    >
+      <div class="flex items-center gap-4 self-end">
+        <Text with="label-sm" as="label" for="weight-unit">
+          Unit
+        </Text>
+        <fieldset id="weight-unit" class="grid grid-cols-2">
+          <SegmentedButton name="unit" label="Lbs" />
+          <SegmentedButton name="unit" label="Kg" />
+        </fieldset>
+      </div>
+      <TextField
+        label="Weight"
+        type="number"
+        inputMode="numeric"
+        step="0.1"
+        name="weight"
+      />
+      <div class="grid grid-cols-2 gap-2 sm:flex sm:self-end">
+        <Button
+          variant="ghost"
+          popoverTargetAction="hide"
+          popoverTarget="weight"
+        >
+          Later
+        </Button>
+        <Button type="submit">Save</Button>
+      </div>
+    </Form>
+  </Drawer>
+</>
