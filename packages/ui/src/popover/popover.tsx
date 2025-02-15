@@ -153,7 +153,7 @@ function inlineAnchoring(id: string, placement: Placement): JSX.CSSProperties | 
 	});
 
 	const style: JSX.CSSProperties = {
-		"position-anchor": `--anchor-${id}`,
+		"--anchor-name": `--anchor-${id}`,
 		...Object.fromEntries(alignmentStyles),
 	};
 	return style;

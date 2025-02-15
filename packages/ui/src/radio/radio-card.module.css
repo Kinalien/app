@@ -5,7 +5,7 @@
     position: relative;
     flex-shrink: 0;
     border-radius: var(--radius-lg);
-    padding: var(--spacing-3);
+    padding: calc(var(--spacing) * 3);
     transition:
       border-color 0.24s ease-out,
       background-color 0.24s ease-out,
@@ -51,7 +51,7 @@
   }
   .wrapper {
     display: flex;
-    gap: var(--spacing-3);
+    gap: calc(var(--spacing) * 3);
     align-items: center;
   }
   .icon,
@@ -61,7 +61,7 @@
   }
   .icon {
     transition: all 0.24s ease-out;
-    padding: var(--spacing-2);
+    padding: calc(var(--spacing) * 2);
     background-color: alpha(var(--color-on-surface), 0.08);
     border-radius: var(--radius-full);
   }

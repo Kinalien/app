@@ -32,10 +32,11 @@
     will-change: transform, opacity;
     margin: 0;
     inset: auto;
-    max-width: calc(100svw - var(--spacing-4));
-    max-height: calc(100svh - var(--spacing-4));
+    max-width: calc(100svw - calc(var(--spacing) * 4));
+    max-height: calc(100svh - calc(var(--spacing) * 4));
     content-visibility: auto;
-    position-try-options: flip-block, flip-inline;
+    position-anchor: var(--anchor-name, unset);
+    position-try: flip-block, flip-inline;
     overflow: auto;
     pointer-events: all;
     @apply bg-surface shadow-popover overflow-y-auto rounded-2xl;
@@ -46,10 +47,10 @@
     }
 
     &[role="menu"] {
-      padding: var(--spacing-1);
+      padding: var(--spacing);
     }
     &[role="dialog"] {
-      padding: var(--spacing-4);
+      padding: calc(var(--spacing) * 4);
     }
 
     &:popover-open {
@@ -80,13 +81,13 @@
         [data-placement*="left-to-right"],
         [data-placement*="right-to-left"]
       ) {
-      margin-inline: var(--spacing-2);
+      margin-inline: calc(var(--spacing) * 2);
     }
     &:where(
         [data-placement*="top-to-bottom"],
         [data-placement*="bottom-to-top"]
       ) {
-      margin-block: var(--spacing-2);
+      margin-block: calc(var(--spacing) * 2);
     }
 
     &:where([data-placement*="top"], [data-placement*="bottom"]):not(
@@ -160,15 +161,19 @@
     .drawer:is(.popover) {
       pointer-events: all;
       position: fixed;
-      position-anchor: unset !important;
-      padding: var(--spacing-2) var(--spacing-4) var(--spacing-4);
-      inset-block: auto var(--spacing-2);
-      inset-inline: var(--spacing-2);
+      position-anchor: --nv-invalid;
+      padding: calc(var(--spacing) * 2) calc(var(--spacing) * 4)
+        calc(var(--spacing) * 4);
+      inset-block: auto calc(var(--spacing) * 2);
+      inset-inline: calc(var(--spacing) * 2);
       margin: 0;
       height: max-content;
-      width: max(calc(100% - var(--spacing-2) * 2), var(--breakpoint-sm));
+      width: max(
+        calc(100% - calc(var(--spacing) * 2) * 2),
+        var(--breakpoint-sm)
+      );
       max-height: 100svh;
-      padding-top: var(--spacing-8);
+      padding-top: calc(var(--spacing) * 8);
       opacity: 1;
       transform: none;
       transform-origin: top center;

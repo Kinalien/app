@@ -4,7 +4,7 @@
   .field {
     --border-color: var(--color-outline);
     --border-scale-y: 0.75;
-    --start-padding: var(--spacing-3);
+    --start-padding: calc(var(--spacing) * 3);
     display: inline-flex;
     flex-flow: column nowrap;
     width: 100%;
@@ -99,12 +99,12 @@
     @apply text-sm;
     & :where(input, textarea),
     & select > button {
-      padding: var(--spacing-2) var(--start-padding);
-      min-height: var(--spacing-12);
+      padding: calc(var(--spacing) * 2) var(--start-padding);
+      min-height: calc(var(--spacing) * 12);
     }
 
     & :where(.prefix, .suffix) {
-      padding-block-start: var(--spacing-2);
+      padding-block-start: calc(var(--spacing) * 2);
     }
   }
 
@@ -112,12 +112,12 @@
     @apply text-base;
     & :where(input, textarea),
     & select > button {
-      padding: var(--spacing-3) var(--start-padding);
-      min-height: var(--spacing-12);
+      padding: calc(var(--spacing) * 3) var(--start-padding);
+      min-height: calc(var(--spacing) * 12);
     }
 
     & :where(.prefix, .suffix) {
-      padding-block-start: var(--spacing-2);
+      padding-block-start: calc(var(--spacing) * 2);
     }
   }
 
@@ -125,10 +125,10 @@
     @apply text-3xl font-medium;
     & :where(input, textarea) {
       padding: calc(var(--spacing) * 3.5) var(--start-padding);
-      min-height: var(--spacing-12);
+      min-height: calc(var(--spacing) * 12);
     }
     & :where(.prefix, .suffix) {
-      padding-block-start: var(--spacing-1);
+      padding-block-start: var(--spacing);
     }
   }
 
@@ -142,13 +142,13 @@
     color: var(--color-on-surface);
     &:not(legend) {
       padding-inline: var(--start-padding);
-      padding-block-start: var(--spacing-2);
+      padding-block-start: calc(var(--spacing) * 2);
     }
   }
   .description {
     /* same as label */
     padding-inline: var(--start-padding);
-    padding-block-end: var(--spacing-2);
+    padding-block-end: calc(var(--spacing) * 2);
     color: var(--color-on-surface-variant);
     @apply text-sm;
   }
@@ -161,11 +161,11 @@
   }
   .prefix {
     padding-inline-start: var(--start-padding);
-    padding-inline-start: var(--spacing-2);
+    padding-inline-start: calc(var(--spacing) * 2);
   }
 
   .suffix {
-    padding-inline-start: var(--spacing-2);
+    padding-inline-start: calc(var(--spacing) * 2);
     padding-inline-end: var(--start-padding);
   }
 

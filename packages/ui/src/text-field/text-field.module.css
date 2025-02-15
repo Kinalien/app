@@ -11,9 +11,9 @@
     &[type="number"] {
       font-variant-numeric: tabular-nums;
       @media (min-width: theme(--breakpoint-sm)) {
-        padding-inline-end: var(--spacing-1);
+        padding-inline-end: var(--spacing);
         &::-webkit-inner-spin-button {
-          margin-inline-start: var(--spacing-1);
+          margin-inline-start: var(--spacing);
         }
       }
     }
@@ -22,7 +22,7 @@
       font-weight: 400;
     }
     /* &[type="date"] {
-      padding-inline-end: var(--spacing-8);
+      padding-inline-end: calc(var(--spacing) * 8);
     } */
     /** set same sizing/position styles as for custom ones */
     &[type="date"]::-webkit-calendar-picker-indicator,
@@ -34,7 +34,7 @@
       aspect-ratio: 1 / 1;
       background-size: 1.75em;
       background-position: center;
-      padding-inline-end: var(--spacing-1);
+      padding-inline-end: var(--spacing);
       margin: 0;
       padding: 0;
       &:focus-visible {

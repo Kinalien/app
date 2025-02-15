@@ -10,11 +10,11 @@
       scale 0.3s ease,
       inset-block-start 0.14s ease;
     position: absolute;
-    inset-block-start: calc(anchor(start, 0) + var(--spacing-2));
+    inset-block-start: calc(anchor(start, 0) + calc(var(--spacing) * 2));
     /* use padding instead of positioning to allow hover to remain stable for multiple toasts */
     padding: theme("spacing[1]") theme("spacing[3]");
     border-radius: var(--radius-2xl);
-    min-width: var(--spacing-64);
+    min-width: calc(var(--spacing) * 64);
     filter: contrast(0.95) brightness(1.01);
     z-index: var(--nou-toast-index);
     pointer-events: all !important;
@@ -61,7 +61,7 @@
         scale: 1;
         filter: none;
         z-index: 8;
-        inset-block-start: calc(anchor(start, 0) + var(--spacing-2));
+        inset-block-start: calc(anchor(start, 0) + calc(var(--spacing) * 2));
       }
 
       /* focused toast */

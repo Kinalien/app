@@ -13,7 +13,7 @@ import { tw } from "./tw";
 
 import { createMediaQuery } from "@solid-primitives/media";
 import { mergeRefs } from "@solid-primitives/refs";
-import css from "../popover/popover.module.css";
+import css from "./popover/popover.module.css";
 import { composeEventHandlers, mergeDefaultProps } from "./utils";
 
 type Side = "top" | "bottom" | "left" | "right";
