@@ -124,19 +124,19 @@
 @custom-variant disabled (&:where(disabled,[aria-disabled="true"]));
 
 @utility view-transition-* {
-  view-transition-name: --value(*);
+  view-transition-name: --value([string]);
 }
 
 @utility view-transition-class-* {
-  view-transition-class: --value(*);
+  view-transition-class: --value([string]);
 }
 
 @utility anchor-* {
-  anchor-name: --value(*);
+  anchor-name: --value([string]);
 }
 
 @utility to-anchor-* {
-  position-anchor: --value(*);
+  position-anchor: --value([string]);
 }
 
 @utility overflow-snap-* {
@@ -145,8 +145,8 @@
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
-  margin-block: calc(-1 * var(--value(*), --spacing-2));
-  padding-block: var(--value(*), --spacing-2);
+  margin-block: calc(-1 * var(--spacing) * --value([integer], --spacing-2));
+  padding-block: var(--spacing) * --value([integer], --spacing-2);
   & > * {
     flex-shrink: 0;
     scroll-snap-align: start;
