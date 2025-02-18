@@ -1,27 +1,16 @@
 {
-  "extends": [
-    "@nou/config/tsconfig",
-    "astro/tsconfigs/base"
-  ],
-  "include": [
-    ".astro/types.d.ts",
-    "./src",
-    "./.storybook"
-  ],
-  "exclude": [
-    "dist"
-  ],
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "~/*": [
-        "./src/*"
-      ]
-    },
-    "jsx": "preserve",
-    "jsxImportSource": "solid-js"
-  },
-  "mdx": {
-    "checkMdx": true
-  }
+	"extends": ["@nou/config/tsconfig", "astro/tsconfigs/base"],
+	"include": [".astro/types.d.ts", "./src"],
+	"exclude": ["dist"],
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"~/*": ["./src/*"]
+		},
+		"jsx": "preserve",
+		"jsxImportSource": "solid-js"
+	},
+	"mdx": {
+		"checkMdx": true
+	}
 }
