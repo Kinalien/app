@@ -4,7 +4,7 @@
 	"type": "module",
 	"license": "GNU General Public License v3.0",
 	"exports": {
-		"./theme.css": "./theme.css",
+		"./theme.css": "./m3-theme/theme.css",
 		"./tsconfig": "./tsconfig.json",
 		"./global.css": "./global.css",
 		"./icons/sprite.svg": "./icons/sprite.svg"
@@ -16,6 +16,7 @@
 	"dependencies": {
 		"@fontsource-variable/inter": "^5.1.0",
 		"@tailwindcss/vite": "4.0.8",
+		"@types/node": "22",
 		"tailwindcss": "catalog:",
 		"tailwindcss-spring": "^1.0.1",
 		"typescript-plugin-css-modules": "^5.1.0",
