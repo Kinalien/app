@@ -1,4 +1,4 @@
-@import "./theme.css";
+@import "./m3-theme/theme.css";
 @import "@fontsource-variable/inter/index.css" layer(base);
 
 @layer base {

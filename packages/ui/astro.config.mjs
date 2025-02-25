@@ -19,6 +19,9 @@ export default defineConfig({
 					autogenerate: { directory: "components" },
 				},
 			],
+			components: {
+				MarkdownContent: "./docs/components/MarkdownContent.astro",
+			},
 			customCss: ["./docs/global.css"],
 		}),
 		solidJs(),

@@ -9,36 +9,36 @@
 
   /* colors */
   --color-*: initial;
-  --color-primary: #106B57;
-  --color-surface-tint: #106B57;
-  --color-on-primary: #FFFFFF;
-  --color-primary-container: #A2F2D9;
+  --color-primary: #106b57;
+  --color-surface-tint: #106b57;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #a2f2d9;
   --color-on-primary-container: #002018;
-  --color-secondary: #4B635B;
-  --color-on-secondary: #FFFFFF;
-  --color-secondary-container: #CDE9DE;
+  --color-secondary: #4b635b;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #cde9de;
   --color-on-secondary-container: #072019;
   --color-tertiary: #416276;
-  --color-on-tertiary: #FFFFFF;
-  --color-tertiary-container: #C4E7FF;
-  --color-on-tertiary-container: #001E2D;
-  --color-error: #BA1A1A;
-  --color-on-error: #FFFFFF;
-  --color-error-container: #FFDAD6;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #c4e7ff;
+  --color-on-tertiary-container: #001e2d;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
   --color-on-error-container: #410002;
-  --color-background: #F5FBF6;
-  --color-on-background: #171D1B;
-  --color-surface: #F5FBF6;
-  --color-on-surface: #171D1B;
-  --color-surface-variant: #DBE5DF;
-  --color-on-surface-variant: #3F4945;
-  --color-outline: #6F7975;
-  --color-outline-variant: #BFC9C4;
-  --color-inverse-surface: #2B322F;
-  --color-inverse-on-surface: #ECF2EE;
-  --color-inverse-primary: #87D6BD;
-  --color-surface-container: #FFFFFF;
-  --color-surface-container-high: #E3EAE5;
+  --color-background: #f5fbf6;
+  --color-on-background: #171d1b;
+  --color-surface: #f5fbf6;
+  --color-on-surface: #171d1b;
+  --color-surface-variant: #dbe5df;
+  --color-on-surface-variant: #3f4945;
+  --color-outline: #6f7975;
+  --color-outline-variant: #bfc9c4;
+  --color-inverse-surface: #2b322f;
+  --color-inverse-on-surface: #ecf2ee;
+  --color-inverse-primary: #87d6bd;
+  --color-surface-container: #ffffff;
+  --color-surface-container-high: #e3eae5;
 
   /* breakpoints */
   --breakpoint-sm: 560px;
@@ -132,8 +132,6 @@
 @utility to-anchor-* {
   position-anchor: --value([string]);
 }
-
-@custom-variant part-* (& [data-part="--value([string])"]);
 
 @utility overflow-snap-* {
   display: flex;
