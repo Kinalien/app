@@ -1,4 +1,3 @@
-import { A } from "@solidjs/router";
 import { type JSX, Show, type ValidComponent, splitProps } from "solid-js";
 import { Dynamic, type DynamicProps } from "solid-js/web";
 
@@ -200,8 +199,8 @@ const Button = (ownProps: Omit<BaseProps<"button">, "component" | "split">) => {
 	return <BaseComponent {...props} component="button" />;
 };
 
-const ButtonLink = (ownProps: Omit<BaseProps<typeof A>, "component">) => {
-	return <BaseComponent {...ownProps} component={A} />;
+const ButtonLink = (ownProps: Omit<BaseProps<"a">, "component">) => {
+	return <BaseComponent {...ownProps} component="a" />;
 };
 
 const SplitButton = (ownProps: Omit<BaseProps<"div">, "component" | "icon">) => {

@@ -18,10 +18,8 @@ export default defineConfig({
 					label: "Components",
 					autogenerate: { directory: "components" },
 				},
+				{ label: "Colors", link: "/colors/" },
 			],
-			components: {
-				MarkdownContent: "./docs/components/MarkdownContent.astro",
-			},
 			customCss: ["./docs/global.css"],
 		}),
 		solidJs(),

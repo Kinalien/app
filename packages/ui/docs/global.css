@@ -1,8 +1,31 @@
-@import "@nou/config/global.css";
+@import "@nou/config/theme.css";
 
-html,
-body {
-  background-color: var(--color-background);
-  color: var(--color-on-background);
-  font-family: var(--font-sans);
+/* Dark mode colors. */
+:root {
+  --sl-color-accent-low: #142823;
+  --sl-color-accent: #267a65;
+  --sl-color-accent-high: #b7cfc7;
+  --sl-color-white: #ffffff;
+  --sl-color-gray-1: #ebeeed;
+  --sl-color-gray-2: #bfc3c2;
+  --sl-color-gray-3: #868d8b;
+  --sl-color-gray-4: #535a57;
+  --sl-color-gray-5: #333a38;
+  --sl-color-gray-6: #222826;
+  --sl-color-black: #161918;
+}
+/* Light mode colors. */
+:root[data-theme="light"] {
+  --sl-color-accent-low: #c9dcd5;
+  --sl-color-accent: #257964;
+  --sl-color-accent-high: #183930;
+  --sl-color-white: #161918;
+  --sl-color-gray-1: #222826;
+  --sl-color-gray-2: #333a38;
+  --sl-color-gray-3: #535a57;
+  --sl-color-gray-4: #868d8b;
+  --sl-color-gray-5: #bfc3c2;
+  --sl-color-gray-6: #ebeeed;
+  --sl-color-gray-7: #f5f7f6;
+  --sl-color-black: #ffffff;
 }
