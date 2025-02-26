@@ -10,13 +10,17 @@ async function generateThemeCss() {
 	const themeCssPath = "./theme.css";
 	const baseCss = await readFile(baseCssPath, { encoding: "utf-8" });
 
-	const lightThemeColors = theme.schemes.light;
-
 	let updatedCss = baseCss;
 
-	for (const [key, value] of Object.entries(lightThemeColors)) {
+	for (const [key, value] of Object.entries(theme.schemes.light)) {
 		const kebabKey = toKebabCase(key);
-		const regex = new RegExp(`var\\(--${kebabKey}\\)`, "g");
+		const regex = new RegExp(`var\\(--m3-light-${kebabKey}\\)`, "g");
+		updatedCss = updatedCss.replace(regex, value);
+	}
+
+	for (const [key, value] of Object.entries(theme.schemes.dark)) {
+		const kebabKey = toKebabCase(key);
+		const regex = new RegExp(`var\\(--m3-dark-${kebabKey}\\)`, "g");
 		updatedCss = updatedCss.replace(regex, value);
 	}
 

@@ -1,8 +1,8 @@
 ---
 import StarlightPage from "@astrojs/starlight/components/StarlightPage.astro";
-import { Code, Card, CardGrid } from "@astrojs/starlight/components";
+import { Code, CardGrid } from "@astrojs/starlight/components";
 
-import { ButtonLink, Card as NouCard } from "../../src/_index";
+import { ButtonLink, Card } from "../../src/_index";
 ---
 
 <StarlightPage frontmatter={{ title: "Colors", description: "Color system" }}>
@@ -23,7 +23,8 @@ import { ButtonLink, Card as NouCard } from "../../src/_index";
     </p>
 
     <CardGrid>
-      <Card title="Primary">
+      <Card>
+        <h3>Primary</h3>
         <p>
           The primary colour is displayed most frequently across screens and
           components. It represents our brand identity and is used for key
@@ -31,16 +32,15 @@ import { ButtonLink, Card as NouCard } from "../../src/_index";
         </p>
         <div class="not-content flex flex-col gap-4">
           <div class="flex items-center gap-4">
-            <div class="size-16 rounded-md bg-primary"></div>
+            <div class="size-16 rounded-md border border-outline bg-primary">
+            </div>
             <div>
               <p class="font-medium text-on-surface">Primary</p>
               <p class="text-sm text-on-surface-variant">#106B57</p>
             </div>
           </div>
           <div class="flex items-center gap-4">
-            <div
-              class="size-16 rounded-md bg-on-primary border border-gray-200 ms-4"
-            >
+            <div class="size-16 rounded-md border border-outline bg-on-primary">
             </div>
             <div>
               <p class="font-medium text-on-surface">On Primary</p>
@@ -48,14 +48,20 @@ import { ButtonLink, Card as NouCard } from "../../src/_index";
             </div>
           </div>
           <div class="flex items-center gap-4">
-            <div class="size-16 rounded-md bg-primary-container"></div>
+            <div
+              class="size-16 rounded-md border border-outline bg-primary-container"
+            >
+            </div>
             <div>
               <p class="font-medium text-on-surface">Primary Container</p>
               <p class="text-sm text-on-surface-variant">#A2F2D9</p>
             </div>
           </div>
           <div class="flex items-center gap-4">
-            <div class="size-16 rounded-md bg-on-primary-container"></div>
+            <div
+              class="size-16 rounded-md border border-outline bg-on-primary-container"
+            >
+            </div>
             <div>
               <p class="font-medium text-on-surface">On Primary Container</p>
               <p class="text-sm text-on-surface-variant">#002018</p>
@@ -64,7 +70,8 @@ import { ButtonLink, Card as NouCard } from "../../src/_index";
         </div>
       </Card>
 
-      <Card title="Secondary">
+      <Card>
+        <h3>Secondary</h3>
         <p>
           Secondary colours are used for less prominent components in the UI
           such as filter chips and secondary buttons. They complement the
@@ -72,7 +79,8 @@ import { ButtonLink, Card as NouCard } from "../../src/_index";
         </p>
         <div class="not-content flex flex-col gap-4">
           <div class="flex items-center gap-4">
-            <div class="size-16 rounded-md bg-secondary"></div>
+            <div class="size-16 rounded-md border border-outline bg-secondary">
+            </div>
             <div>
               <p class="font-medium text-on-surface">Secondary</p>
               <p class="text-sm text-on-surface-variant">#4B635B</p>
@@ -80,7 +88,7 @@ import { ButtonLink, Card as NouCard } from "../../src/_index";
           </div>
           <div class="flex items-center gap-4">
             <div
-              class="size-16 rounded-md bg-on-secondary border border-gray-200 ms-4"
+              class="size-16 rounded-md border border-outline bg-on-secondary"
             >
             </div>
             <div>
@@ -89,14 +97,20 @@ import { ButtonLink, Card as NouCard } from "../../src/_index";
             </div>
           </div>
           <div class="flex items-center gap-4">
-            <div class="size-16 rounded-md bg-secondary-container"></div>
+            <div
+              class="size-16 rounded-md border border-outline bg-secondary-container"
+            >
+            </div>
             <div>
               <p class="font-medium text-on-surface">Secondary Container</p>
               <p class="text-sm text-on-surface-variant">#CDE9DE</p>
             </div>
           </div>
           <div class="flex items-center gap-4">
-            <div class="size-16 rounded-md bg-on-secondars-4"></div>
+            <div
+              class="size-16 rounded-md border border-outline bg-on-secondars-4"
+            >
+            </div>
             <div>
               <p class="font-medium text-on-surface">On Secondary Container</p>
               <p class="text-sm text-on-surface-variant">#072019</p>
@@ -105,7 +119,8 @@ import { ButtonLink, Card as NouCard } from "../../src/_index";
         </div>
       </Card>
 
-      <Card title="Tertiary">
+      <Card>
+        <h3>Tertiary</h3>
         <p>
           Tertiary colours provide additional visual interest and can be used to
           accent specialized components. They help balance primary and secondary
@@ -113,7 +128,8 @@ import { ButtonLink, Card as NouCard } from "../../src/_index";
         </p>
         <div class="not-content flex flex-col gap-4">
           <div class="flex items-center gap-4">
-            <div class="size-16 rounded-md bg-tertiary"></div>
+            <div class="size-16 rounded-md border border-outline bg-tertiary">
+            </div>
             <div>
               <p class="font-medium text-on-surface">Tertiary</p>
               <p class="text-sm text-on-surface-variant">#416276</p>
@@ -121,7 +137,7 @@ import { ButtonLink, Card as NouCard } from "../../src/_index";
           </div>
           <div class="flex items-center gap-4">
             <div
-              class="size-16 rounded-md bg-on-tertiary border border-gray-200 ms-4"
+              class="size-16 rounded-md border border-outline bg-on-tertiary"
             >
             </div>
             <div>
@@ -130,14 +146,20 @@ import { ButtonLink, Card as NouCard } from "../../src/_index";
             </div>
           </div>
           <div class="flex items-center gap-4">
-            <div class="size-16 rounded-md bg-tertiary-container"></div>
+            <div
+              class="size-16 rounded-md border border-outline bg-tertiary-container"
+            >
+            </div>
             <div>
               <p class="font-medium text-on-surface">Tertiary Container</p>
               <p class="text-sm text-on-surface-variant">#C4E7FF</p>
             </div>
           </div>
           <div class="flex items-center gap-4">
-            <div class="size-16 rounded-md bg-on-tertiary-container"></div>
+            <div
+              class="size-16 rounded-md border border-outline bg-on-tertiary-container"
+            >
+            </div>
             <div>
               <p class="font-medium text-on-surface">On Tertiary Container</p>
               <p class="text-sm text-on-surface-variant">#001E2D</p>
@@ -146,7 +168,8 @@ import { ButtonLink, Card as NouCard } from "../../src/_index";
         </div>
       </Card>
 
-      <Card title="Error">
+      <Card>
+        <h3>Error</h3>
         <p>
           Error colours are used specifically to indicate error states and
           represent destructive actions. They draw attention to critical
@@ -154,16 +177,15 @@ import { ButtonLink, Card as NouCard } from "../../src/_index";
         </p>
         <div class="not-content flex flex-col gap-4">
           <div class="flex items-center gap-4">
-            <div class="size-16 rounded-md bg-error"></div>
+            <div class="size-16 rounded-md border border-outline bg-error">
+            </div>
             <div>
               <p class="font-medium text-on-surface">Error</p>
               <p class="text-sm text-on-surface-variant">#BA1A1A</p>
             </div>
           </div>
           <div class="flex items-center gap-4">
-            <div
-              class="size-16 rounded-md bg-on-error border border-gray-200 ms-4"
-            >
+            <div class="size-16 rounded-md border border-outline bg-on-error">
             </div>
             <div>
               <p class="font-medium text-on-surface">On Error</p>
@@ -171,14 +193,20 @@ import { ButtonLink, Card as NouCard } from "../../src/_index";
             </div>
           </div>
           <div class="flex items-center gap-4">
-            <div class="size-16 rounded-md bg-error-container"></div>
+            <div
+              class="size-16 rounded-md border border-outline bg-error-container"
+            >
+            </div>
             <div>
               <p class="font-medium text-on-surface">Error Container</p>
               <p class="text-sm text-on-surface-variant">#FFDAD6</p>
             </div>
           </div>
           <div class="flex items-center gap-4">
-            <div class="size-16 rounded-md bg-on-error-container"></div>
+            <div
+              class="size-16 rounded-md border border-outline bg-on-error-container"
+            >
+            </div>
             <div>
               <p class="font-medium text-on-surface">On Error Container</p>
               <p class="text-sm text-on-surface-variant">#410002</p>
@@ -198,7 +226,8 @@ import { ButtonLink, Card as NouCard } from "../../src/_index";
     </p>
 
     <CardGrid>
-      <Card title="Background & Surface">
+      <Card>
+        <h3>Background & Surface</h3>
         <p>
           Background appears behind scrollable content while surface colours are
           used for elements that contain content and interactive components.
@@ -206,9 +235,7 @@ import { ButtonLink, Card as NouCard } from "../../src/_index";
         </p>
         <div class="not-content flex flex-col gap-4">
           <div class="flex items-center gap-4">
-            <div
-              class="size-16 rounded-md bg-background border border-gray-200 ms-4"
-            >
+            <div class="size-16 rounded-md border border-outline bg-background">
             </div>
             <div>
               <p class="font-medium text-on-surface">Background</p>
@@ -216,9 +243,7 @@ import { ButtonLink, Card as NouCard } from "../../src/_index";
             </div>
           </div>
           <div class="flex items-center gap-4">
-            <div
-              class="size-16 rounded-md bg-surface border border-gray-200 ms-4"
-            >
+            <div class="size-16 rounded-md border border-outline bg-surface">
             </div>
             <div>
               <p class="font-medium text-on-surface">Surface</p>
@@ -226,7 +251,10 @@ import { ButtonLink, Card as NouCard } from "../../src/_index";
             </div>
           </div>
           <div class="flex items-center gap-4">
-            <div class="size-16 rounded-md bg-surface-variant"></div>
+            <div
+              class="size-16 rounded-md border border-outline bg-surface-variant"
+            >
+            </div>
             <div>
               <p class="font-medium text-on-surface">Surface Variant</p>
               <p class="text-sm text-on-surface-variant">#DBE5DF</p>
@@ -234,7 +262,7 @@ import { ButtonLink, Card as NouCard } from "../../src/_index";
           </div>
           <div class="flex items-center gap-4">
             <div
-              class="size-16 rounded-md bg-surface-container border border-gray-200 ms-4"
+              class="size-16 rounded-md border border-outline bg-surface-container"
             >
             </div>
             <div>
@@ -243,7 +271,10 @@ import { ButtonLink, Card as NouCard } from "../../src/_index";
             </div>
           </div>
           <div class="flex items-center gap-4">
-            <div class="size-16 rounded-md bg-surface-containes-4"></div>
+            <div
+              class="size-16 rounded-md border border-outline bg-surface-containes-4"
+            >
+            </div>
             <div>
               <p class="font-medium text-on-surface">Surface Container High</p>
               <p class="text-sm text-on-surface-variant">#E3EAE5</p>
@@ -252,7 +283,8 @@ import { ButtonLink, Card as NouCard } from "../../src/_index";
         </div>
       </Card>
 
-      <Card title="On Surface & Outline">
+      <Card>
+        <h3>On Surface & Outline</h3>
         <p>
           "On" colours are used for text, icons, and strokes that appear on top
           of surfaces. Outline colours are used to define boundaries and create
@@ -260,35 +292,46 @@ import { ButtonLink, Card as NouCard } from "../../src/_index";
         </p>
         <div class="not-content flex flex-col gap-4">
           <div class="flex items-center gap-4">
-            <div class="size-16 rounded-md bg-on-background"></div>
+            <div
+              class="size-16 rounded-md border border-outline bg-on-background"
+            >
+            </div>
             <div>
               <p class="font-medium text-on-surface">On Background</p>
               <p class="text-sm text-on-surface-variant">#171D1B</p>
             </div>
           </div>
           <div class="flex items-center gap-4">
-            <div class="size-16 rounded-md bg-on-surface"></div>
+            <div class="size-16 rounded-md border border-outline bg-on-surface">
+            </div>
             <div>
               <p class="font-medium text-on-surface">On Surface</p>
               <p class="text-sm text-on-surface-variant">#171D1B</p>
             </div>
           </div>
           <div class="flex items-center gap-4">
-            <div class="size-16 rounded-md bg-on-surface-variant"></div>
+            <div
+              class="size-16 rounded-md border border-outline bg-on-surface-variant"
+            >
+            </div>
             <div>
               <p class="font-medium text-on-surface">On Surface Variant</p>
               <p class="text-sm text-on-surface-variant">#3F4945</p>
             </div>
           </div>
           <div class="flex items-center gap-4">
-            <div class="size-16 rounded-md bg-outline"></div>
+            <div class="size-16 rounded-md border border-outline bg-outline">
+            </div>
             <div>
               <p class="font-medium text-on-surface">Outline</p>
               <p class="text-sm text-on-surface-variant">#6F7975</p>
             </div>
           </div>
           <div class="flex items-center gap-4">
-            <div class="size-16 rounded-md bg-outline-variant"></div>
+            <div
+              class="size-16 rounded-md border border-outline bg-outline-variant"
+            >
+            </div>
             <div>
               <p class="font-medium text-on-surface">Outline Variant</p>
               <p class="text-sm text-on-surface-variant">#BFC9C4</p>
@@ -341,119 +384,113 @@ import { ButtonLink, Card as NouCard } from "../../src/_index";
   <section>
     <h2>Usage guidelines</h2>
 
+    <Card>
+      <h3>Colour combinations</h3>
+      <p>
+        Always pair surface colours with their corresponding "on" colours for
+        proper contrast:
+      </p>
+      <ul class="text-on-surface-variant">
+        <li>
+          • Use <span class="text-on-primary bg-primary px-2 py-1 rounded"
+            >on-primary</span
+          > text on <span class="bg-primary px-2 py-1 rounded text-on-primary"
+            >primary</span
+          > surfaces
+        </li>
+        <li>
+          • Use <span
+            class="text-on-primary-container bg-primary-container px-2 py-1 rounded"
+            >on-primary-container</span
+          > text on <span
+            class="bg-primary-container px-2 py-1 rounded text-on-primary-container"
+            >primary-container</span
+          > surfaces
+        </li>
+        <li>
+          • Use <span class="text-on-secondary bg-secondary px-2 py-1 rounded"
+            >on-secondary</span
+          > text on <span
+            class="bg-secondary px-2 py-1 rounded text-on-secondary"
+            >secondary</span
+          > surfaces
+        </li>
+        <li>
+          • Use <span
+            class="text-on-surface bg-surface px-2 py-1 rounded border border-gray-200"
+            >on-surface</span
+          > text on <span
+            class="bg-surface px-2 py-1 rounded text-on-surface border border-gray-200"
+            >surface</span
+          > areas
+        </li>
+      </ul>
+    </Card>
+
+    <Card>
+      <h3>Common components</h3>
+      <p>Recommended colour usage for common UI components:</p>
+      <div class="not-content flex flex-col gap-4">
+        <div class="flex items-center gap-4">
+          <ButtonLink variant="tonal" href="/components/button"
+            >Button</ButtonLink
+          >
+          <p class="text-sm text-on-surface-variant">Primary</p>
+        </div>
+        <div class="flex items-center gap-4">
+          <ButtonLink variant="accent" href="/components/button"
+            >Button</ButtonLink
+          >
+          <p class="text-sm text-on-surface-variant">Accent</p>
+        </div>
+        <div class="flex items-center gap-4">
+          <ButtonLink variant="link" href="/components/button">Link</ButtonLink>
+          <p class="text-sm text-on-surface-variant">Secondary actions</p>
+        </div>
+        <div class="flex items-center gap-4">
+          <Card tone="failure">Error Message</Card>
+          <p class="text-sm text-on-surface-variant">Errors and warnings</p>
+        </div>
+      </div>
+    </Card>
+  </section>
+
+  <section>
+    <h3>Accessibility</h3>
+    <p>
+      All colour combinations in our system meet WCAG 2.1 AA standards for
+      accessibility. Always ensure sufficient contrast between text and
+      background by using the prescribed colour combinations.
+    </p>
     <CardGrid>
-      <Card title="Colour combinations">
-        <p>
-          Always pair surface colours with their corresponding "on" colours for
-          proper contrast:
+      <div class="p-4 bg-primary rounded-md">
+        <div>
+          <p class="text-on-primary font-medium">Good contrast</p>
+          <p class="text-on-primary">Primary with on-primary text</p>
+        </div>
+      </div>
+      <div class="p-4 bg-primary-container rounded-md">
+        <p class="text-on-primary-container font-medium">Good contrast</p>
+        <p class="text-on-primary-container">
+          Primary container with on-primary-container text
         </p>
-        <ul class="text-on-surface-variant">
-          <li>
-            • Use <span class="text-on-primary bg-primary px-2 py-1 rounded"
-              >on-primary</span
-            > text on <span class="bg-primary px-2 py-1 rounded text-on-primary"
-              >primary</span
-            > surfaces
-          </li>
-          <li>
-            • Use <span
-              class="text-on-primary-container bg-primary-container px-2 py-1 rounded"
-              >on-primary-container</span
-            > text on <span
-              class="bg-primary-container px-2 py-1 rounded text-on-primary-container"
-              >primary-container</span
-            > surfaces
-          </li>
-          <li>
-            • Use <span class="text-on-secondary bg-secondary px-2 py-1 rounded"
-              >on-secondary</span
-            > text on <span
-              class="bg-secondary px-2 py-1 rounded text-on-secondary"
-              >secondary</span
-            > surfaces
-          </li>
-          <li>
-            • Use <span
-              class="text-on-surface bg-surface px-2 py-1 rounded border border-gray-200"
-              >on-surface</span
-            > text on <span
-              class="bg-surface px-2 py-1 rounded text-on-surface border border-gray-200"
-              >surface</span
-            > areas
-          </li>
-        </ul>
-      </Card>
-
-      <Card title="Common components">
-        <p>Recommended colour usage for common UI components:</p>
-        <div class="space-y-4">
-          <div class="flex items-center gap-4">
-            <ButtonLink variant="tonal" href="/components/button"
-              >Button</ButtonLink
-            >
-            <p class="text-sm text-on-surface-variant">Primary</p>
-          </div>
-          <div class="flex items-center gap-4">
-            <ButtonLink variant="accent" href="/components/button"
-              >Button</ButtonLink
-            >
-            <p class="text-sm text-on-surface-variant">Accent</p>
-          </div>
-          <div class="flex items-center gap-4">
-            <ButtonLink
-              variant="link"
-              class="bg-secondary-container text-on-secondary-container px-4 py-2 rounded-md ms-4"
-              >Link</ButtonLink
-            >
-            <p class="text-sm text-on-surface-variant">Secondary actions</p>
-          </div>
-          <div class="flex items-center gap-4">
-            <NouCard>Card Element</NouCard>
-            <p class="text-sm text-on-surface-variant">Cards and containers</p>
-          </div>
-          <div class="flex items-center gap-4">
-            <NouCard tone="failure">Error Message</NouCard>
-            <p class="text-sm text-on-surface-variant">Errors and warnings</p>
-          </div>
-        </div>
-      </Card>
+      </div>
     </CardGrid>
+  </section>
 
-    <section>
-      <h3>Accessibility</h3>
-      <p>
-        All colour combinations in our system meet WCAG 2.1 AA standards for
-        accessibility. Always ensure sufficient contrast between text and
-        background by using the prescribed colour combinations.
-      </p>
-      <CardGrid>
-        <div class="p-4 bg-primary rounded-md">
-          <div>
-            <p class="text-on-primary font-medium">Good contrast</p>
-            <p class="text-on-primary">Primary with on-primary text</p>
-          </div>
-        </div>
-        <div class="p-4 bg-primary-container rounded-md">
-          <p class="text-on-primary-container font-medium">Good contrast</p>
-          <p class="text-on-primary-container">
-            Primary container with on-primary-container text
-          </p>
-        </div>
-      </CardGrid>
-    </section>
+  <section>
+    <h2>Implementation</h2>
+    <p>
+      Our colour system is implemented using CSS custom properties. To use these
+      colours in your components, reference them as CSS variables or use the
+      corresponding Tailwind classes.
+    </p>
 
-    <section>
-      <h2>Implementation</h2>
-      <p>
-        Our colour system is implemented using CSS custom properties. To use
-        these colours in your components, reference them as CSS variables or use
-        the corresponding Tailwind classes.
-      </p>
-
-      <Card title="CSS implementation">
-        <Code
-          lang="css"
-          code={`.my-button {
+    <Card>
+      <h3>CSS implementation</h3>
+      <Code
+        lang="css"
+        code={`.my-button {
   background-color: var(--color-primary);
   color: var(--color-on-primary);
 }
@@ -463,8 +500,7 @@ import { ButtonLink, Card as NouCard } from "../../src/_index";
   color: var(--color-on-surface);
   border: 1px solid var(--color-outline-variant);
 }`}
-        />
-      </Card>
-    </section>
+      />
+    </Card>
   </section>
 </StarlightPage>
