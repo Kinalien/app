@@ -1,29 +1,184 @@
 ---
 title: Button
-description: A simple Button component.
+description: Buttons enable users to take actions and make choices with a single tap. They come in various styles to suit different contexts and levels of emphasis.
 ---
 
-import { Button } from "@nou/ui";
-
+import { Button, ButtonLink, Text } from "@nou/ui";
 import { Code } from "@astrojs/starlight/components";
 
-This is a simple Button component.
+## Overview
+
+The `Button` component provides a versatile way to trigger actions within your application. It supports several variants and tones, allowing you to customize its appearance based on the importance and context of the action.
 
 ## Usage
+
+Here's a basic example of how to use the `Button` component:
 
 ```tsx
 import { Button } from "@nou/ui";
 
 const MyComponent = () => (
-  <Button variant="primary" tone="accent">
-    Click me
-  </Button>
+  <>
+    <Button variant="text">
+      Cancel
+    </Button>
+    <Button variant="accent" tone="primary">
+      Save
+    </Button>
+  </>
 );
 ```
 
-
-<div class="not-content">
-  <Button>
-    Click me
+<div class="not-content flex gap-2">
+  <Button variant="ghost">
+    Cancel
   </Button>
+  <Button variant="accent" tone="primary">
+    Save
+  </Button>
+</div>
+
+## Variants and Tones
+
+### Accent
+
+The `accent` variant is a high-emphasis filled button, typically used for primary actions.
+
+```tsx
+<Button variant="accent" tone="neutral">Accent Neutral</Button>
+<Button variant="accent" tone="primary">Accent Primary</Button>
+<Button variant="accent" tone="tertiary">Accent Tertiary</Button>
+<Button variant="accent" tone="success">Accent Success</Button>
+<Button variant="accent" tone="destructive">Accent Destructive</Button>
+```
+
+<div class="not-content flex flex-wrap gap-4">
+  <Button variant="accent" tone="neutral">Accent Neutral</Button>
+  <Button variant="accent" tone="primary">Accent Primary</Button>
+  <Button variant="accent" tone="tertiary">Accent Tertiary</Button>
+  <Button variant="accent" tone="destructive">Accent Destructive</Button>
+</div>
+
+### Tonal
+
+The `tonal` variant is a medium-emphasis filled button, suitable for important but not primary actions.
+
+```tsx
+<Button variant="tonal" tone="neutral">Tonal Neutral</Button>
+<Button variant="tonal" tone="primary">Tonal Primary</Button>
+<Button variant="tonal" tone="tertiary">Tonal Tertiary</Button>
+<Button variant="tonal" tone="destructive">Tonal Destructive</Button>
+```
+
+<div class="not-content flex flex-wrap gap-4">
+  <Button variant="tonal" tone="neutral">Tonal Neutral</Button>
+  <Button variant="tonal" tone="primary">Tonal Primary</Button>
+  <Button variant="tonal" tone="tertiary">Tonal Tertiary</Button>
+  <Button variant="tonal" tone="destructive">Tonal Destructive</Button>
+</div>
+
+### Outline
+
+The `outline` variant is a medium-emphasis outlined button, useful for secondary actions.
+
+```tsx
+<Button variant="outline" tone="neutral">Outline Neutral</Button>
+<Button variant="outline" tone="destructive">Outline Destructive</Button>
+```
+
+<div class="not-content flex flex-wrap gap-4">
+  <Button variant="outline" tone="neutral">Outline Neutral</Button>
+  <Button variant="outline" tone="destructive">Outline Destructive</Button>
+</div>
+
+### Ghost
+
+The `ghost` variant is a low-emphasis button, often used for less important actions or in toolbars.
+
+```tsx
+<Button variant="ghost" tone="neutral">Ghost Neutral</Button>
+<Button variant="ghost" tone="primary">Ghost Primary</Button>
+<Button variant="ghost" tone="tertiary">Ghost Tertiary</Button>
+<Button variant="ghost" tone="success">Ghost Success</Button>
+<Button variant="ghost" tone="destructive">Ghost Destructive</Button>
+```
+
+<div class="not-content flex flex-wrap gap-4">
+  <Button variant="ghost" tone="neutral">Ghost Neutral</Button>
+  <Button variant="ghost" tone="destructive">Ghost Destructive</Button>
+</div>
+
+### Text
+
+The `text` variant is a very low-emphasis button, used as a secondary action, or within a block of text.
+It has only one tone, which is primary, to stand out from the surrounding text.
+
+```tsx
+<Button variant="text">Text Neutral</Button>
+```
+
+<div class="not-content flex flex-wrap gap-4">
+  <p>To see it in action, see <ButtonLink href="/components/button" variant="text">Button</ButtonLink> documentation.</p>
+</div>
+
+## Pending state
+
+The `pending` prop can be used to indicate that an action is in progress. When this prop is set to `true`, the button will display a loading spinner and disable user interaction.
+
+```tsx
+<Button variant="accent" pending>Perform action</Button>
+```
+
+<div class="not-content flex gap-6">
+  <div class="flex flex-col gap-4">
+    <Text with="overline">Accent</Text>
+    <Button variant="accent" pending>Perform action</Button>
+    <Button variant="accent" tone="tertiary" pending>Perform action</Button>
+    <Button variant="accent" tone="destructive" pending>Perform action</Button>
+  </div>
+  <div class="flex flex-col gap-2">
+    <Text with="overline">Outline</Text>
+    <Button variant="outline" tone="neutral" pending>Perform action</Button>
+    <Button variant="outline" tone="destructive" pending>Perform action</Button>
+  </div>
+  <div class="flex flex-col gap-2">
+    <Text with="overline">Tonal</Text>
+    <Button variant="tonal" tone="neutral" pending>Perform action</Button>
+    <Button variant="tonal" tone="primary" pending>Perform action</Button>
+    <Button variant="tonal" tone="tertiary" pending>Perform action</Button>
+    <Button variant="tonal" tone="destructive" pending>Perform action</Button>
+  </div>
+</div>
+
+## Disabled
+The `disabled` prop can be used to disable the button, preventing user interaction.
+
+```tsx
+<Button variant="accent" disabled>
+  Disabled
+</Button>
+```
+
+<div class="not-content flex flex-wrap gap-4">
+  <Button variant="accent" disabled>
+    Disabled
+  </Button>
+</div>
+
+## Sizes
+
+The `size` prop can be used to adjust the size of the button. It accepts the following values: `sm`, `base`, `lg` and `cta`.
+
+```tsx
+<Button variant="accent" size="sm">Small</Button>
+<Button variant="accent" size="base">Medium</Button>
+<Button variant="accent" size="lg">Large</Button>
+<Button variant="accent" size="cta">Large</Button>
+```
+
+<div class="not-content flex items-start flex-wrap gap-4">
+  <Button variant="accent" size="sm">Small</Button>
+  <Button variant="accent" size="base">Medium</Button>
+  <Button variant="accent" size="lg">Large</Button>
+  <Button variant="accent" size="cta">Call To Action</Button>
 </div>
