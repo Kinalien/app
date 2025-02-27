@@ -1,0 +1,11 @@
+{
+  "extends": ["./tsconfig.json"],
+  "include": ["m3-theme/to-theme.mjs"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"]
+    },
+    "types": ["node"]
+  }
+}

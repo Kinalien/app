@@ -85,8 +85,8 @@ importers:
   packages/ui:
     dependencies:
       '@astrojs/solid-js':
-        specifier: ^5.0.4
-        version: 5.0.4(@types/node@22.13.5)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.85.0)(solid-js@1.9.5)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.0)
+        specifier: ^5.0.5
+        version: 5.0.5(@types/node@22.13.5)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.85.0)(solid-js@1.9.5)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.0)
       '@solid-primitives/media':
         specifier: ^2.2.9
         version: 2.3.0(solid-js@1.9.5)
@@ -103,8 +103,8 @@ importers:
         specifier: 'catalog:'
         version: 0.15.3(solid-js@1.9.5)
       astro:
-        specifier: ^5.3.1
-        version: 5.3.1(@types/node@22.13.5)(db0@0.2.4(better-sqlite3@11.8.1)(drizzle-orm@0.40.0(@types/better-sqlite3@7.6.12)(better-sqlite3@11.8.1)(gel@2.0.0)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.8)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(typescript@5.7.3)(yaml@2.7.0)
+        specifier: ^5.4.0
+        version: 5.4.0(@types/node@22.13.5)(db0@0.2.4(better-sqlite3@11.8.1)(drizzle-orm@0.40.0(@types/better-sqlite3@7.6.12)(better-sqlite3@11.8.1)(gel@2.0.0)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.8)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(typescript@5.7.3)(yaml@2.7.0)
       solid-js:
         specifier: 1.9.5
         version: 1.9.5
@@ -120,7 +120,7 @@ importers:
     devDependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.1(astro@5.3.1(@types/node@22.13.5)(db0@0.2.4(better-sqlite3@11.8.1)(drizzle-orm@0.40.0(@types/better-sqlite3@7.6.12)(better-sqlite3@11.8.1)(gel@2.0.0)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.8)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(typescript@5.7.3)(yaml@2.7.0))
+        version: 0.32.1(astro@5.4.0(@types/node@22.13.5)(db0@0.2.4(better-sqlite3@11.8.1)(drizzle-orm@0.40.0(@types/better-sqlite3@7.6.12)(better-sqlite3@11.8.1)(gel@2.0.0)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.8)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(typescript@5.7.3)(yaml@2.7.0))
       '@nou/config':
         specifier: workspace:*
         version: link:../config
@@ -158,8 +158,8 @@ importers:
         specifier: ^6.2.0
         version: 6.2.0(@types/node@22.13.5)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.0)
       vite-plugin-solid:
-        specifier: ^2.11.4
-        version: 2.11.4(solid-js@1.9.5)(vite@6.2.0(@types/node@22.13.5)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.0))
+        specifier: ^2.11.6
+        version: 2.11.6(solid-js@1.9.5)(vite@6.2.0(@types/node@22.13.5)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.0))
       vite-svg-sprite-wrapper:
         specifier: ^1.3.3
         version: 1.4.1(vite@6.2.0(@types/node@22.13.5)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.0))
@@ -288,11 +288,14 @@ packages:
   '@astrojs/compiler@2.10.4':
     resolution: {integrity: sha512-86B3QGagP99MvSNwuJGiYSBHnh8nLvm2Q1IFI15wIUJJsPeQTO3eb2uwBmrqRsXykeR/mBzH8XCgz5AAt1BJrQ==}
 
-  '@astrojs/internal-helpers@0.5.1':
-    resolution: {integrity: sha512-M7rAge1n2+aOSxNvKUFa0u/KFn0W+sZy7EW91KOSERotm2Ti8qs+1K0xx3zbOxtAVrmJb5/J98eohVvvEqtNkw==}
+  '@astrojs/internal-helpers@0.6.0':
+    resolution: {integrity: sha512-XgHIJDQaGlFnTr0sDp1PiJrtqsWzbHP2qkTU+JpQ8SnBewKP2IKOe/wqCkl0CyfyRXRu3TSWu4t/cpYMVfuBNA==}
 
   '@astrojs/markdown-remark@6.1.0':
     resolution: {integrity: sha512-emZNNSTPGgPc3V399Cazpp5+snogjaF04ocOSQn9vy3Kw/eIC4vTQjXOrWDEoSEy+AwPDZX9bQ4wd3bxhpmGgQ==}
+
+  '@astrojs/markdown-remark@6.2.0':
+    resolution: {integrity: sha512-LUDjgd9p1yG0qTFSocaj3GOLmZs8Hsw/pNtvqzvNY58Acebxvb/46vDO/e/wxYgsKgIfWS+p+ZI5SfOjoVrbCg==}
 
   '@astrojs/mdx@4.0.8':
     resolution: {integrity: sha512-/aiLr2yQ55W9AbpyOgfMtFXk7g2t7XoWdC2Avps/NqxAx4aYONDLneX43D79QwgqdjFhin7o3cIPp/vVppMbaA==}
@@ -307,8 +310,8 @@ packages:
   '@astrojs/sitemap@3.2.1':
     resolution: {integrity: sha512-uxMfO8f7pALq0ADL6Lk68UV6dNYjJ2xGUzyjjVj60JLBs5a6smtlkBYv3tQ0DzoqwS7c9n4FUx5lgv0yPo/fgA==}
 
-  '@astrojs/solid-js@5.0.4':
-    resolution: {integrity: sha512-UoSyxNoFEv/nYd945lpzpAaO9IN4c3GOmbd+eTuOeXXwpU6hcomZwbDIKdeh/hNUfDYGqpTUIkKJDP8b4pl7ww==}
+  '@astrojs/solid-js@5.0.5':
+    resolution: {integrity: sha512-i+hsqm5u4Jaf+2CznCMh/oHFiBlmZz3jpTqQS1x5gilCzX3SOtVMLmbHHEpQ3wiZF1QToa4gcgEDqmeUqwW2Ow==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0}
     peerDependencies:
       solid-devtools: ^0.30.1
@@ -2278,8 +2281,8 @@ packages:
     peerDependencies:
       astro: ^4.0.0-beta || ^5.0.0-beta || ^3.3.0
 
-  astro@5.3.1:
-    resolution: {integrity: sha512-dfcuWKkGsYI6XH6zhSK4tHGFXRgEbPZZwZQ/VmGtKBnDfFW+3faq6k+ETKlKDeRB4LwDGtaeoH+US4HYC5w1SA==}
+  astro@5.4.0:
+    resolution: {integrity: sha512-7A//zrCtJUGfJcQAt6PDhMu4a6pogvnK54HLXnYlPnKSWQZu/tKIYWfyvocVnTuEYIPExIN3CpjNAFFLoweJVw==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -2306,20 +2309,10 @@ packages:
   babel-dead-code-elimination@1.0.9:
     resolution: {integrity: sha512-JLIhax/xullfInZjtu13UJjaLHDeTzt3vOeomaSUdO/nAMEL/pWC/laKrSvWylXMnVWyL5bpmG9njqBZlUQOdg==}
 
-  babel-plugin-jsx-dom-expressions@0.39.6:
-    resolution: {integrity: sha512-HMkTn5A3NyydEgG7HKmm48YcnsQQyqeT6SKNWh2TrS6nn5rOLeHDfg5hPbrRUCFUqaT9WGn5NInQfMc3qne3Dg==}
-    peerDependencies:
-      '@babel/core': ^7.20.12
-
   babel-plugin-jsx-dom-expressions@0.39.7:
     resolution: {integrity: sha512-8GzVmFla7jaTNWW8W+lTMl9YGva4/06CtwJjySnkYtt8G1v9weCzc2SuF1DfrudcCNb2Doetc1FRg33swBYZCA==}
     peerDependencies:
       '@babel/core': ^7.20.12
-
-  babel-preset-solid@1.9.3:
-    resolution: {integrity: sha512-jvlx5wDp8s+bEF9sGFw/84SInXOA51ttkUEroQziKMbxplXThVKt83qB6bDTa1HuLNatdU9FHpFOiQWs1tLQIg==}
-    peerDependencies:
-      '@babel/core': ^7.0.0
 
   babel-preset-solid@1.9.5:
     resolution: {integrity: sha512-85I3osODJ1LvZbv8wFozROV1vXq32BubqHXAGu73A//TRs3NLI1OFP83AQBUTSQHwgZQmARjHlJciym3we+V+w==}
@@ -5379,18 +5372,8 @@ packages:
     resolution: {integrity: sha512-OOvVnaBTqJJ2J7X1cM1qpH4pj9jsfTxia1VSuWeyXtf+OnP8d0YI1LHpv8y2NT47wg+n7XiTgh3BvcSffuBWrw==}
     engines: {node: '>=18.0.0'}
 
-  vite-plugin-solid@2.11.2:
-    resolution: {integrity: sha512-/OXVasW5OIRSFXnqzMgm8X3hPvf+JTbGecjQhmk7QnbDFq4hqdLssuYAWw9GsJGfzUPiMHM3ME2Y2XHPsTWmkw==}
-    peerDependencies:
-      '@testing-library/jest-dom': ^5.16.6 || ^5.17.0 || ^6.*
-      solid-js: ^1.7.2
-      vite: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
-    peerDependenciesMeta:
-      '@testing-library/jest-dom':
-        optional: true
-
-  vite-plugin-solid@2.11.4:
-    resolution: {integrity: sha512-qTy8FbA1oAwIaCl8+lmAJwMZ9fR7UcwQ68nVuX4VH6b1l059MrbKffgmJharcMJhqD/yJ+pD/EdSna6HEddEmw==}
+  vite-plugin-solid@2.11.6:
+    resolution: {integrity: sha512-Sl5CTqJTGyEeOsmdH6BOgalIZlwH3t4/y0RQuFLMGnvWMBvxb4+lq7x3BSiAw6etf0QexfNJW7HSOO/Qf7pigg==}
     peerDependencies:
       '@testing-library/jest-dom': ^5.16.6 || ^5.17.0 || ^6.*
       solid-js: ^1.7.2
@@ -5450,14 +5433,6 @@ packages:
       tsx:
         optional: true
       yaml:
-        optional: true
-
-  vitefu@1.0.5:
-    resolution: {integrity: sha512-h4Vflt9gxODPFNGPwp4zAMZRpZR7eslzwH2c5hn5kNZ5rhnKyRJ50U+yGCdc2IRaBs8O4haIgLNGrV5CrpMsCA==}
-    peerDependencies:
-      vite: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
-    peerDependenciesMeta:
-      vite:
         optional: true
 
   vitefu@1.0.6:
@@ -5574,8 +5549,8 @@ packages:
     resolution: {integrity: sha512-b4JR1PFR10y1mKjhHY9LaGo6tmrgjit7hxVIeAmyMw3jegXR4dhYqLaQF5zMXZxY7tLpMyJeLjr1C4rLmkVe8g==}
     engines: {node: '>=12.20'}
 
-  yocto-spinner@0.2.0:
-    resolution: {integrity: sha512-Qu6WAqNLGleB687CCGcmgHIo8l+J19MX/32UrSMfbf/4L8gLoxjpOYoiHT1asiWyqvjRZbgvOhLlvne6E5Tbdw==}
+  yocto-spinner@0.2.1:
+    resolution: {integrity: sha512-lHHxjh0bXaLgdJy3cNnVb/F9myx3CkhrvSOEVTkaUgNMXnYFa2xYPVhtGnqhh3jErY2gParBOHallCbc7NrlZQ==}
     engines: {node: '>=18.19'}
 
   yoctocolors@2.1.1:
@@ -5614,7 +5589,7 @@ snapshots:
 
   '@astrojs/compiler@2.10.4': {}
 
-  '@astrojs/internal-helpers@0.5.1': {}
+  '@astrojs/internal-helpers@0.6.0': {}
 
   '@astrojs/markdown-remark@6.1.0':
     dependencies:
@@ -5641,12 +5616,38 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@4.0.8(astro@5.3.1(@types/node@22.13.5)(db0@0.2.4(better-sqlite3@11.8.1)(drizzle-orm@0.40.0(@types/better-sqlite3@7.6.12)(better-sqlite3@11.8.1)(gel@2.0.0)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.8)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(typescript@5.7.3)(yaml@2.7.0))':
+  '@astrojs/markdown-remark@6.2.0':
+    dependencies:
+      '@astrojs/internal-helpers': 0.6.0
+      '@astrojs/prism': 3.2.0
+      github-slugger: 2.0.0
+      hast-util-from-html: 2.0.3
+      hast-util-to-text: 4.0.2
+      import-meta-resolve: 4.1.0
+      js-yaml: 4.1.0
+      mdast-util-definitions: 6.0.0
+      rehype-raw: 7.0.0
+      rehype-stringify: 10.0.1
+      remark-gfm: 4.0.1
+      remark-parse: 11.0.0
+      remark-rehype: 11.1.1
+      remark-smartypants: 3.0.2
+      shiki: 1.29.2
+      smol-toml: 1.3.1
+      unified: 11.0.5
+      unist-util-remove-position: 5.0.0
+      unist-util-visit: 5.0.0
+      unist-util-visit-parents: 6.0.1
+      vfile: 6.0.3
+    transitivePeerDependencies:
+      - supports-color
+
+  '@astrojs/mdx@4.0.8(astro@5.4.0(@types/node@22.13.5)(db0@0.2.4(better-sqlite3@11.8.1)(drizzle-orm@0.40.0(@types/better-sqlite3@7.6.12)(better-sqlite3@11.8.1)(gel@2.0.0)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.8)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(typescript@5.7.3)(yaml@2.7.0))':
     dependencies:
       '@astrojs/markdown-remark': 6.1.0
       '@mdx-js/mdx': 3.1.0(acorn@8.14.0)
       acorn: 8.14.0
-      astro: 5.3.1(@types/node@22.13.5)(db0@0.2.4(better-sqlite3@11.8.1)(drizzle-orm@0.40.0(@types/better-sqlite3@7.6.12)(better-sqlite3@11.8.1)(gel@2.0.0)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.8)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(typescript@5.7.3)(yaml@2.7.0)
+      astro: 5.4.0(@types/node@22.13.5)(db0@0.2.4(better-sqlite3@11.8.1)(drizzle-orm@0.40.0(@types/better-sqlite3@7.6.12)(better-sqlite3@11.8.1)(gel@2.0.0)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.8)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(typescript@5.7.3)(yaml@2.7.0)
       es-module-lexer: 1.6.0
       estree-util-visit: 2.0.0
       hast-util-to-html: 9.0.5
@@ -5670,11 +5671,11 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.24.2
 
-  '@astrojs/solid-js@5.0.4(@types/node@22.13.5)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.85.0)(solid-js@1.9.5)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.0)':
+  '@astrojs/solid-js@5.0.5(@types/node@22.13.5)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.85.0)(solid-js@1.9.5)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.0)':
     dependencies:
       solid-js: 1.9.5
       vite: 6.2.0(@types/node@22.13.5)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.0)
-      vite-plugin-solid: 2.11.4(solid-js@1.9.5)(vite@6.2.0(@types/node@22.13.5)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.0))
+      vite-plugin-solid: 2.11.6(solid-js@1.9.5)(vite@6.2.0(@types/node@22.13.5)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.0))
     transitivePeerDependencies:
       - '@testing-library/jest-dom'
       - '@types/node'
@@ -5690,16 +5691,16 @@ snapshots:
       - tsx
       - yaml
 
-  '@astrojs/starlight@0.32.1(astro@5.3.1(@types/node@22.13.5)(db0@0.2.4(better-sqlite3@11.8.1)(drizzle-orm@0.40.0(@types/better-sqlite3@7.6.12)(better-sqlite3@11.8.1)(gel@2.0.0)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.8)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(typescript@5.7.3)(yaml@2.7.0))':
+  '@astrojs/starlight@0.32.1(astro@5.4.0(@types/node@22.13.5)(db0@0.2.4(better-sqlite3@11.8.1)(drizzle-orm@0.40.0(@types/better-sqlite3@7.6.12)(better-sqlite3@11.8.1)(gel@2.0.0)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.8)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(typescript@5.7.3)(yaml@2.7.0))':
     dependencies:
-      '@astrojs/mdx': 4.0.8(astro@5.3.1(@types/node@22.13.5)(db0@0.2.4(better-sqlite3@11.8.1)(drizzle-orm@0.40.0(@types/better-sqlite3@7.6.12)(better-sqlite3@11.8.1)(gel@2.0.0)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.8)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(typescript@5.7.3)(yaml@2.7.0))
+      '@astrojs/mdx': 4.0.8(astro@5.4.0(@types/node@22.13.5)(db0@0.2.4(better-sqlite3@11.8.1)(drizzle-orm@0.40.0(@types/better-sqlite3@7.6.12)(better-sqlite3@11.8.1)(gel@2.0.0)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.8)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(typescript@5.7.3)(yaml@2.7.0))
       '@astrojs/sitemap': 3.2.1
       '@pagefind/default-ui': 1.3.0
       '@types/hast': 3.0.4
       '@types/js-yaml': 4.0.9
       '@types/mdast': 4.0.4
-      astro: 5.3.1(@types/node@22.13.5)(db0@0.2.4(better-sqlite3@11.8.1)(drizzle-orm@0.40.0(@types/better-sqlite3@7.6.12)(better-sqlite3@11.8.1)(gel@2.0.0)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.8)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(typescript@5.7.3)(yaml@2.7.0)
-      astro-expressive-code: 0.40.2(astro@5.3.1(@types/node@22.13.5)(db0@0.2.4(better-sqlite3@11.8.1)(drizzle-orm@0.40.0(@types/better-sqlite3@7.6.12)(better-sqlite3@11.8.1)(gel@2.0.0)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.8)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(typescript@5.7.3)(yaml@2.7.0))
+      astro: 5.4.0(@types/node@22.13.5)(db0@0.2.4(better-sqlite3@11.8.1)(drizzle-orm@0.40.0(@types/better-sqlite3@7.6.12)(better-sqlite3@11.8.1)(gel@2.0.0)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.8)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(typescript@5.7.3)(yaml@2.7.0)
+      astro-expressive-code: 0.40.2(astro@5.4.0(@types/node@22.13.5)(db0@0.2.4(better-sqlite3@11.8.1)(drizzle-orm@0.40.0(@types/better-sqlite3@7.6.12)(better-sqlite3@11.8.1)(gel@2.0.0)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.8)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(typescript@5.7.3)(yaml@2.7.0))
       bcp-47: 2.1.0
       hast-util-from-html: 2.0.3
       hast-util-select: 6.0.4
@@ -6985,7 +6986,7 @@ snapshots:
       terracotta: 1.0.6(solid-js@1.9.5)
       tinyglobby: 0.2.10
       vinxi: 0.5.3(@types/node@22.13.5)(better-sqlite3@11.8.1)(db0@0.2.4(better-sqlite3@11.8.1)(drizzle-orm@0.40.0(@types/better-sqlite3@7.6.12)(better-sqlite3@11.8.1)(gel@2.0.0)))(drizzle-orm@0.40.0(@types/better-sqlite3@7.6.12)(better-sqlite3@11.8.1)(gel@2.0.0))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(typescript@5.7.3)(yaml@2.7.0)
-      vite-plugin-solid: 2.11.2(solid-js@1.9.5)(vite@6.2.0(@types/node@22.13.5)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.0))
+      vite-plugin-solid: 2.11.6(solid-js@1.9.5)(vite@6.2.0(@types/node@22.13.5)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.0))
     transitivePeerDependencies:
       - '@testing-library/jest-dom'
       - babel-plugin-macros
@@ -7364,16 +7365,16 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro-expressive-code@0.40.2(astro@5.3.1(@types/node@22.13.5)(db0@0.2.4(better-sqlite3@11.8.1)(drizzle-orm@0.40.0(@types/better-sqlite3@7.6.12)(better-sqlite3@11.8.1)(gel@2.0.0)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.8)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(typescript@5.7.3)(yaml@2.7.0)):
+  astro-expressive-code@0.40.2(astro@5.4.0(@types/node@22.13.5)(db0@0.2.4(better-sqlite3@11.8.1)(drizzle-orm@0.40.0(@types/better-sqlite3@7.6.12)(better-sqlite3@11.8.1)(gel@2.0.0)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.8)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(typescript@5.7.3)(yaml@2.7.0)):
     dependencies:
-      astro: 5.3.1(@types/node@22.13.5)(db0@0.2.4(better-sqlite3@11.8.1)(drizzle-orm@0.40.0(@types/better-sqlite3@7.6.12)(better-sqlite3@11.8.1)(gel@2.0.0)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.8)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(typescript@5.7.3)(yaml@2.7.0)
+      astro: 5.4.0(@types/node@22.13.5)(db0@0.2.4(better-sqlite3@11.8.1)(drizzle-orm@0.40.0(@types/better-sqlite3@7.6.12)(better-sqlite3@11.8.1)(gel@2.0.0)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.8)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(typescript@5.7.3)(yaml@2.7.0)
       rehype-expressive-code: 0.40.2
 
-  astro@5.3.1(@types/node@22.13.5)(db0@0.2.4(better-sqlite3@11.8.1)(drizzle-orm@0.40.0(@types/better-sqlite3@7.6.12)(better-sqlite3@11.8.1)(gel@2.0.0)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.8)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(typescript@5.7.3)(yaml@2.7.0):
+  astro@5.4.0(@types/node@22.13.5)(db0@0.2.4(better-sqlite3@11.8.1)(drizzle-orm@0.40.0(@types/better-sqlite3@7.6.12)(better-sqlite3@11.8.1)(gel@2.0.0)))(ioredis@5.5.0)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(rollup@4.34.8)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(typescript@5.7.3)(yaml@2.7.0):
     dependencies:
       '@astrojs/compiler': 2.10.4
-      '@astrojs/internal-helpers': 0.5.1
-      '@astrojs/markdown-remark': 6.1.0
+      '@astrojs/internal-helpers': 0.6.0
+      '@astrojs/markdown-remark': 6.2.0
       '@astrojs/telemetry': 3.2.0
       '@oslojs/encoding': 1.1.0
       '@rollup/pluginutils': 5.1.4(rollup@4.34.8)
@@ -7394,7 +7395,7 @@ snapshots:
       dlv: 1.1.3
       dset: 3.1.4
       es-module-lexer: 1.6.0
-      esbuild: 0.24.2
+      esbuild: 0.25.0
       estree-walker: 3.0.3
       flattie: 1.1.1
       github-slugger: 2.0.0
@@ -7426,7 +7427,7 @@ snapshots:
       which-pm: 3.0.1
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
-      yocto-spinner: 0.2.0
+      yocto-spinner: 0.2.1
       zod: 3.24.2
       zod-to-json-schema: 3.24.3(zod@3.24.2)
       zod-to-ts: 1.2.0(typescript@5.7.3)(zod@3.24.2)
@@ -7493,16 +7494,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  babel-plugin-jsx-dom-expressions@0.39.6(@babel/core@7.26.9):
-    dependencies:
-      '@babel/core': 7.26.9
-      '@babel/helper-module-imports': 7.18.6
-      '@babel/plugin-syntax-jsx': 7.25.9(@babel/core@7.26.9)
-      '@babel/types': 7.26.9
-      html-entities: 2.3.3
-      parse5: 7.2.1
-      validate-html-nesting: 1.2.2(patch_hash=ebb4be6bb4f9d37f571c99da409e095b96e4dc28cd461a71360d2a84369baae4)
-
   babel-plugin-jsx-dom-expressions@0.39.7(@babel/core@7.26.9):
     dependencies:
       '@babel/core': 7.26.9
@@ -7512,11 +7503,6 @@ snapshots:
       html-entities: 2.3.3
       parse5: 7.2.1
       validate-html-nesting: 1.2.2(patch_hash=ebb4be6bb4f9d37f571c99da409e095b96e4dc28cd461a71360d2a84369baae4)
-
-  babel-preset-solid@1.9.3(@babel/core@7.26.9):
-    dependencies:
-      '@babel/core': 7.26.9
-      babel-plugin-jsx-dom-expressions: 0.39.6(@babel/core@7.26.9)
 
   babel-preset-solid@1.9.5(@babel/core@7.26.9):
     dependencies:
@@ -11189,20 +11175,7 @@ snapshots:
     transitivePeerDependencies:
       - rollup
 
-  vite-plugin-solid@2.11.2(solid-js@1.9.5)(vite@6.2.0(@types/node@22.13.5)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.0)):
-    dependencies:
-      '@babel/core': 7.26.9
-      '@types/babel__core': 7.20.5
-      babel-preset-solid: 1.9.3(@babel/core@7.26.9)
-      merge-anything: 5.1.7
-      solid-js: 1.9.5
-      solid-refresh: 0.6.3(solid-js@1.9.5)
-      vite: 6.2.0(@types/node@22.13.5)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.0)
-      vitefu: 1.0.5(vite@6.2.0(@types/node@22.13.5)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.0))
-    transitivePeerDependencies:
-      - supports-color
-
-  vite-plugin-solid@2.11.4(solid-js@1.9.5)(vite@6.2.0(@types/node@22.13.5)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.0)):
+  vite-plugin-solid@2.11.6(solid-js@1.9.5)(vite@6.2.0(@types/node@22.13.5)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.0)):
     dependencies:
       '@babel/core': 7.26.9
       '@types/babel__core': 7.20.5
@@ -11250,10 +11223,6 @@ snapshots:
       terser: 5.39.0
       tsx: 4.19.3
       yaml: 2.7.0
-
-  vitefu@1.0.5(vite@6.2.0(@types/node@22.13.5)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.0)):
-    optionalDependencies:
-      vite: 6.2.0(@types/node@22.13.5)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.0)
 
   vitefu@1.0.6(vite@6.2.0(@types/node@22.13.5)(jiti@2.4.2)(less@4.2.2)(lightningcss@1.29.1)(sass@1.85.0)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.0)):
     optionalDependencies:
@@ -11364,7 +11333,7 @@ snapshots:
 
   yocto-queue@1.1.1: {}
 
-  yocto-spinner@0.2.0:
+  yocto-spinner@0.2.1:
     dependencies:
       yoctocolors: 2.1.1
 

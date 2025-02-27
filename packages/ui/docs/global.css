@@ -1,5 +1,8 @@
 @import "@nou/config/theme.css";
 
+@source "../src";
+@source "../docs/";
+
 /* Dark mode colors. */
 :root {
   --sl-color-accent-low: #142823;

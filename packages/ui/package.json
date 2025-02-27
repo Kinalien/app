@@ -17,13 +17,13 @@
 		"check": "biome check ."
 	},
 	"dependencies": {
-		"@astrojs/solid-js": "^5.0.4",
+		"@astrojs/solid-js": "^5.0.5",
 		"@solid-primitives/media": "^2.2.9",
 		"@solid-primitives/presence": "^0.1.0",
 		"@solid-primitives/refs": "^1.0.8",
 		"@solid-primitives/rootless": "^1.4.5",
 		"@solidjs/router": "catalog:",
-		"astro": "^5.3.1",
+		"astro": "^5.4.0",
 		"solid-js": "1.9.5",
 		"tailwind-merge": "^3.0.2",
 		"tailwind-variants": "^0.3.0",
@@ -43,7 +43,7 @@
 		"typedoc-plugin-markdown": "4.4.2",
 		"valibot": "1.0.0-rc.2",
 		"vite": "^6.2.0",
-		"vite-plugin-solid": "^2.11.4",
+		"vite-plugin-solid": "^2.11.6",
 		"vite-svg-sprite-wrapper": "^1.3.3"
 	}
 }
