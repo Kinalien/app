@@ -90,7 +90,11 @@ const Popover = <T extends ValidComponent = "div">(ownProps: PopoverProps<T>) =>
 			role={local.role}
 			tabIndex={0}
 			ref={mergeRefs(local.ref, setPopover)}
-			class={tw(css.popover, local.class)}
+			class={tw(
+				"pointer-events-auto inset-auto isolate m-0 w-max overflow-y-auto rounded-2xl bg-surface text-on-surface shadow-popover transition-discrete",
+				css.popover,
+				local.class,
+			)}
 			onBeforeToggle={composeEventHandlers(props.onBeforeToggle, (event) => {
 				if (event.newState === "open") {
 					setShownState("open");

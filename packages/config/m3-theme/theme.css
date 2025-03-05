@@ -118,7 +118,7 @@
 
   /* shadows */
   --shadow-flat: 0 0 1px 2px alpha(var(--color-on-surface, 0.2));
-  --shadow-popover: 0 0 1px alpha(var(--color-on-surface-variant, 0.2)),
+  --shadow-popover: 0 0 1px alpha(var(--color-on-surface, 0.2)),
     var(--shadow-lg);
 
   /* animation */
