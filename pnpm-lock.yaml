@@ -73,6 +73,9 @@ importers:
       '@faker-js/faker':
         specifier: ^9.5.1
         version: 9.5.1
+      '@px/config':
+        specifier: workspace:*
+        version: link:../config
       '@types/node':
         specifier: ^22.13.9
         version: 22.13.9

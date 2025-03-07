@@ -18,6 +18,7 @@
 	"keywords": [],
 	"author": "",
 	"devDependencies": {
+		"@px/config": "workspace:*",
 		"@faker-js/faker": "^9.5.1",
 		"@types/node": "^22.13.9"
 	},

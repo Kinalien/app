@@ -172,7 +172,7 @@ export function PrescriptionActivityForm(
 		const start = dateStarted();
 		const end = endDate();
 		if (!start || !end) return null;
-		return end.with({ hour: 0, minute: 0 }).since(start.with({ hour: 0, minute: 0 }), {
+		return end.with({ hour: 0, minute: 0 }).since(start, {
 			smallestUnit: "weeks",
 			largestUnit: "weeks",
 		}).weeks;
