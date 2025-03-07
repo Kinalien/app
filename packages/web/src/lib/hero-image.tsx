@@ -1,4 +1,4 @@
-import { tw } from "@nou/ui";
+import { tw } from "@px/ui";
 import type { JSX } from "solid-js";
 
 export function HeroImage(props: JSX.ImgHTMLAttributes<HTMLImageElement>) {

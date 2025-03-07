@@ -1,4 +1,4 @@
-import spriteHref from "@nou/config/icons/sprite.svg?url";
+import spriteHref from "@px/config/icons/sprite.svg?url";
 import { type JSX, splitProps } from "solid-js";
 
 import { type VariantProps, tv, tw } from "../tw";

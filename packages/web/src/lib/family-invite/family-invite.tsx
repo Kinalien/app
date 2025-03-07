@@ -1,4 +1,4 @@
-import { Button, Icon, Text, mergeDefaultProps } from "@nou/ui";
+import { Button, Icon, Text, mergeDefaultProps } from "@px/ui";
 import { Match, Show, Switch, createSignal } from "solid-js";
 
 import { createTranslator } from "~/server/i18n";

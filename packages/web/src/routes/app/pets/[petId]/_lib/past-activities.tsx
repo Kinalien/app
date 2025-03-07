@@ -1,4 +1,4 @@
-import { Card, Icon, Text } from "@nou/ui";
+import { Card, Icon, Text } from "@px/ui";
 import { type Accessor, For, Show } from "solid-js";
 import type { listAllPetActivities } from "~/server/api/activity";
 

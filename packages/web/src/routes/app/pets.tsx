@@ -1,4 +1,4 @@
-import { ButtonLink, Icon, Text } from "@nou/ui";
+import { ButtonLink, Icon, Text } from "@px/ui";
 import { Title } from "@solidjs/meta";
 import {
 	type RouteDefinition,

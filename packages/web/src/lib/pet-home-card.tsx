@@ -10,7 +10,7 @@ import {
 	type SvgIcons,
 	Text,
 	tw,
-} from "@nou/ui";
+} from "@px/ui";
 import { A, useLocation } from "@solidjs/router";
 import { ErrorBoundary, Match, Show, Suspense, Switch, createUniqueId } from "solid-js";
 
@@ -270,7 +270,7 @@ export function QuickSetters(props: { pet: PetHomeCardProps["pet"] }) {
 			<Match when={qs()?.showBreed}>
 				<SplitButton
 					variant="tonal"
-					class="max-w-48 gap-1 outline outline-4 outline-surface outline-offset-0"
+					class="max-w-48 gap-1 outline-4 outline-surface outline-offset-0"
 					size="sm"
 				>
 					<SplitButton.Inner popoverTarget={`${props.pet.id}-breed`} class="gap-2 text-nowrap">

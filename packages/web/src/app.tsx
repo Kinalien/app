@@ -1,4 +1,4 @@
-import "@nou/config/global.css";
+import "@px/config/global.css";
 
 import { MetaProvider } from "@solidjs/meta";
 import { Navigate, Router } from "@solidjs/router";

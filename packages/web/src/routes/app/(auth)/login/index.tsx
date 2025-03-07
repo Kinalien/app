@@ -1,4 +1,4 @@
-import { ButtonLink, Icon } from "@nou/ui";
+import { ButtonLink, Icon } from "@px/ui";
 import { Title } from "@solidjs/meta";
 import { type Component, Suspense, createSignal, lazy, onCleanup, onMount } from "solid-js";
 

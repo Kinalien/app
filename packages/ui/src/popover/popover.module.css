@@ -1,4 +1,4 @@
-@reference "@nou/config/theme.css";
+@reference "@px/config/theme.css";
 
 /* Avoid consumers overriding this for all states with e.g. display: flex */
 @layer utilities {

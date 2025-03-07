@@ -1,4 +1,4 @@
-@reference "@nou/config/theme.css";
+@reference "@px/config/theme.css";
 
 @layer components {
   .toast {

@@ -1,4 +1,4 @@
-import { Drawer, Popover, startViewTransition, tw } from "@nou/ui";
+import { Drawer, Popover, startViewTransition, tw } from "@px/ui";
 import { type Accessor, type JSX, type ParentProps, Show, Suspense } from "solid-js";
 
 import "./multi-screen-popover.module.css";

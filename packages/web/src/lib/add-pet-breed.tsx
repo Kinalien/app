@@ -1,4 +1,4 @@
-import { Button, Drawer, Form, Icon, Text, TextField, Toast, toast } from "@nou/ui";
+import { Button, Drawer, Form, Icon, Text, TextField, Toast, toast } from "@px/ui";
 import { useAction, useSubmission } from "@solidjs/router";
 import { type ComponentProps, Show } from "solid-js";
 

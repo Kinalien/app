@@ -1,4 +1,4 @@
-import { Button, Icon, Text } from "@nou/ui";
+import { Button, Icon, Text } from "@px/ui";
 import { Match, Show, Switch, createSignal } from "solid-js";
 import { createTranslator } from "~/server/i18n";
 import type { SupportedLocale } from "~/server/i18n/shared";

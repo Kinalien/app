@@ -1,4 +1,4 @@
-import { Icon, NavCard, type SvgIcons, Text } from "@nou/ui";
+import { Icon, NavCard, type SvgIcons, Text } from "@px/ui";
 import type { RouteDefinition } from "@solidjs/router";
 import { type Accessor, For, type ParentProps } from "solid-js";
 
@@ -28,7 +28,7 @@ export default function WWWLayout(props: ParentProps) {
 		{
 			href: "/about",
 			label: () => t("link-about-the-project"),
-			icon: "nouvet",
+			icon: "puxet",
 		},
 		// {
 		//   href: '/privacy',

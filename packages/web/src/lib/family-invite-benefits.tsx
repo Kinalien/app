@@ -1,4 +1,4 @@
-import { tw } from "@nou/ui";
+import { tw } from "@px/ui";
 
 export const FamilyInviteBenefits = (props: {
 	class?: string;

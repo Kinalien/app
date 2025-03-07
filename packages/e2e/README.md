@@ -1,4 +1,4 @@
-# @nou/acceptance-tests
+# @px/acceptance-tests
 
 [Playwright](https://playwright.dev/) E2E tests.
 
@@ -7,13 +7,13 @@
 Prepare the database which will be seeded for each test:
 
 ```
-npm run db:push -w @nou/acceptance-tests
+npm run db:push -w @px/acceptance-tests
 ```
 
 Now you can run [Playwright in UI mode](https://playwright.dev/docs/test-ui-mode):
 
 ```
-npm run test -w @nou/acceptance-tests --  --ui
+npm run test -w @px/acceptance-tests --  --ui
 ```
 
 > [!IMPORTANT]  

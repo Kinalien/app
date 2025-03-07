@@ -1,4 +1,4 @@
-@reference "@nou/ui/theme.css";
+@reference "@px/ui/theme.css";
 
 @layer components {
   .genderSwitch {

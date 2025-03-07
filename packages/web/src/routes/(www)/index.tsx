@@ -1,4 +1,4 @@
-import { ButtonLink, Card, Icon } from "@nou/ui";
+import { ButtonLink, Card, Icon } from "@px/ui";
 import { Title } from "@solidjs/meta";
 
 import { T, createTranslator } from "~/server/i18n";

@@ -13,41 +13,44 @@ import { getAuthFilePath } from "./utils";
  * due to them being not isolated, they can re-initialize the database manually.
  */
 setup("Set up tests", async ({ page }) => {
-	// await setup.step('Set up the database', async () => {
-	//   console.time('database');
+  // await setup.step('Set up the database', async () => {
+  //   console.time('database');
 
-	//   console.log(`Re-seeding the database`);
-	//   try {
-	//     execSync('npm run db:seed -w @nou/acceptance-tests', { stdio: 'pipe' });
-	//     process.env.TEST_RUN_ID = randomUUID();
-	//   } catch (error) {
-	//     console.error(error);
-	//     process.exit(1);
-	//   }
+  //   console.log(`Re-seeding the database`);
+  //   try {
+  //     execSync('npm run db:seed -w @px/acceptance-tests', { stdio: 'pipe' });
+  //     process.env.TEST_RUN_ID = randomUUID();
+  //   } catch (error) {
+  //     console.error(error);
+  //     process.exit(1);
+  //   }
 
-	//   console.log(`The database is set up!`);
-	//   console.timeEnd('database');
-	// });
+  //   console.log(`The database is set up!`);
+  //   console.timeEnd('database');
+  // });
 
-	await setup.step("authenticate user-1", async () => {
-		console.log("authenticate user-1");
-		const authFilePath = getAuthFilePath(1);
-		if (existsSync(authFilePath)) {
-			return;
-		}
-		console.log("Going through authentication");
-		await page.goto("http://localhost:3000/app/login");
+  await setup.step("authenticate user-1", async () => {
+    console.log("authenticate user-1");
+    const authFilePath = getAuthFilePath(1);
+    if (existsSync(authFilePath)) {
+      return;
+    }
+    console.log("Going through authentication");
+    await page.goto("http://localhost:3000/app/login");
 
-		await page.getByTitle("Developer login").click();
+    await page.getByTitle("Developer login").click();
 
-		await page.getByLabel("Dev login").getByRole("textbox").fill("1");
-		await page.getByLabel("Dev login").getByText("Login", { exact: true }).click();
+    await page.getByLabel("Dev login").getByRole("textbox").fill("1");
+    await page
+      .getByLabel("Dev login")
+      .getByText("Login", { exact: true })
+      .click();
 
-		await page.waitForURL("http://localhost:3000/app");
+    await page.waitForURL("http://localhost:3000/app");
 
-		expect(page.getByLabel("User menu")).toBeVisible();
-		console.log("Authenticated!");
+    expect(page.getByLabel("User menu")).toBeVisible();
+    console.log("Authenticated!");
 
-		await page.context().storageState({ path: authFilePath });
-	});
+    await page.context().storageState({ path: authFilePath });
+  });
 });

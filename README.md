@@ -1,8 +1,8 @@
 <img src="./packages/web-petcare/public/icons/icon.svg" width="48" height="48" />
 
-# NouVet
+# Puxet
 
-NouVet is an app for pet owners. The project has been created with the goal of building a web application that maximizes the value to the users while remaining as cheap as possible.
+Puxet is an app for pet owners.
 
 The project has a [license](./LICENSE), the main purpose of which is to convey my attitude to copying the project. I don't append a license text to each source file, but I expect the source of the copy to be included, and remain open sourced. This will make me happy.
 
@@ -12,9 +12,9 @@ The project has a [license](./LICENSE), the main purpose of which is to convey m
 
 The codebase is split into:
 
-- `@nou/config` for shared configurations.
-- `@nou/ui` for component library development.
-- `@nou/web` for the actual app.
+- `@px/config` for shared configurations.
+- `@px/ui` for component library development.
+- `@px/web` for the actual app.
 
 I split it this way only because I hate all the Storybook dependencies in the main project.
 
@@ -26,7 +26,7 @@ See `packages/web/.env.example`.
 Now you can create the SQLite file and apply the schema:
 
 ```
-npm run db:migrate -w @nou/web
+npm run db:migrate -w @px/web
 ```
 
 Now your app will be running correctly:

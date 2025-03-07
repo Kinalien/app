@@ -1,4 +1,4 @@
-import { ButtonLink, Icon, tw } from "@nou/ui";
+import { ButtonLink, Icon, tw } from "@px/ui";
 import { createAsync, useLocation, useNavigate } from "@solidjs/router";
 import { type JSX, Match, type ParentProps, Show, Switch, children } from "solid-js";
 

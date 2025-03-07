@@ -47,64 +47,64 @@ const buttonVariants = tv({
 		{
 			variant: "accent",
 			class:
-				"intent:bg-[color-mix(in_hsl,var(--nou-btn-bg)_92%,var(--nou-on-background))] [--nou-btn-bg:var(--color-primary)]",
+				"intent:bg-[color-mix(in_hsl,var(--px-btn-bg)_92%,var(--px-on-background))] [--px-btn-bg:var(--color-primary)]",
 		},
 		{
 			variant: "accent",
 			tone: "tertiary",
 			class:
-				"intent:bg-[color-mix(in_hsl,var(--nou-btn-bg)_92%,var(--nou-on-background))] bg-tertiary text-on-tertiary outline-tertiary [--nou-btn-bg:var(--color-tertiary)]",
+				"intent:bg-[color-mix(in_hsl,var(--px-btn-bg)_92%,var(--px-on-background))] bg-tertiary text-on-tertiary outline-tertiary [--px-btn-bg:var(--color-tertiary)]",
 		},
 		{
 			variant: "accent",
 			tone: "destructive",
 			class:
-				"bg-error intent:bg-error/90 text-on-error outline-error [--nou-btn-bg:var(--color-error)]",
+				"bg-error intent:bg-error/90 text-on-error outline-error [--px-btn-bg:var(--color-error)]",
 		},
 		{
 			variant: "outline",
-			class: "intent:bg-on-surface/8 [--nou-btn-bg:var(--color-surface)]",
+			class: "intent:bg-on-surface/8 [--px-btn-bg:var(--color-surface)]",
 		},
 		{
 			variant: "outline",
 			tone: "destructive",
 			class:
-				"border-error intent:bg-error-container/30 text-error outline-error [--nou-btn-bg:var(--color-surface)]",
+				"border-error intent:bg-error-container/30 text-error outline-error [--px-btn-bg:var(--color-surface)]",
 		},
 		{
 			variant: "tonal",
 			tone: "neutral",
 			class:
-				"bg-on-surface/5 intent:bg-on-surface/8 text-on-surface [--nou-btn-bg:var(--color-surface)]",
+				"bg-on-surface/5 intent:bg-on-surface/8 text-on-surface [--px-btn-bg:var(--color-surface)]",
 		},
 		{
 			variant: "tonal",
 			tone: "primary",
 			class:
-				"intent:bg-[color-mix(in_hsl,var(--nou-btn-bg)_92%,var(--nou-on-background))] bg-primary-container text-on-primary-container [--nou-btn-bg:var(--color-primary-container)]",
+				"intent:bg-[color-mix(in_hsl,var(--px-btn-bg)_92%,var(--px-on-background))] bg-primary-container text-on-primary-container [--px-btn-bg:var(--color-primary-container)]",
 		},
 		{
 			variant: "tonal",
 			tone: "tertiary",
 			class:
-				"intent:bg-[color-mix(in_hsl,var(--nou-btn-bg)_92%,var(--nou-on-background))] bg-tertiary-container text-on-tertiary-container [--nou-btn-bg:var(--color-tertiary-container)]",
+				"intent:bg-[color-mix(in_hsl,var(--px-btn-bg)_92%,var(--px-on-background))] bg-tertiary-container text-on-tertiary-container [--px-btn-bg:var(--color-tertiary-container)]",
 		},
 		{
 			variant: "tonal",
 			tone: "destructive",
 			class:
-				"bg-error/5 text-error [--nou-btn-bg:color-mix(in_oklab,var(--nou-error)_8%,var(--nou-background))] hover:bg-error/8 focus:bg-error/12",
+				"bg-error/5 text-error [--px-btn-bg:color-mix(in_oklab,var(--px-error)_8%,var(--px-background))] hover:bg-error/8 focus:bg-error/12",
 		},
 		{
 			variant: "ghost",
 			tone: "neutral",
-			class: "[--nou-btn-bg:var(--color-surface)] hover:bg-on-surface/5 focus:bg-on-surface/8",
+			class: "[--px-btn-bg:var(--color-surface)] hover:bg-on-surface/5 focus:bg-on-surface/8",
 		},
 		{
 			variant: "ghost",
 			tone: "destructive",
 			class:
-				"text-error [--nou-btn-bg:color-mix(in_oklab,var(--nou-error)_8%,var(--nou-background))] hover:bg-error/5 focus:bg-error/8",
+				"text-error [--px-btn-bg:color-mix(in_oklab,var(--px-error)_8%,var(--px-background))] hover:bg-error/5 focus:bg-error/8",
 		},
 		{
 			variant: "text",
@@ -173,7 +173,7 @@ const BaseComponent = <T extends ValidComponent>(ownProps: BaseProps<T>) => {
 		>
 			{props.children}
 			<Show when={local.pending}>
-				<div class="absolute inset-0 isolate flex cursor-default items-center justify-center rounded-[inherit] bg-[radial-gradient(circle_at_50%_50%,color-mix(in_lch,var(--nou-btn-bg)_98%,transparent)_30%,transparent)]">
+				<div class="absolute inset-0 isolate flex cursor-default items-center justify-center rounded-[inherit] bg-[radial-gradient(circle_at_50%_50%,color-mix(in_lch,var(--px-btn-bg)_98%,transparent)_30%,transparent)]">
 					<Spinner size={local.size} />
 				</div>
 			</Show>

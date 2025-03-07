@@ -1,5 +1,5 @@
 {
-  "extends": ["@nou/config/tsconfig", "astro/tsconfigs/base"],
+  "extends": ["@px/config/tsconfig", "astro/tsconfigs/base"],
   "include": [".astro/types.d.ts", "./src", "./docs"],
   "exclude": ["dist"],
   "compilerOptions": {

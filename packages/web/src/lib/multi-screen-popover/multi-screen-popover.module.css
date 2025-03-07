@@ -1,4 +1,4 @@
-@reference "@nou/config/theme.css";
+@reference "@px/config/theme.css";
 
 :global(html:active-view-transition-type(backwards, forwards)) {
   &::view-transition-old(multi-screen-popover-content),

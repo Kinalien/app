@@ -1,4 +1,4 @@
-import { Card } from "@nou/ui";
+import { Card } from "@px/ui";
 import { type RouteDefinition, type RouteSectionProps, createAsync } from "@solidjs/router";
 import { Show } from "solid-js";
 

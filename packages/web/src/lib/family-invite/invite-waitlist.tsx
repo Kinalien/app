@@ -1,4 +1,4 @@
-import { Avatar, Button, ButtonLink, Card, Chip, Icon, Text } from "@nou/ui";
+import { Avatar, Button, ButtonLink, Card, Chip, Icon, Text } from "@px/ui";
 import { createAsync, useMatch } from "@solidjs/router";
 import { Match, Show, Suspense, Switch } from "solid-js";
 

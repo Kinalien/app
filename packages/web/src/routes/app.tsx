@@ -1,4 +1,4 @@
-import { Toaster } from "@nou/ui";
+import { Toaster } from "@px/ui";
 import type { RouteDefinition, RouteSectionProps } from "@solidjs/router";
 
 import { createTranslator, queryDictionary } from "~/server/i18n";

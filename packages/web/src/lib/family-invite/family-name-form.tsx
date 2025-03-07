@@ -1,4 +1,4 @@
-import { Form, Icon, TextField } from "@nou/ui";
+import { Form, Icon, TextField } from "@px/ui";
 import { useAction, useSubmission } from "@solidjs/router";
 
 import { updateFamily } from "~/server/api/family";
