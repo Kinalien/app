@@ -220,7 +220,7 @@ export function QuickSetters(props: { pet: PetHomeCardProps["pet"] }) {
 			<Match when={qs()?.showBirthDate}>
 				<SplitButton
 					variant="tonal"
-					class="max-w-48 gap-1 outline outline-4 outline-surface outline-offset-0"
+					class="max-w-48 gap-1 outline-4 outline-surface outline-offset-0"
 					size="sm"
 				>
 					<SplitButton.Inner popoverTarget={`${props.pet.id}-birth-date`} class="gap-2 text-nowrap">
@@ -245,7 +245,7 @@ export function QuickSetters(props: { pet: PetHomeCardProps["pet"] }) {
 			<Match when={qs()?.showWeight}>
 				<SplitButton
 					variant="tonal"
-					class="max-w-48 gap-1 outline outline-4 outline-surface outline-offset-0"
+					class="max-w-48 gap-1 outline-4 outline-surface outline-offset-0"
 					size="sm"
 				>
 					<SplitButton.Inner popoverTarget={`${props.pet.id}-weight`} class="gap-2 text-nowrap">
