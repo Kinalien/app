@@ -31,9 +31,6 @@ dependencies:
   flutter:
     sdk: flutter
   google_fonts: ^6.2.1
-  hive: ^4.0.0
-  isar_flutter_libs: ^4.0.0-dev.13
-  path_provider: ^2.1.0
   hooks_riverpod: ^2.5.1
   freezed_annotation: ^3.0.0
 
