@@ -1,0 +1,5 @@
+package com.kinalien.native_app
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity : FlutterActivity()
