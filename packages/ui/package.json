@@ -17,20 +17,20 @@
 		"check": "biome check ."
 	},
 	"dependencies": {
-		"@astrojs/solid-js": "^5.0.5",
+		"@astrojs/solid-js": "^5.0.7",
 		"@solid-primitives/media": "^2.2.9",
 		"@solid-primitives/presence": "^0.1.0",
 		"@solid-primitives/refs": "^1.0.8",
 		"@solid-primitives/rootless": "^1.4.5",
 		"@solidjs/router": "catalog:",
-		"astro": "^5.5.4",
+		"astro": "^5.5.6",
 		"solid-js": "1.9.5",
-		"tailwind-merge": "^3.0.2",
+		"tailwind-merge": "^3.1.0",
 		"tailwind-variants": "^1.0.0",
 		"tailwindcss-spring": "^1.0.1"
 	},
 	"devDependencies": {
-		"@astrojs/starlight": "^0.32.4",
+		"@astrojs/starlight": "^0.32.5",
 		"@px/config": "workspace:*",
 		"@tailwindcss/vite": "catalog:",
 		"autoprefixer": "^10.4.21",
@@ -40,9 +40,9 @@
 		"prettier-plugin-tailwindcss": "0.6.11",
 		"tailwindcss": "catalog:",
 		"typedoc": "0.28.1",
-		"typedoc-plugin-markdown": "4.6.0",
+		"typedoc-plugin-markdown": "4.6.1",
 		"valibot": "1.0.0",
-		"vite": "^6.2.2",
+		"vite": "^6.2.4",
 		"vite-plugin-solid": "^2.11.6",
 		"vite-svg-sprite-wrapper": "^1.3.3"
 	}

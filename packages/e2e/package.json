@@ -20,7 +20,7 @@
 	"devDependencies": {
 		"@faker-js/faker": "^9.6.0",
 		"@px/config": "workspace:*",
-		"@types/node": "^22.13.12"
+		"@types/node": "^22.14.0"
 	},
 	"dependencies": {
 		"@dotenvx/dotenvx": "^1.39.0",
