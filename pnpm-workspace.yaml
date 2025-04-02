@@ -1,8 +1,12 @@
 packages:
-  - "packages/*"
+  - "packages/app"
+  - "packages/config"
+  - "packages/e2e"
+  - "packages/native"
+  - "packages/ui"
 
 catalog:
   "solid-js": ^1.9.5
   "@solidjs/router": ^0.15.1
-  "tailwindcss": "^4.0.14"
-  "@tailwindcss/vite": "^4.0.14"
+  "tailwindcss": "^4.1.1"
+  "@tailwindcss/vite": "^4.1.1"
