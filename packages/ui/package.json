@@ -23,7 +23,7 @@
 		"@solid-primitives/refs": "^1.0.8",
 		"@solid-primitives/rootless": "^1.4.5",
 		"@solidjs/router": "catalog:",
-		"astro": "^5.5.6",
+		"astro": "^5.6.0",
 		"solid-js": "1.9.5",
 		"tailwind-merge": "^3.1.0",
 		"tailwind-variants": "^1.0.0",
@@ -42,7 +42,7 @@
 		"typedoc": "0.28.1",
 		"typedoc-plugin-markdown": "4.6.1",
 		"valibot": "1.0.0",
-		"vite": "^6.2.4",
+		"vite": "^6.2.5",
 		"vite-plugin-solid": "^2.11.6",
 		"vite-svg-sprite-wrapper": "^1.3.3"
 	}
