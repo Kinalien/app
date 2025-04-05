@@ -1,5 +1,5 @@
 {
-	"name": "@px/ui",
+	"name": "@alien/ui",
 	"version": "0.0.1",
 	"type": "module",
 	"license": "GNU General Public License v3.0",
@@ -31,7 +31,7 @@
 	},
 	"devDependencies": {
 		"@astrojs/starlight": "^0.32.5",
-		"@px/config": "workspace:*",
+		"@alien/config": "workspace:*",
 		"@tailwindcss/vite": "catalog:",
 		"autoprefixer": "^10.4.21",
 		"fast-glob": "3.3.3",

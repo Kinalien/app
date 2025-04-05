@@ -1,4 +1,4 @@
-import { Button, Icon, Text } from "@px/ui";
+import { Button, Icon, Text } from "@alien/ui";
 import { createPermission } from "@solid-primitives/permission";
 import { createAsync } from "@solidjs/router";
 import { Match, Show, Suspense, Switch, createUniqueId, lazy } from "solid-js";

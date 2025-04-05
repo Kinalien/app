@@ -1,4 +1,4 @@
-@reference "@px/config/theme.css";
+@reference "@alien/config/theme.css";
 
 @layer components {
   .input:is(select) {
@@ -18,7 +18,7 @@
     }
   }
 
-  @position-try --px-picker-top {
+  @position-try --alien-picker-top {
     border-radius: var(--radius-2xl) var(--radius-2xl) 0 0;
     bottom: calc(anchor(top) + var(--spacing-6));
     top: unset;
@@ -28,7 +28,7 @@
     min-width: anchor-size(width);
     /* border-radius: 0 0 var(--radius-2xl) var(--radius-2xl); */
     top: calc(anchor(bottom) + var(--spacing-2));
-    position-try: --px-picker-top;
+    position-try: --alien-picker-top;
   }
 
   .option {

@@ -1,4 +1,4 @@
-@reference "@px/config/theme.css";
+@reference "@alien/config/theme.css";
 
 :global(html:active-view-transition-type(backwards, forwards)) {
   &::view-transition-old(multi-screen-popover-content),

@@ -1,4 +1,4 @@
-import { Button, Card, Divider, Image, Text } from "@px/ui";
+import { Button, Card, Divider, Image, Text } from "@alien/ui";
 import { Title } from "@solidjs/meta";
 import { type RouteDefinition, type RouteSectionProps, createAsync } from "@solidjs/router";
 import { Match, Show, Suspense, Switch } from "solid-js";

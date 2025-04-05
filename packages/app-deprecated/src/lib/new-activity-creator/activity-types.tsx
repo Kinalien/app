@@ -10,7 +10,7 @@ import {
 	Toast,
 	toast,
 	tw,
-} from "@px/ui";
+} from "@alien/ui";
 import { useAction, useSubmission } from "@solidjs/router";
 import {
 	type Accessor,

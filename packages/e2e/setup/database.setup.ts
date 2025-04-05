@@ -18,7 +18,7 @@ setup("Set up tests", async ({ page }) => {
 
   //   console.log(`Re-seeding the database`);
   //   try {
-  //     execSync('npm run db:seed -w @px/acceptance-tests', { stdio: 'pipe' });
+  //     execSync('npm run db:seed -w @alien/acceptance-tests', { stdio: 'pipe' });
   //     process.env.TEST_RUN_ID = randomUUID();
   //   } catch (error) {
   //     console.error(error);

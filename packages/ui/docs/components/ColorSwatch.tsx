@@ -21,7 +21,7 @@ export function ColorSwatch(ownProps: {
 			)}
 			ref={() => {
 				const tokenColor = getComputedStyle(document.documentElement).getPropertyValue(
-					`--px-${token}`,
+					`--alien-${token}`,
 				);
 				setColor(tokenColor);
 			}}

@@ -1,4 +1,4 @@
-import { Icon, tw } from "@px/ui";
+import { Icon, tw } from "@alien/ui";
 import { A } from "@solidjs/router";
 import { type JSX, Show } from "solid-js";
 

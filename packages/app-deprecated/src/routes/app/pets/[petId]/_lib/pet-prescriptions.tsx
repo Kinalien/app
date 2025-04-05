@@ -1,4 +1,4 @@
-import { Button, Card, Drawer, Icon, Text } from "@px/ui";
+import { Button, Card, Drawer, Icon, Text } from "@alien/ui";
 import { type Accessor, For, Show } from "solid-js";
 import { Temporal } from "temporal-polyfill";
 import { PrescriptionActivityForm } from "~/lib/new-activity-creator/activity-types";

@@ -1,4 +1,4 @@
-import { Card, Text, tw } from "@px/ui";
+import { Card, Text, tw } from "@alien/ui";
 
 import { createTranslator } from "~/server/i18n";
 

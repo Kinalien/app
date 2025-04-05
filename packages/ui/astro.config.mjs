@@ -9,7 +9,7 @@ export default defineConfig({
 	srcDir: "docs",
 	integrations: [
 		starlight({
-			title: "@px/ui",
+			title: "@alien/ui",
 			social: {
 				github: "https://github.com/LexSwed/",
 			},

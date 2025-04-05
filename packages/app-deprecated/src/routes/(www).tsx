@@ -1,4 +1,4 @@
-import { Icon, NavCard, type SvgIcons, Text } from "@px/ui";
+import { Icon, NavCard, type SvgIcons, Text } from "@alien/ui";
 import type { RouteDefinition } from "@solidjs/router";
 import { type Accessor, For, type ParentProps } from "solid-js";
 

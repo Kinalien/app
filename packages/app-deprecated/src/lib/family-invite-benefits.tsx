@@ -1,4 +1,4 @@
-import { tw } from "@px/ui";
+import { tw } from "@alien/ui";
 
 export const FamilyInviteBenefits = (props: {
 	class?: string;

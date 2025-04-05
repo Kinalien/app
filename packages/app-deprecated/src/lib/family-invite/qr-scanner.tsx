@@ -1,4 +1,4 @@
-import { Button, Icon, Spinner, Text } from "@px/ui";
+import { Button, Icon, Spinner, Text } from "@alien/ui";
 import { useAction, useSubmission } from "@solidjs/router";
 import QrScanner from "qr-scanner";
 import { Match, Show, Switch, createEffect, createSignal, onCleanup } from "solid-js";
@@ -6,7 +6,7 @@ import { Match, Show, Switch, createEffect, createSignal, onCleanup } from "soli
 import { joinFamilyWithQRCode } from "~/server/api/family-invite";
 import { createTranslator } from "~/server/i18n";
 
-import { startViewTransition } from "@px/ui";
+import { startViewTransition } from "@alien/ui";
 
 const QRCodeScannerPage = (props: { onSuccess: () => void }) => {
 	const t = createTranslator("family");

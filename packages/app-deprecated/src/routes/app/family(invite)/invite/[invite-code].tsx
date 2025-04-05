@@ -1,4 +1,4 @@
-import { Button, ButtonLink, Card, Form, Icon, Image, Text } from "@px/ui";
+import { Button, ButtonLink, Card, Form, Icon, Image, Text } from "@alien/ui";
 import { Title } from "@solidjs/meta";
 import {
 	A,

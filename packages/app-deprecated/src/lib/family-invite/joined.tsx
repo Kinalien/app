@@ -1,4 +1,4 @@
-import { Button, Card, Icon, Text } from "@px/ui";
+import { Button, Card, Icon, Text } from "@alien/ui";
 
 import { createTranslator } from "~/server/i18n";
 

@@ -11,7 +11,7 @@ import {
 	MenuItem,
 	Popover,
 	Text,
-} from "@px/ui";
+} from "@alien/ui";
 import { type RouteDefinition, createAsync, useSubmission } from "@solidjs/router";
 import { For, Match, Show, Suspense, Switch } from "solid-js";
 

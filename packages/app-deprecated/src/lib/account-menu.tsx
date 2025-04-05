@@ -1,4 +1,4 @@
-import { Avatar, Button, Divider, Icon, MenuItem, MenuList, Popover, Text } from "@px/ui";
+import { Avatar, Button, Divider, Icon, MenuItem, MenuList, Popover, Text } from "@alien/ui";
 import { A, useLocation } from "@solidjs/router";
 
 import { createTranslator } from "~/server/i18n";

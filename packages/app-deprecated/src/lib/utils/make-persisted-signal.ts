@@ -2,7 +2,7 @@ import { createAsync, query, revalidate } from "@solidjs/router";
 import { untrack } from "solid-js";
 import { isServer } from "solid-js/web";
 
-import { startViewTransition } from "@px/ui";
+import { startViewTransition } from "@alien/ui";
 
 const parseDocumentCookie = () =>
   Object.fromEntries(

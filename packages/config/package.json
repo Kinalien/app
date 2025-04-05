@@ -1,5 +1,5 @@
 {
-	"name": "@px/config",
+	"name": "@alien/config",
 	"version": "1.0.0",
 	"type": "module",
 	"license": "GNU General Public License v3.0",
@@ -7,7 +7,8 @@
 		"./theme.css": "./m3-theme/theme.css",
 		"./tsconfig": "./tsconfig.json",
 		"./global.css": "./global.css",
-		"./icons/sprite.svg": "./icons/sprite.svg"
+		"./icons/sprite.svg": "./icons/sprite.svg",
+		"./theme.json": "./m3-theme/M3.json"
 	},
 	"scripts": {
 		"typecheck": "tsc",

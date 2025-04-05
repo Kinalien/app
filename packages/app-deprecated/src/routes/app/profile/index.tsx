@@ -10,7 +10,7 @@ import {
 	TextField,
 	Toast,
 	toast,
-} from "@px/ui";
+} from "@alien/ui";
 import { Title } from "@solidjs/meta";
 import { type RouteDefinition, createAsync, useAction, useSubmission } from "@solidjs/router";
 import { Show, Suspense } from "solid-js";

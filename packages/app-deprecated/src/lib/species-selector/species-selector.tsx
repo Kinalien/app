@@ -1,4 +1,4 @@
-import { Fieldset, Icon, RadioCard, type SvgIcons, tw } from "@px/ui";
+import { Fieldset, Icon, RadioCard, type SvgIcons, tw } from "@alien/ui";
 import { type ComponentProps, For } from "solid-js";
 
 import { createTranslator } from "~/server/i18n";

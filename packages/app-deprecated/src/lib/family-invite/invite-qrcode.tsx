@@ -1,4 +1,4 @@
-import { Button, Card, Spinner, Text, tw } from "@px/ui";
+import { Button, Card, Spinner, Text, tw } from "@alien/ui";
 import { createAsync } from "@solidjs/router";
 import { Suspense, createEffect, createSignal } from "solid-js";
 import type QRCodeStyling from "styled-qr-code";

@@ -1,5 +1,5 @@
 {
-	"name": "@px/web-petcare",
+	"name": "@alien/web-petcare",
 	"version": "0.0.1",
 	"type": "module",
 	"license": "GNU General Public License v3.0",
@@ -18,7 +18,7 @@
 	"dependencies": {
 		"@oslojs/crypto": "1.0.1",
 		"@oslojs/encoding": "1.1.0",
-		"@px/ui": "workspace:*",
+		"@alien/ui": "workspace:*",
 		"@solid-primitives/devices": "^1.2.6",
 		"@solid-primitives/i18n": "^2.1.1",
 		"@solid-primitives/media": "^2.2.9",
@@ -44,7 +44,7 @@
 	},
 	"devDependencies": {
 		"@faker-js/faker": "^9.6.0",
-		"@px/config": "workspace:*",
+		"@alien/config": "workspace:*",
 		"@types/better-sqlite3": "^7.6.11",
 		"dotenv": "^16.4.5",
 		"drizzle-kit": "^0.30.6",

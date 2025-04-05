@@ -1,4 +1,4 @@
-@reference "@px/config/theme.css";
+@reference "@alien/config/theme.css";
 
 /* Avoid consumers overriding this for all states with e.g. display: flex */
 @layer utilities {

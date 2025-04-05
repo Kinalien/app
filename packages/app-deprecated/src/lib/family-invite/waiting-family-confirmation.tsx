@@ -1,4 +1,4 @@
-import { Avatar, Button, Card, Form, Icon, Text } from "@px/ui";
+import { Avatar, Button, Card, Form, Icon, Text } from "@alien/ui";
 import { useSubmission } from "@solidjs/router";
 
 import { moveUserFromTheWaitList } from "~/server/api/family-invite";

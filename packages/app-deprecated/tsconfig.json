@@ -1,5 +1,5 @@
 {
-  "extends": "@px/config/tsconfig",
+  "extends": "@alien/config/tsconfig",
   "include": [
     "./src",
     "./drizzle.config.ts",

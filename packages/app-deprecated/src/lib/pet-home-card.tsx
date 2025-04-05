@@ -10,7 +10,7 @@ import {
 	type SvgIcons,
 	Text,
 	tw,
-} from "@px/ui";
+} from "@alien/ui";
 import { A, useLocation } from "@solidjs/router";
 import { ErrorBoundary, Match, Show, Suspense, Switch, createUniqueId } from "solid-js";
 

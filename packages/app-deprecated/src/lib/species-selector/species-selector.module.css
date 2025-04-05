@@ -1,4 +1,4 @@
-@reference "@px/ui/theme.css";
+@reference "@alien/ui/theme.css";
 
 @layer components {
   .genderSwitch {

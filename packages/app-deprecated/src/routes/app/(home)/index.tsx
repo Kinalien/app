@@ -1,4 +1,4 @@
-import { Button, ButtonLink, Card, Drawer, Icon } from "@px/ui";
+import { Button, ButtonLink, Card, Drawer, Icon } from "@alien/ui";
 import { Title } from "@solidjs/meta";
 import { type RouteDefinition, createAsync } from "@solidjs/router";
 import { For, Match, Show, Suspense, Switch, createUniqueId, lazy } from "solid-js";
