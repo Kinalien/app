@@ -1,5 +1,5 @@
 import { readFile, writeFile } from "node:fs/promises";
-import theme from "./M3.json" with { type: "json" };
+import theme from "./theme.json" with { type: "json" };
 
 function toKebabCase(str) {
 	return str.replace(/([a-z])([A-Z])/g, "$1-$2").toLowerCase();

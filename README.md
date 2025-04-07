@@ -1,6 +1,6 @@
 <img src="./packages/web-petcare/public/icons/icon.svg" width="48" height="48" />
 
-# Puxet
+# Kinalien
 
 Puxet is an app for pet owners.
 
@@ -12,9 +12,9 @@ The project has a [license](./LICENSE), the main purpose of which is to convey m
 
 The codebase is split into:
 
-- `@px/config` for shared configurations.
-- `@px/ui` for component library development.
-- `@px/web` for the actual app.
+- `@alien/config` for shared configurations.
+- `@alien/ui` for component library development.
+- `@alien/web` for the actual app.
 
 I split it this way only because I hate all the Storybook dependencies in the main project.
 
@@ -26,7 +26,7 @@ See `packages/web/.env.example`.
 Now you can create the SQLite file and apply the schema:
 
 ```
-npm run db:migrate -w @px/web
+npm run db:migrate -w @alien/web
 ```
 
 Now your app will be running correctly:

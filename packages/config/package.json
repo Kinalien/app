@@ -8,7 +8,7 @@
 		"./tsconfig": "./tsconfig.json",
 		"./global.css": "./global.css",
 		"./icons/sprite.svg": "./icons/sprite.svg",
-		"./theme.json": "./m3-theme/M3.json"
+		"./theme/theme.json": "./theme/theme.json"
 	},
 	"scripts": {
 		"typecheck": "tsc",
