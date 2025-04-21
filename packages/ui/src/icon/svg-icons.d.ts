@@ -31,7 +31,7 @@ export type SvgIcons =
   | "info"
   | "install"
   | "note"
-  | "puxet"
+  | "kinalien"
   | "package"
   | "paw-print"
   | "pencil"

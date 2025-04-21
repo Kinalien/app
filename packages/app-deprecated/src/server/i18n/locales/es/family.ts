@@ -1,6 +1,6 @@
 const familyDict = {
-  "meta.title-new-user": "Puxet | Bienvenido",
-  "meta.title": "Puxet | {{familyName}}",
+  "meta.title-new-user": "KinAlien | Bienvenido",
+  "meta.title": "KinAlien | {{familyName}}",
   "no-name": "Mi familia",
   "update-name-label": "Actualizar nombre de la familia",
   "update-name-description": "Los nuevos nombres se guardan automáticamente",
@@ -65,13 +65,13 @@ const familyDict = {
   "invite.waitlist-joined-cancel": "Eliminar",
   "invite.cta-later": "Más tarde",
   "invite.cta-cancel": "Regresar",
-  "invite.invite-share-title-user": "Únete a {{userName}} en Puxet",
-  "invite.invite-share-title-no-name": "¿Úneme a Puxet?",
+  "invite.invite-share-title-user": "Únete a {{userName}} en KinAlien",
+  "invite.invite-share-title-no-name": "¿Úneme a KinAlien?",
   "invite.invite-share-text":
     "¡Te invito a un grupo para compartir el cuidado de nuestras mascotas! Únete usando este enlace.",
   "invite.expires-in": "La invitación expira en {{expiresIn}}",
   "invite.join-instruction":
-    "Escanea el código QR creado por tu compañero en su aplicación Puxet.",
+    "Escanea el código QR creado por tu compañero en su aplicación KinAlien.",
   "invite.scan-denied":
     "La cámara no está disponible. Puedes usar la cámara de tu dispositivo para escanear el código o pedirle al invitador que comparta un enlace directo.",
   "invite.join-scan-cta": "Escanear código QR con la cámara",

@@ -129,11 +129,11 @@ async function createQRCode(data: string, containerRef: HTMLDivElement) {
 		type: "svg",
 		image: "/icons/icon.svg",
 		dotsOptions: {
-			color: "var(--nou-on-surface)",
+			color: "var(--kin-on-surface)",
 			type: "rounded",
 		},
 		cornersSquareOptions: {
-			color: "var(--nou-on-surface)",
+			color: "var(--kin-on-surface)",
 			type: "extra-rounded",
 		},
 		backgroundOptions: {

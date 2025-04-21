@@ -28,7 +28,7 @@ export default function WWWLayout(props: ParentProps) {
 		{
 			href: "/about",
 			label: () => t("link-about-the-project"),
-			icon: "puxet",
+			icon: "kinalien",
 		},
 		// {
 		//   href: '/privacy',

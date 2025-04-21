@@ -1,5 +1,5 @@
 const invitedDict = {
-  "meta.title": "Puxet | Invitación",
+  "meta.title": "KinAlien | Invitación",
   "logo-label": "Invitación Familiar",
   "expired.heading": "¿La invitación se dañó?",
   "expired.description":

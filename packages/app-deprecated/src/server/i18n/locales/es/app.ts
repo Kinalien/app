@@ -1,7 +1,7 @@
 const appDict = {
   login: "Iniciar sesión",
-  "meta.title-new-user": "Puxet | Bienvenido",
-  "meta.title": "Puxet | {{familyName}}",
+  "meta.title-new-user": "KinAlien | Bienvenido",
+  "meta.title": "KinAlien | {{familyName}}",
   "family.no-name": "Mi familia",
   "invite-card-heading": "¿Tu pareja ya está registrada? ¡Únase a ellos!",
   "invite-card-description":
@@ -12,7 +12,7 @@ const appDict = {
   "account-menu.account": "Perfil",
   "account-menu.pwa-title": "Instalar sin conexión",
   "account-menu.pwa-description":
-    "Utilice Puxet sin internet, agilizando el acceso y habilitando más funciones.",
+    "Utilice KinAlien sin internet, agilizando el acceso y habilitando más funciones.",
   "account-menu.support": "Informar un error",
   "account-menu.logout": "Cerrar sesión",
   "pet-list": "Tus mascotas",

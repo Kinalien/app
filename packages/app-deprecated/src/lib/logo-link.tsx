@@ -13,7 +13,7 @@ function LogoLink(props: {
 			title={props.label}
 			class={tw("flex flex-row items-center gap-4", props.class)}
 		>
-			<Icon use="puxet" class="size-14" />
+			<Icon use="kinalien" class="size-14" />
 			<Show when={props.label}>
 				<span class="hidden text-lg sm:inline-block">{props.label}</span>
 			</Show>

@@ -1,6 +1,6 @@
 const familyDict = {
-  "meta.title-new-user": "Puxet | Welcome",
-  "meta.title": "Puxet | {{familyName}}",
+  "meta.title-new-user": "KinAlien | Welcome",
+  "meta.title": "KinAlien | {{familyName}}",
   "no-name": "My Family",
   "update-name-label": "Update family name",
   "update-name-description": "New name is automatically saved",
@@ -64,13 +64,13 @@ const familyDict = {
   "invite.waitlist-joined-cancel": "Remove",
   "invite.cta-later": "Later",
   "invite.cta-cancel": "Return",
-  "invite.invite-share-title-user": "Join {{userName}} in Puxet",
-  "invite.invite-share-title-no-name": "Join me in Puxet?",
+  "invite.invite-share-title-user": "Join {{userName}} in KinAlien",
+  "invite.invite-share-title-no-name": "Join me in KinAlien?",
   "invite.invite-share-text":
     "I invite you to a group to share the care of our pets! Join using this link.",
   "invite.expires-in": "The invitation expires {{expiresIn}}",
   "invite.join-instruction":
-    "Scan the QR-code, created by your partner in their Puxet app.",
+    "Scan the QR-code, created by your partner in their KinAlien app.",
   "invite.scan-denied":
     "Camera is not available. You can use the camera app of your device to scan the code, or ask the inviter to share a direct link instead.",
   "invite.join-scan-cta": "Scan QR-code with the camera",

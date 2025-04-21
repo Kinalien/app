@@ -12,9 +12,9 @@ const wwwDict = {
   "feature-medical-history": "Own the medical history of your pet",
   "feature-share-reminders": "Share the reminders with your family",
   "feature-connect-veterinaries": "Connect with veterinaries around you",
-  "meta.main-title": "Puxet for pets wellbeing",
-  "meta.about-title": "About Puxet",
-  "meta.privacy-title": "Puxet privacy policy",
+  "meta.main-title": "KinAlien for pets wellbeing",
+  "meta.about-title": "About KinAlien",
+  "meta.privacy-title": "KinAlien privacy policy",
 } as const;
 
 export default wwwDict;

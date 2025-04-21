@@ -1,5 +1,5 @@
 const loginDict = {
-  "meta.title": "Puxet | Iniciar sesión",
+  "meta.title": "KinAlien | Iniciar sesión",
   "back-home": "Volver a la página de inicio",
   "hero-image": "Un gato y un perro durmiendo juntos",
   "with-facebook": "Continuar con Facebook",

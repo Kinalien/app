@@ -47,7 +47,7 @@ export default function InviteAcceptPage(props: RouteSectionProps) {
 				<header class="z-10 col-start-1 col-end-[-1] row-[1] flex flex-row items-center justify-between gap-8 md:col-start-1 md:col-end-6">
 					<div class="flex flex-row items-center">
 						<A href="/app" class="group -m-4 flex items-center gap-4 p-4">
-							<Icon use="puxet" class="group-hover:-rotate-6 size-14 duration-200" />
+							<Icon use="kinalien" class="group-hover:-rotate-6 size-14 duration-200" />
 							<Text with="body-lg">{t("logo-label")}</Text>
 						</A>
 					</div>

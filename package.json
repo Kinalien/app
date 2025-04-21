@@ -1,15 +1,16 @@
 {
-	"name": "puxet",
+	"name": "kinalien",
 	"type": "module",
 	"license": "GNU General Public License v3.0",
 	"engines": {
 		"node": ">=22",
 		"pnpm": ">=10"
 	},
-	"packageManager": "pnpm@10.7.1",
+	"packageManager": "pnpm@10.9.0",
 	"scripts": {
 		"check": "turbo run check --continue",
-		"typecheck": "turbo run typecheck"
+		"typecheck": "turbo run typecheck",
+		"db": "pnpm --filter @alien/app run db"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.4",
@@ -17,16 +18,14 @@
 		"typescript": "^5.8.2"
 	},
 	"pnpm": {
-		"patchedDependencies": {
-			"validate-html-nesting@1.2.2": "patches/validate-html-nesting@1.2.2.patch"
-		},
 		"onlyBuiltDependencies": [
 			"@biomejs/biome",
 			"@parcel/watcher",
 			"@swc/core",
 			"better-sqlite3",
 			"esbuild",
-			"sharp"
+			"sharp",
+			"workerd"
 		]
 	}
 }

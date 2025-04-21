@@ -172,7 +172,7 @@ function Toaster(props: { label: string }) {
 					}}
 				>
 					<div
-						class="-m-1 absolute h-1 w-full [anchor-name:--nou-toast-anchor-list]"
+						class="-m-1 absolute h-1 w-full [anchor-name:--kin-toast-anchor-list]"
 						aria-hidden="true"
 					/>
 					<For each={toaster.items()}>
@@ -182,8 +182,8 @@ function Toaster(props: { label: string }) {
 									class={tw(css.toast, "min-h-16")}
 									style={{
 										"anchor-name": entry.anchorName,
-										"position-anchor": entry.positionAnchor ?? "--nou-toast-anchor-list",
-										"--nou-toast-index": toaster.items().length - index(),
+										"position-anchor": entry.positionAnchor ?? "--kin-toast-anchor-list",
+										"--kin-toast-index": toaster.items().length - index(),
 									}}
 									on:toast-dismiss={() => toaster.remove(entry.id)}
 								>
@@ -224,7 +224,7 @@ const useToastsController = createSingletonRoot(() => {
 		const newItem = {
 			id,
 			element,
-			anchorName: `--nou-toast-anchor-${id}`,
+			anchorName: `--kin-toast-anchor-${id}`,
 			get positionAnchor(): string | undefined {
 				return positionAnchor();
 			},

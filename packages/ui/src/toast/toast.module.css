@@ -16,7 +16,7 @@
     border-radius: var(--radius-2xl);
     min-width: calc(var(--spacing) * 64);
     filter: contrast(0.95) brightness(1.01);
-    z-index: var(--nou-toast-index);
+    z-index: var(--kin-toast-index);
     pointer-events: all !important;
 
     &:first-of-type {

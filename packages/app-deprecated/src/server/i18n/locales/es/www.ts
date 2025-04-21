@@ -12,9 +12,9 @@ const wwwDict = {
   "feature-medical-history": "Lleva el historial médico de tu mascota",
   "feature-share-reminders": "Comparte los recordatorios con tu familia",
   "feature-connect-veterinaries": "Conecta con veterinarios cerca de ti",
-  "meta.main-title": "Puxet para el bienestar de las mascotas",
-  "meta.about-title": "Acerca de Puxet",
-  "meta.privacy-title": "Política de privacidad de Puxet",
+  "meta.main-title": "KinAlien para el bienestar de las mascotas",
+  "meta.about-title": "Acerca de KinAlien",
+  "meta.privacy-title": "Política de privacidad de KinAlien",
 } as const satisfies Record<keyof typeof import("../en/www").default, string>;
 
 export default wwwDict;

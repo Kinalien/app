@@ -2,7 +2,7 @@
 
 # Kinalien
 
-Puxet is an app for pet owners.
+KinAlien is an app for pet owners.
 
 The project has a [license](./LICENSE), the main purpose of which is to convey my attitude to copying the project. I don't append a license text to each source file, but I expect the source of the copy to be included, and remain open sourced. This will make me happy.
 
