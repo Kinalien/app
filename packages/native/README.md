@@ -1,1 +1,0 @@
-# KinAlien native app
