@@ -6,20 +6,20 @@
     "indentWidth": 2,
     "lineWidth": 100,
     "attributePosition": "auto",
-    "useEditorconfig": true
+    "useEditorconfig": true,
   },
   "linter": {
     "enabled": true,
     "rules": {
       "recommended": true,
       "style": {
-        "noNonNullAssertion": "info"
+        "noNonNullAssertion": "info",
       },
       "correctness": {
         "noChildrenProp": "off",
         "useJsxKeyInIterable": "off",
         "noUnusedImports": "error",
-        "noUnusedVariables": "error"
+        "noUnusedVariables": "error",
       },
       "nursery": {
         "useSortedClasses": {
@@ -27,22 +27,22 @@
           "fix": "safe",
           "options": {
             "attributes": ["class", "classList"],
-            "functions": ["cva", "tw"]
-          }
-        }
-      }
-    }
+            "functions": ["cva", "tw"],
+          },
+        },
+      },
+    },
   },
   "css": {
     "formatter": {
-      "enabled": false
+      "enabled": false,
     },
     "linter": {
-      "enabled": false
+      "enabled": false,
     },
     "parser": {
-      "cssModules": false
-    }
+      "cssModules": false,
+    },
   },
   "files": {
     "ignore": [
@@ -56,22 +56,23 @@
       "test-results/**/*",
       "svg-icons.d.ts",
       "./packages/ui/docs/**/*.astro",
-      "./packages/native/**"
-    ]
+      "./packages/native/**",
+      "./packages/native-app/**",
+    ],
   },
   "overrides": [
     {
       "include": ["*.json", ".*rc"],
-      "json": { "formatter": { "trailingCommas": "none" } }
+      "json": { "formatter": { "trailingCommas": "none" } },
     },
     {
       "include": ["*.astro"],
       "linter": {
-        "enabled": false
+        "enabled": false,
       },
       "formatter": {
-        "enabled": false
-      }
-    }
-  ]
+        "enabled": false,
+      },
+    },
+  ],
 }

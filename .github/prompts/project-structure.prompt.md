@@ -1,6 +1,6 @@
 # Instructions
 
-This project is a monorepo for `Kinalien` app - a pet care application with social interactions to share the care.
+This project is a `pnpm` monorepo for `Kinalien` app - a pet care application with social interactions to share the care.
 The project has the following structure:
 
 - `packages/config` is a folder with shared configs between all folders: linter configuration, `tsconfig.json`, Tailwind CSS v4 theme, and icons collection.

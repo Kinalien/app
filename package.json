@@ -6,7 +6,7 @@
 		"node": ">=22",
 		"pnpm": ">=10"
 	},
-	"packageManager": "pnpm@10.9.0",
+	"packageManager": "pnpm@10.10.0",
 	"scripts": {
 		"check": "turbo run check --continue",
 		"typecheck": "turbo run typecheck",
@@ -14,8 +14,8 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.4",
-		"turbo": "^2.4.4",
-		"typescript": "^5.8.2"
+		"turbo": "^2.5.2",
+		"typescript": "^5.8.3"
 	},
 	"pnpm": {
 		"onlyBuiltDependencies": [
